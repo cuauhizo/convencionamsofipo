@@ -1,5 +1,6 @@
 <script setup>
   import { ref, onMounted, onUnmounted, reactive, computed, watch, nextTick } from 'vue';
+  import Responsive from './components/responsive.vue'
   import Stands from './components/stands.vue'
   import StandsCopy from './components/stands-copy.vue'
 
@@ -1085,6 +1086,7 @@ onUnmounted(() => {
         </div>
     </div>
   </footer>
+  <!-- <Responsive/> -->
 </template>
 
 <style scoped>
