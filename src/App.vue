@@ -391,11 +391,11 @@ const goToSlide = (index) => {
 // --- Lógica de Auto-Deslizamiento ---
 const startAutoSlideDia1 = () => {
   clearInterval(autoSlideIntervalDia1.value); // Limpia cualquier intervalo existente
-  autoSlideIntervalDia1.value = setInterval(nextSlideDia1, 5000); // Cambia cada 5 segundos
+  autoSlideIntervalDia1.value = setInterval(nextSlideDia1, 3000); // Cambia cada 5 segundos
 };
 const startAutoSlideDia2 = () => {
   clearInterval(autoSlideIntervalDia2.value); // Limpia cualquier intervalo existente
-  autoSlideIntervalDia2.value = setInterval(nextSlideDia2, 5000); // Cambia cada 5 segundos
+  autoSlideIntervalDia2.value = setInterval(nextSlideDia2, 3000); // Cambia cada 5 segundos
 };
 
 const resetAutoSlideDia1 = () => {
@@ -542,11 +542,10 @@ onUnmounted(() => {
   <!-- Main -->
   <main>
     <!-- Hero -->
-    <section id="section1" class="container flex flex-wrap md:flex-nowrap gap-12 justify-items-center items-end py-[5rem] 2xl:min-h-[695px]">
-      <div class="w-full md:w-2/3">
+    <section id="section1" class="container flex flex-wrap justify-items-end items-end min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center xl:min-h-[695px]">
+      <div class="w-full md:w-2/3" data-aos="fade-right">
         <h1
-          class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold"
-          data-aos="fade-right">
+          class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
           Seguridad y confianza:<br>
           <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
         </h1>
@@ -558,31 +557,31 @@ onUnmounted(() => {
         </button>
       <div class="mt-6 md:max-w-[497.23px]">
         <div class="grid grid-cols-9 gap-2">
-          <a href=""><img src="./assets/img/sofipos/amextra.webp" alt="amextra"></a>
-          <a href=""><img src="./assets/img/sofipos/asp.webp" alt="asp"></a>
-          <a href=""><img src="./assets/img/sofipos/bbcd.webp" alt="bbcd"></a>
-          <a href=""><img src="./assets/img/sofipos/bienestar.webp" alt="bienestar"></a>
-          <a href=""><img src="./assets/img/sofipos/broxel.webp" alt="broxel"></a>
-          <a href=""><img src="./assets/img/sofipos/capital_activo.webp" alt="capital_activo"></a>
-          <a href=""><img src="./assets/img/sofipos/credicapital.webp" alt="credicapital"></a>
-          <a href=""><img src="./assets/img/sofipos/crediclub.webp" alt="crediclub"></a>
-          <a href=""><img src="./assets/img/sofipos/fincomun.webp" alt="fincomun"></a>
-          <a href=""><img src="./assets/img/sofipos/fin_amigo.webp" alt="fin amigo"></a>
-          <a href=""><img src="./assets/img/sofipos/fondedora.webp" alt="fondedora"></a>
-          <a href=""><img src="./assets/img/sofipos/grensa.webp" alt="grensa"></a>
-          <a href=""><img src="./assets/img/sofipos/klar.webp" alt="klar"></a>
-          <a href=""><img src="./assets/img/sofipos/kubo.webp" alt="kubo"></a>
-          <a href=""><img src="./assets/img/sofipos/monte_de_piedad.webp" alt="monte de piedad"></a>
-          <a href=""><img src="./assets/img/sofipos/paso_seguro.webp" alt="paso seguro"></a>
-          <a href=""><img src="./assets/img/sofipos/porvenir.webp" alt="porvenir"></a>
-          <a href=""><img src="./assets/img/sofipos/premu.webp" alt="premu"></a>
-          <a href=""><img src="./assets/img/sofipos/progressa.webp" alt="progressa"></a>
-          <a href=""><img src="./assets/img/sofipos/resuelve.webp" alt="resuelve"></a>
-          <a href=""><img src="./assets/img/sofipos/sofiexpress.webp" alt="sofiexpress"></a>
-          <a href=""><img src="./assets/img/sofipos/stori.webp" alt="stori"></a>
-          <a href=""><img src="./assets/img/sofipos/sumate.webp" alt="sumate"></a>
-          <a href=""><img src="./assets/img/sofipos/unagra.webp" alt="unagra"></a>
-          <a href=""><img src="./assets/img/sofipos/xepelin.webp" alt="xepelin"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/amextra.webp" alt="amextra"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/asp.webp" alt="asp"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/bbcd.webp" alt="bbcd"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/bienestar.webp" alt="bienestar"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/broxel.webp" alt="broxel"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/capital_activo.webp" alt="capital_activo"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/credicapital.webp" alt="credicapital"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/crediclub.webp" alt="crediclub"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/fincomun.webp" alt="fincomun"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/fin_amigo.webp" alt="fin amigo"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/fondedora.webp" alt="fondedora"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/grensa.webp" alt="grensa"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/klar.webp" alt="klar"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/kubo.webp" alt="kubo"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/monte_de_piedad.webp" alt="monte de piedad"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/paso_seguro.webp" alt="paso seguro"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/porvenir.webp" alt="porvenir"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/premu.webp" alt="premu"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/progressa.webp" alt="progressa"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/resuelve.webp" alt="resuelve"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/sofiexpress.webp" alt="sofiexpress"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/stori.webp" alt="stori"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/sumate.webp" alt="sumate"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/unagra.webp" alt="unagra"></a>
+          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/xepelin.webp" alt="xepelin"></a>
         </div>
 
       </div>
@@ -599,67 +598,89 @@ onUnmounted(() => {
 
     <!-- Patrocinadores -->
     <section id="section2" class="container grid gap-12 justify-items-center items-center py-20 lg:grid-cols-2">
-      <div>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-center">
         <h2 class="titulo-seccion">Patrocinadores</h2>
-        <p class="titulo" data-aos="fade-up">
+        <p class="titulo">
             Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.
         </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="container grid grid-cols-2 gap-4 justify-items-center items-center lg:py-12 md:grid-cols-3" data-aos="fade-up">
+      <div class="container grid grid-cols-2 gap-4 justify-items-center items-center lg:py-12 md:grid-cols-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/bajaware.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/bajaware.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/circulo_de_credito.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/circulo_de_credito.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/gmc360.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/gmc360.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/efisys.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/efisys.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/finvero.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/finvero.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/fitch_ratings.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/fitch_ratings.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/preven.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/preven.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/mc_collect.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/mc_collect.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/buro_de_credito.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/buro_de_credito.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/sekura.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/sekura.webp" alt="">
+            </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <img src="./assets/img/patrocinadores/tecreo.webp" alt="">
+            <a href="">
+              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/tecreo.webp" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -668,7 +689,7 @@ onUnmounted(() => {
     <!-- Ponentes -->
     <section id="section3" class="py-20 px-4">
       <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row">
-        <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 order-2 md:order-1">
+        <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 order-2 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-top">
           <div class="max-w-[276px] rounded-2xl bg-perfil p-6 text-center shadow-lg">
             <h3 class="text-sm">Marlene Garayzar</h3>
             <img class="mx-auto mt-4 mb-4 h-32 w-32 rounded-full shadow-lg" src="https://i.pravatar.cc/200" alt="profile picture" />
@@ -737,9 +758,9 @@ onUnmounted(() => {
           </div>
 
         </div>
-        <div class="w-full md:sticky md:top-20 md:w-1/2 order-1 md:order-2">
+        <div class="w-full md:sticky md:top-20 md:w-1/2 order-1 md:order-2" data-aos="fade-up" data-aos-anchor-placement="top-top">
           <h2 class="titulo-seccion">Ponentes</h2>
-          <p class="titulo" data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.</p>
+          <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
@@ -747,17 +768,17 @@ onUnmounted(() => {
 
     <!-- Programa -->
     <section id="section4" class="container grid grid-cols-12 gap-12 justify-items-center items-center py-20">
-      <div class="col-span-full sm:col-span-8">
+      <div class="col-span-full sm:col-span-8" data-aos="zoom-in-right" data-aos-anchor-placement="center-center">
         <h2 class="titulo-seccion">Programa</h2>
-        <p class="titulo" data-aos="fade-up">
+        <p class="titulo">
             Lorem ipsum dolor sit amet, consectetur adipiscing.
         </p>
       </div>
-      <div class="col-span-full sm:col-span-4">
+      <div class="col-span-full sm:col-span-4" data-aos="zoom-in-left" data-aos-anchor-placement="center-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </section>
-    <div class="w-full">
+    <div class="w-full" data-aos="zoom-in" data-aos-anchor-placement="center-center">
       <div class="flex max-w-lg mx-auto gap-10 font-lemon-normal">
         <button
           class="w-1/2 py-4 text-center text-lg font-extralight focus:outline-none"
@@ -920,30 +941,30 @@ onUnmounted(() => {
     <StandsCopy/>
 
     <!-- Sede -->
-    <section id="section6" class="container grid gap-12 justify-items-center items-center py-20 lg:grid-cols-2">
+    <section id="section6" class="container grid gap-12 justify-items-center items-center py-20 lg:grid-cols-2" data-aos-anchor-placement="center-center">
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="./assets/img/galeria/imagen1.png" alt="Gallery image" />
+        <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="500">
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen1.png" alt="Gallery image" />
         </div>
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="./assets/img/galeria/imagen2.png" alt="Gallery image" />
+        <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="1000">
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen2.png" alt="Gallery image" />
         </div>
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="./assets/img/galeria/imagen3.png" alt="Gallery image" />
+        <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="1500">
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen3.png" alt="Gallery image" />
         </div>
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="./assets/img/galeria/imagen4.png" alt="Gallery image" />
+        <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="2000">
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen4.png" alt="Gallery image" />
         </div>
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="./assets/img/galeria/imagen5.png" alt="Gallery image" />
+        <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="2500">
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen5.png" alt="Gallery image" />
         </div>
-        <div>
-          <img class="h-auto max-w-full rounded-lg" src="./assets/img/galeria/imagen6.png" alt="Gallery image" />
+        <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="3000">
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen6.png" alt="Gallery image" />
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-center">
         <h2 class="titulo-seccion">Sede</h2>
-        <p class="titulo" data-aos="fade-up">
+        <p class="titulo">
             Hotel Sumiya
         </p>
         <p class="mb-6">Interior Fraccionamiento, Cam. Real a Sumiya S/N, Jose G. Parres, C. P. 62564 Jiutepec, Morelos.</p>

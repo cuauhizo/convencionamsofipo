@@ -136,7 +136,7 @@ const goToSlide = (index) => {
 // --- Lógica de Auto-Deslizamiento ---
 const startAutoSlideDia1 = () => {
   clearInterval(autoSlideIntervalDia1.value); // Limpia cualquier intervalo existente
-  autoSlideIntervalDia1.value = setInterval(nextSlideDia1, 5000); // Cambia cada 5 segundos
+  autoSlideIntervalDia1.value = setInterval(nextSlideDia1, 2000); // Cambia cada 5 segundos
 };
 
 const resetAutoSlideDia1 = () => {
@@ -272,7 +272,7 @@ onUnmounted(() => {
 
 <template>
     <section id="section5" class="grid gap-5 items-center py-20 lg:grid-cols-2">
-      <div class="px-4">
+      <div class="px-4"  data-aos="zoom-in-right" data-aos-anchor-placement="center-center">
         <div class="grid grid-cols-1">
           <div class="
           xl:max-w-[630px]
@@ -291,7 +291,7 @@ onUnmounted(() => {
         </div>
         </div>
       </div>
-      <div class="">
+      <div class=""  data-aos="zoom-in-left" data-aos-anchor-placement="center-center">
         <div class="relative">
           <div
             id="carousel"
