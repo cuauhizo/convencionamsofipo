@@ -790,7 +790,7 @@ useHead({
           :class="{ 'active-tab-button': activeTab === 'tab1' }"
           @click="openTab('tab1')"
         >
-          Miércoles 28 de agosto
+          <h3>Miércoles 28 de agosto</h3>
         </button>
 
         <button
@@ -798,7 +798,7 @@ useHead({
           :class="{ 'active-tab-button': activeTab === 'tab2' }"
           @click="openTab('tab2')"
         >
-          Jueves 29 de agosto
+          <h3>Jueves 29 de agosto</h3>
         </button>
       </div>
 
@@ -832,7 +832,7 @@ useHead({
                   <p class="mb-6 font-normal leading-[1.237rem]">{{ programa.actividad }}</p>
                   <div v-if="programa.name" class="flex items-center font-raleway">
                     <div>
-                      <h4 class="">{{ programa.name }}</h4>
+                      <p class="">{{ programa.name }}</p>
                       <p class="text-sm">{{ programa.title }}</p>
                     </div>
                   </div>
@@ -851,6 +851,7 @@ useHead({
           <div class="flex justify-center mt-4 space-x-3">
             <button
               id="prev"
+              aria-label="Anterior"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
               @click="prevSlideDia1"
             >
@@ -860,6 +861,7 @@ useHead({
             </button>
             <button
               id="next"
+              aria-label="Siguiente"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
               @click="nextSlideDia1"
             >
@@ -901,7 +903,7 @@ useHead({
                   <p class="mb-6 font-normal leading-[1.237rem]">{{ programa2.actividad }}</p>
                   <div v-if="programa2.name" class="flex items-center font-raleway">
                     <div>
-                      <h4 class="">{{ programa2.name }}</h4>
+                      <p class="">{{ programa2.name }}</p>
                       <p class="text-sm">{{ programa2.title }}</p>
                     </div>
                   </div>
@@ -920,6 +922,7 @@ useHead({
           <div class="flex justify-center mt-4 space-x-3">
             <button
               id="prev2"
+              aria-label="Anterior"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
               @click="prevSlideDia2"
             >
@@ -929,6 +932,7 @@ useHead({
             </button>
             <button
               id="next2"
+              aria-label="Siguiente"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
               @click="nextSlideDia2"
             >
@@ -982,6 +986,7 @@ useHead({
     <button class="btn-irArriba"
       @click="scrollToTop"
       v-show="showScrollTopButton">
+      <span class="sr-only">Ir Arriba</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

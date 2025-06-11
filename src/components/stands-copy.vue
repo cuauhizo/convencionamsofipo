@@ -239,6 +239,7 @@ onUnmounted(() => {
           <div class="flex  mt-4 space-x-3">
             <button
               id="prev"
+              aria-label="Anterior"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
               @click="prevSlideDia1"
             >
@@ -248,6 +249,7 @@ onUnmounted(() => {
             </button>
             <button
               id="next"
+              aria-label="Siguiente"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
               @click="nextSlideDia1"
             >
