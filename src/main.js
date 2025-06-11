@@ -1,11 +1,16 @@
-import './assets/main.css';
-import { createApp } from 'vue';
+import { ViteSSG } from 'vite-ssg/single-page'
+import '@/assets/main.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import App from './App.vue';
 
-
-const app = createApp(App);
-
-AOS.init();
-app.mount('#app');
+export const createApp = ViteSSG(
+  App,
+  ({ app, router, routes, isClient, initialState }) => {
+    // install plugins etc.
+    // AOS.init()
+    if (isClient) {
+      AOS.init()
+    }
+  },
+)

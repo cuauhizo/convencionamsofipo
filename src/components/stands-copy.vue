@@ -63,8 +63,9 @@ const autoSlideIntervalDia1 = ref(null); // ID del intervalo para el auto-desliz
 
 // Propiedad computada para determinar cuántas tarjetas son visibles según el ancho de la pantalla
 const visibleCards = computed(() => {
-  if (window.innerWidth >= 1024) return 3; // Escritorio (lg)
-  if (window.innerWidth >= 768) return 2;  // Tableta (md)
+  const width = window.innerWidth
+  if (width >= 1024) return 3; // Escritorio (lg)
+  if (width >= 768) return 2;  // Tableta (md)
   return 1; // Móvil (predeterminado)
 });
 
@@ -183,7 +184,7 @@ onUnmounted(() => {
 
 <template>
     <section id="section5" class="grid gap-5 items-center py-20 lg:grid-cols-2">
-      <div class="px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-center">
+      <div class="px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
         <div class="grid grid-cols-1">
           <div class="
           xl:max-w-[630px]
@@ -202,7 +203,7 @@ onUnmounted(() => {
         </div>
         </div>
       </div>
-      <div class=""  data-aos="zoom-in-left" data-aos-anchor-placement="center-center">
+      <div class=""  data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
         <div class="relative">
           <div
             id="carousel"

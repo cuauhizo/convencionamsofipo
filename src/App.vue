@@ -1,8 +1,9 @@
 <script setup>
   import { ref, onMounted, onUnmounted, reactive, computed, watch, nextTick } from 'vue';
-  import Responsive from './components/responsive.vue'
-  import Stands from './components/stands.vue'
-  import StandsCopy from './components/stands-copy.vue'
+  import { useHead } from '@vueuse/head'
+  import Responsive from '@/components/responsive.vue'
+  import Stands from '@/components/stands.vue'
+  import StandsCopy from '@/components/stands-copy.vue'
 
   const anio = ref(new Date().getFullYear());
   const showScrollTopButton = ref(false);
@@ -319,8 +320,9 @@ const autoSlideIntervalDia2 = ref(null); // ID del intervalo para el auto-desliz
 
 // Propiedad computada para determinar cuántas tarjetas son visibles según el ancho de la pantalla
 const visibleCards = computed(() => {
-  if (window.innerWidth >= 1024) return 3; // Escritorio (lg)
-  if (window.innerWidth >= 768) return 2;  // Tableta (md)
+  const width = window.innerWidth
+  if (width >= 1024) return 3; // Escritorio (lg)
+  if (width >= 768) return 2;  // Tableta (md)
   return 1; // Móvil (predeterminado)
 });
 
@@ -457,6 +459,15 @@ onUnmounted(() => {
   clearInterval(autoSlideIntervalDia2.value);
 });
 
+
+
+useHead({
+  title: 'Inicio | 10a Convención | Lorem ipsum dolor sit amet,',
+  meta: [
+    { name: 'description', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
+  ]
+})
+
 </script>
 
 <template>
@@ -464,13 +475,8 @@ onUnmounted(() => {
   <header class="mt-2">
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15">
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
-        <a
-          href="./"
-          class="w-1/3 max-w-[126px]">
-          <img
-            src="./assets/img/logo-convension.svg"
-            alt="Logo tolko"
-            class="w-full" />
+        <a href="./" class="w-1/3 max-w-[126px]">
+          <img src="@/assets/img/logo-convension.svg" alt="Logo tolko" class="w-full"/>
         </a>
         <div class="flex items-center justify-end gap-2 text-[14px]">
           <input type="checkbox" id="menu" class="peer hidden" />
@@ -528,8 +534,8 @@ onUnmounted(() => {
               <li>
                 <a href="#"
                 class="flex items-center gap-2 bg-black text-white w-fit mx-auto rounded-full shadow-sm py-1 px-1.5 pr-2 transition-all duration-500">
-                  <i><img src="./assets/img/icon-contacto.svg" alt=""></i>
-                  <span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Contacto</span></span>
+                  <i><img src="@/assets/img/icon-contacto.svg" alt="icono contacto"></i>
+                  <span style="vertical-align: inherit"><span style="vertical-align: inherit">Contacto</span></span>
                 </a>
               </li>
             </ul>
@@ -543,143 +549,143 @@ onUnmounted(() => {
   <main>
     <!-- Hero -->
     <section id="section1" class="container flex flex-wrap justify-items-end items-end min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center xl:min-h-[695px]">
-      <div class="w-full md:w-2/3" data-aos="fade-right">
-        <h1
-          class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
+      <div class="w-full md:w-2/3" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+        <h1 class="sr-only">10<sup>a</sup> Convención</h1>
+        <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
           Seguridad y confianza:<br>
           <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
-        </h1>
+        </h2>
         <button class="flex gap-2 rounded-full transition-all mt-4 duration-500 text-white text-[1.246rem] font-lemon-normal justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-3.5 md:text-[1.402rem]">
           <span>10<sup>a</sup></span> Convención
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" stroke="#1DC270" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" stroke="#1DC270" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </button>
-      <div class="mt-6 md:max-w-[497.23px]">
-        <div class="grid grid-cols-9 gap-2">
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/amextra.webp" alt="amextra"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/asp.webp" alt="asp"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/bbcd.webp" alt="bbcd"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/bienestar.webp" alt="bienestar"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/broxel.webp" alt="broxel"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/capital_activo.webp" alt="capital_activo"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/credicapital.webp" alt="credicapital"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/crediclub.webp" alt="crediclub"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/fincomun.webp" alt="fincomun"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/fin_amigo.webp" alt="fin amigo"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/fondedora.webp" alt="fondedora"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/grensa.webp" alt="grensa"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/klar.webp" alt="klar"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/kubo.webp" alt="kubo"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/monte_de_piedad.webp" alt="monte de piedad"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/paso_seguro.webp" alt="paso seguro"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/porvenir.webp" alt="porvenir"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/premu.webp" alt="premu"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/progressa.webp" alt="progressa"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/resuelve.webp" alt="resuelve"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/sofiexpress.webp" alt="sofiexpress"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/stori.webp" alt="stori"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/sumate.webp" alt="sumate"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/unagra.webp" alt="unagra"></a>
-          <a href="" class="transition-all duration-300 hover:scale-110"><img src="./assets/img/sofipos/xepelin.webp" alt="xepelin"></a>
-        </div>
 
-      </div>
+        <div class="mt-6 md:max-w-[497.23px]">
+          <div class="grid grid-cols-9 gap-2">
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/amextra.webp" alt="amextra"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/asp.webp" alt="asp"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/bbcd.webp" alt="bbcd"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/bienestar.webp" alt="bienestar"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/broxel.webp" alt="broxel"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/capital_activo.webp" alt="capital_activo"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/credicapital.webp" alt="credicapital"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/crediclub.webp" alt="crediclub"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/fincomun.webp" alt="fincomun"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/fin_amigo.webp" alt="fin amigo"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/fondedora.webp" alt="fondedora"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/grensa.webp" alt="grensa"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/klar.webp" alt="klar"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/kubo.webp" alt="kubo"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/monte_de_piedad.webp" alt="monte de piedad"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/paso_seguro.webp" alt="paso seguro"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/porvenir.webp" alt="porvenir"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/premu.webp" alt="premu"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/progressa.webp" alt="progressa"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/resuelve.webp" alt="resuelve"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/sofiexpress.webp" alt="sofiexpress"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/stori.webp" alt="stori"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/sumate.webp" alt="sumate"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/unagra.webp" alt="unagra"></a>
+            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/xepelin.webp" alt="xepelin"></a>
+          </div>
+        </div>
       </div>
       <div class="space-y-6 md:space-y-8 w-full md:w-1/3" data-aos="fade-left">
-        <h2 class="uppercase text-end leading-7">
-          <span class="text-[2.244rem] font-lemon-bold">3 al 5</span><br>
-          <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de septiembre</span><br>
-          <span class="text-[1.246rem] font-lemon-normal">hotel sumiya</span><br>
-          <span class="text-[1.246rem] font-lemon-light">juitepec morelos</span>
-        </h2>
+        <h3 class="uppercase text-end leading-7">
+          <span class="text-[2.244rem] font-lemon-bold">3 al 5 </span><br>
+          <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
+          <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
+          <span class="text-[1.246rem] font-lemon-light">Juitepec Morelos</span>
+        </h3>
       </div>
     </section>
 
     <!-- Patrocinadores -->
-    <section id="section2" class="container grid gap-12 justify-items-center items-center py-20 lg:grid-cols-2">
-      <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+    <section id="section2" class="container grid gap-12 justify-items-center items-center py-10 md:py-20 lg:grid-cols-2">
+      <div data-aos="fade-down" data-aos-anchor-placement="top-center">
         <h2 class="titulo-seccion">Patrocinadores</h2>
         <p class="titulo">
             Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.
         </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="container grid grid-cols-2 gap-4 justify-items-center items-center lg:py-12 md:grid-cols-3" data-aos="fade-up" data-aos-anchor-placement="center-center">
+      <div class="container grid grid-cols-2 gap-4 justify-items-center items-center lg:py-12 md:grid-cols-3" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/bajaware.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="1000" src="@/assets/img/patrocinadores/bajaware.webp" alt="logo bajaware">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/circulo_de_credito.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="1200" src="@/assets/img/patrocinadores/circulo_de_credito.webp" alt="logo circulo de crédito">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/gmc360.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="1400" src="@/assets/img/patrocinadores/gmc360.webp" alt="logo gmc 360">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/efisys.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="1600" src="@/assets/img/patrocinadores/efisys.webp" alt="logo efisys">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/finvero.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="1800" src="@/assets/img/patrocinadores/finvero.webp" alt="logo finvero">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/fitch_ratings.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="2000" src="@/assets/img/patrocinadores/fitch_ratings.webp" alt="logo fitch ratings">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/preven.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="2200" src="@/assets/img/patrocinadores/preven.webp" alt="logo preven">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/mc_collect.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="2400" src="@/assets/img/patrocinadores/mc_collect.webp" alt="logo mc collect">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/buro_de_credito.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="2600" src="@/assets/img/patrocinadores/buro_de_credito.webp" alt="logo buro de crédito">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/sekura.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="2800" src="@/assets/img/patrocinadores/sekura.webp" alt="logo sekura">
             </a>
           </div>
         </div>
         <div class="max-w-sm rounded-2xl h-full flex flex-col">
           <div class="flex-1">
-            <a href="">
-              <img class="grayscale transition-all duration-300 hover:grayscale-0" src="./assets/img/patrocinadores/tecreo.webp" alt="">
+            <a href="#">
+              <img class="" data-aos="flip-right" data-aos-duration="3000" src="@/assets/img/patrocinadores/tecreo.webp" alt="logo tecreo">
             </a>
           </div>
         </div>
@@ -687,9 +693,14 @@ onUnmounted(() => {
     </section>
 
     <!-- Ponentes -->
-    <section id="section3" class="py-20 px-4">
+    <section id="section3" class="py-10 md:py-20 px-4">
       <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row">
-        <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 order-2 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-top">
+        <div class="w-full md:sticky md:top-20 md:w-1/2 md:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+          <h2 class="titulo-seccion">Ponentes</h2>
+          <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
           <div class="max-w-[276px] rounded-2xl bg-perfil p-6 text-center shadow-lg">
             <h3 class="text-sm">Marlene Garayzar</h3>
             <img class="mx-auto mt-4 mb-4 h-32 w-32 rounded-full shadow-lg" src="https://i.pravatar.cc/200" alt="profile picture" />
@@ -756,29 +767,23 @@ onUnmounted(() => {
               Semblanza
             </button>
           </div>
-
-        </div>
-        <div class="w-full md:sticky md:top-20 md:w-1/2 order-1 md:order-2" data-aos="fade-up" data-aos-anchor-placement="top-top">
-          <h2 class="titulo-seccion">Ponentes</h2>
-          <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </section>
 
     <!-- Programa -->
-    <section id="section4" class="container grid grid-cols-12 gap-12 justify-items-center items-center py-20">
-      <div class="col-span-full sm:col-span-8" data-aos="zoom-in-right" data-aos-anchor-placement="center-center">
+    <section id="section4" class="container grid grid-cols-12 gap-12 justify-items-center items-center py-10 md:py-20">
+      <div class="col-span-full sm:col-span-8" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
         <h2 class="titulo-seccion">Programa</h2>
         <p class="titulo">
             Lorem ipsum dolor sit amet, consectetur adipiscing.
         </p>
       </div>
-      <div class="col-span-full sm:col-span-4" data-aos="zoom-in-left" data-aos-anchor-placement="center-center">
+      <div class="col-span-full sm:col-span-4" data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </section>
-    <div class="w-full" data-aos="zoom-in" data-aos-anchor-placement="center-center">
+    <div class="w-full" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
       <div class="flex max-w-lg mx-auto gap-10 font-lemon-normal">
         <button
           class="w-1/2 py-4 text-center text-lg font-extralight focus:outline-none"
@@ -798,7 +803,7 @@ onUnmounted(() => {
       </div>
 
       <div id="tab1" class="tabcontent py-4" :class="{ 'hidden': activeTab !== 'tab1' }">
-        <div class="relative">
+        <div class="relative overflow-hidden">
           <div
             id="carousel"
             class="overflow-hidden relative"
@@ -941,28 +946,28 @@ onUnmounted(() => {
     <StandsCopy/>
 
     <!-- Sede -->
-    <section id="section6" class="container grid gap-12 justify-items-center items-center py-20 lg:grid-cols-2" data-aos-anchor-placement="center-center">
+    <section id="section6" class="container grid gap-12 justify-items-center items-center py-10 md:py-20 lg:grid-cols-2" data-aos-anchor-placement="center-bottom">
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="500">
-          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen1.png" alt="Gallery image" />
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="@/assets/img/galeria/imagen1.png" alt="Gallery image" />
         </div>
         <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="1000">
-          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen2.png" alt="Gallery image" />
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="@/assets/img/galeria/imagen2.png" alt="Gallery image" />
         </div>
         <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="1500">
-          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen3.png" alt="Gallery image" />
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="@/assets/img/galeria/imagen3.png" alt="Gallery image" />
         </div>
         <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="2000">
-          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen4.png" alt="Gallery image" />
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="@/assets/img/galeria/imagen4.png" alt="Gallery image" />
         </div>
         <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="2500">
-          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen5.png" alt="Gallery image" />
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="@/assets/img/galeria/imagen5.png" alt="Gallery image" />
         </div>
         <div class="overflow-hidden rounded-lg" data-aos="flip-right" data-aos-duration="3000">
-          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="./assets/img/galeria/imagen6.png" alt="Gallery image" />
+          <img class="h-auto max-w-full rounded-lg transition-transform hover:rotate-2 hover:scale-110" src="@/assets/img/galeria/imagen6.png" alt="Gallery image" />
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <h2 class="titulo-seccion">Sede</h2>
         <p class="titulo">
             Hotel Sumiya
@@ -999,11 +1004,11 @@ onUnmounted(() => {
 
   <!-- Footer -->
   <footer>
-    <div class="container py-20">
+    <div class="container py-10 md:py-20">
         <div class="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-12 md:gap-x-8">
             <div class="text-[15px] md:col-span-4 xl:col-span-6 max-w-md">
               <a class="flex items-center justify-start">
-                <img src="./assets/img/logo-convension.svg" alt="Logo convension" />
+                <img src="@/assets/img/logo-convension.svg" alt="Logo convension" />
               </a>
               <!-- Social Icons -->
               <div class="mt-4">
@@ -1035,17 +1040,17 @@ onUnmounted(() => {
             <div class="hidden md:block md:col-span-1 lg:hidden"></div>
             <div class="grid grid-cols-1 text-sm sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-6 col-span-1 md:col-span-7 xl:col-span-6 gap-y-8 sm:gap-x-8 md:gap-x-8 xl:gap-x-3">
               <div class="sm:col-span-2 xl:col-span-3">
-                <h2 class="mb-3 font-bold">
+                <h3 class="mb-3 font-bold">
                   Dirección
-                </h2>
+                </h3>
                 <p>
                   Ave. Insurgentes Sur #2047 Esq. Cracovia Edificio "B", Colonia San Ángel, Del. Álvaro Obregón  C.P. 01000, CDMX
                 </p>
               </div>
               <div class="sm:col-span-1 xl:col-span-2">
-                <h2 class="mb-3 font-bold">
+                <h3 class="mb-3 font-bold">
                   Contacto
-                </h2>
+                </h3>
                 <nav class="mb-10 list-none">
                   <ul>
                     <li class="mt-3">
@@ -1063,9 +1068,9 @@ onUnmounted(() => {
                 </nav>
               </div>
               <div class="sm:col-span-1 md:col-span-1 xl:-ml-3">
-                <h2 class="mb-3 font-bold">
+                <h3 class="mb-3 font-bold">
                   Ligas de interés
-                </h2>
+                </h3>
                 <nav class="mb-10 list-none">
                   <ul>
                     <li class="">

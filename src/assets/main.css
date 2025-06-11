@@ -12,12 +12,12 @@
   }
 
   .bg-perfil {
-    background-image: url('img/bg-perfil.png');
+    background-image: url('@/assets/img/bg-perfil.png');
     background-size: cover;
   }
 
   .bg-programa {
-    background-image: url('img/bg-programa.png');
+    background-image: url('@/assets/img/bg-programa.png');
     background-size: cover;
   }
 
@@ -36,29 +36,29 @@
 
 @font-face {
   font-family: 'lemon-bold';
-  src: url('./font/Lemon/lemon-milk-pro-bold.eot'); /* IE9+ Compat Modes */
-  src: url('./font/Lemon/lemon-milk-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./font/Lemon/lemon-milk-pro-bold.woff2') format('woff2'), /* Super modern browsers */
-       url('./font/Lemon/lemon-milk-pro-bold.woff') format('woff'), /* Modern browsers */
-       url('./font/Lemon/lemon-milk-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-bold.eot'); /* IE9+ Compat Modes */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('@/assets/font/Lemon/lemon-milk-pro-bold.woff2') format('woff2'), /* Super modern browsers */
+       url('@/assets/font/Lemon/lemon-milk-pro-bold.woff') format('woff'), /* Modern browsers */
+       url('@/assets/font/Lemon/lemon-milk-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'lemon-normal';
-  src: url('./font/Lemon/lemon-milk-pro-regular.eot'); /* IE9+ Compat Modes */
-  src: url('./font/Lemon/lemon-milk-pro-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./font/Lemon/lemon-milk-pro-regular.woff2') format('woff2'), /* Super modern browsers */
-       url('./font/Lemon/lemon-milk-pro-regular.woff') format('woff'), /* Modern browsers */
-       url('./font/Lemon/lemon-milk-pro-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-regular.eot'); /* IE9+ Compat Modes */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('@/assets/font/Lemon/lemon-milk-pro-regular.woff2') format('woff2'), /* Super modern browsers */
+       url('@/assets/font/Lemon/lemon-milk-pro-regular.woff') format('woff'), /* Modern browsers */
+       url('@/assets/font/Lemon/lemon-milk-pro-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'lemon-light';
-  src: url('./font/Lemon/lemon-milk-pro-ultra-light.otf'); /* IE9+ Compat Modes */
-  src: url('./font/Lemon/lemon-milk-pro-ultra-light.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./font/Lemon/lemon-milk-pro-ultra-light.woff2') format('woff2'), /* Super modern browsers */
-       url('./font/Lemon/lemon-milk-pro-ultra-light.woff') format('woff'), /* Modern browsers */
-       url('./font/Lemon/lemon-milk-pro-ultra-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.otf'); /* IE9+ Compat Modes */
+  src: url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.woff2') format('woff2'), /* Super modern browsers */
+       url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.woff') format('woff'), /* Modern browsers */
+       url('@/assets/font/Lemon/lemon-milk-pro-ultra-light.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 
