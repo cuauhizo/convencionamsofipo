@@ -564,31 +564,31 @@ useHead({
 
         <div class="mt-6 md:max-w-[497.23px]">
           <div class="grid grid-cols-9 gap-2">
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/amextra.webp" alt="amextra"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/asp.webp" alt="asp"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/bbcd.webp" alt="bbcd"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/bienestar.webp" alt="bienestar"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/broxel.webp" alt="broxel"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/capital_activo.webp" alt="capital_activo"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/credicapital.webp" alt="credicapital"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/crediclub.webp" alt="crediclub"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/fincomun.webp" alt="fincomun"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/fin_amigo.webp" alt="fin amigo"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/fondedora.webp" alt="fondedora"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/grensa.webp" alt="grensa"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/klar.webp" alt="klar"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/kubo.webp" alt="kubo"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/monte_de_piedad.webp" alt="monte de piedad"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/paso_seguro.webp" alt="paso seguro"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/porvenir.webp" alt="porvenir"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/premu.webp" alt="premu"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/progressa.webp" alt="progressa"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/resuelve.webp" alt="resuelve"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/sofiexpress.webp" alt="sofiexpress"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/stori.webp" alt="stori"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/sumate.webp" alt="sumate"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/unagra.webp" alt="unagra"></a>
-            <a href="#" class="transition-all duration-300 hover:scale-110" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img src="@/assets/img/sofipos/xepelin.webp" alt="xepelin"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/amextra.webp" alt="amextra"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/asp.webp" alt="asp"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/bbcd.webp" alt="bbcd"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/bienestar.webp" alt="bienestar"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/broxel.webp" alt="broxel"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/capital_activo.webp" alt="capital_activo"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/credicapital.webp" alt="credicapital"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/crediclub.webp" alt="crediclub"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/fincomun.webp" alt="fincomun"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/fin_amigo.webp" alt="fin amigo"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/fondedora.webp" alt="fondedora"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/grensa.webp" alt="grensa"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/klar.webp" alt="klar"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/kubo.webp" alt="kubo"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/monte_de_piedad.webp" alt="monte de piedad"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/paso_seguro.webp" alt="paso seguro"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/porvenir.webp" alt="porvenir"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/premu.webp" alt="premu"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/progressa.webp" alt="progressa"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/resuelve.webp" alt="resuelve"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/sofiexpress.webp" alt="sofiexpress"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/stori.webp" alt="stori"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/sumate.webp" alt="sumate"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/unagra.webp" alt="unagra"></a>
+            <a href="#" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom"><img class="transition-all duration-300 hover:scale-110" src="@/assets/img/sofipos/xepelin.webp" alt="xepelin"></a>
           </div>
         </div>
       </div>
@@ -1054,15 +1054,14 @@ useHead({
                 <nav class="mb-10 list-none">
                   <ul>
                     <li class="mt-3">
-                      <a
-                        class="cursor-pointer hover:text-gray-500"
-                        href="mailto:contacto@amsofipo.mx"
-                        >contacto@amsofipo.mx</a
-                      >
+                      <a class="cursor-pointer hover:text-gray-500" href="mailto:contacto@amsofipo.mx">
+                        contacto@amsofipo.mx
+                      </a>
                     </li>
                     <li class="">
-                      <a href="tel:+5550014851" class="cursor-pointer hover:text-gray-500"
-                      >+55 5001 4851</a>
+                      <a href="tel:+5550014851" class="cursor-pointer hover:text-gray-500">
+                        +55 5001 4851
+                      </a>
                     </li>
                   </ul>
                 </nav>
