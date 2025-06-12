@@ -5,10 +5,9 @@
 
   // carrusel
 
-// --- Datos de Testimonios ---
 // Normalmente, estos datos se obtendrían de una API o se pasarían como un `prop`,
 // pero para este ejemplo, los codificaremos aquí.
-const programaDia1 = ref([
+const stands = ref([
   {
     id: 1,
     imagen: Stand1,
@@ -53,13 +52,11 @@ const programaDia1 = ref([
   }
 ]);
 
-
-
 // --- Estado y Lógica del Carrusel ---
-const currentIndexDia1 = ref(0); // Índice del testimonio actual visible
-const carouselTrackDia1 = ref(null); // Referencia al elemento DOM del carrusel (la pista)
-const cardWidthDia1 = ref(0); // Ancho de una tarjeta de testimonio
-const autoSlideIntervalDia1 = ref(null); // ID del intervalo para el auto-deslizamiento
+const currentIndex = ref(0); // Índice del testimonio actual visible
+const carouselTrack = ref(null); // Referencia al elemento DOM del carrusel (la pista)
+const cardWidth = ref(0); // Ancho de una tarjeta de testimonio
+const autoSlideInterval = ref(null); // ID del intervalo para el auto-deslizamiento
 
 // Propiedad computada para determinar cuántas tarjetas son visibles según el ancho de la pantalla
 const visibleCards = computed(() => {
@@ -70,21 +67,21 @@ const visibleCards = computed(() => {
 });
 
 // Propiedad computada para calcular el índice máximo al que podemos deslizar
-const maxIndexDia1 = computed(() => programaDia1.value.length - visibleCards.value);
+const maxIndex = computed(() => stands.value.length - visibleCards.value);
 
 // Propiedad computada para la transformación CSS que desliza el carrusel
-const transformStyleDia1 = computed(() => {
-  const offset = -currentIndexDia1.value * cardWidthDia1.value;
+const transformStyle = computed(() => {
+  const offset = -currentIndex.value * cardWidth.value;
   return `translateX(${offset}px)`;
 });
 
 
 // Función para actualizar la posición del carrusel y el punto indicador activo
-const updateCarouselDia1 = () => {
-  // Esperamos a que el DOM se actualice para obtener el `cardWidthDia1` correcto
+const updateCarousel = () => {
+  // Esperamos a que el DOM se actualice para obtener el `cardWidth` correcto
   nextTick(() => {
-    if (carouselTrackDia1.value && carouselTrackDia1.value.firstElementChild) {
-      cardWidthDia1.value = carouselTrackDia1.value.firstElementChild.offsetWidth;
+    if (carouselTrack.value && carouselTrack.value.firstElementChild) {
+      cardWidth.value = carouselTrack.value.firstElementChild.offsetWidth;
     }
   });
   // La transformación CSS y la clase del punto activo son manejadas por propiedades computadas y clases condicionales.
@@ -92,35 +89,35 @@ const updateCarouselDia1 = () => {
 
 
 // --- Funciones de Navegación ---
-const nextSlideDia1 = () => {
-  currentIndexDia1.value = (currentIndexDia1.value + 1) % (maxIndexDia1.value + 1);
-  resetAutoSlideDia1();
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % (maxIndex.value + 1);
+  resetAutoSlide();
 };
 
-const prevSlideDia1 = () => {
-  currentIndexDia1.value = (currentIndexDia1.value - 1 + (maxIndexDia1.value + 1)) % (maxIndexDia1.value + 1);
-  resetAutoSlideDia1();
+const prevSlide = () => {
+  currentIndex.value = (currentIndex.value - 1 + (maxIndex.value + 1)) % (maxIndex.value + 1);
+  resetAutoSlide();
 };
 
 
 const goToSlide = (index) => {
-  currentIndexDia1.value = index;
-  resetAutoSlideDia1();
+  currentIndex.value = index;
+  resetAutoSlide();
 };
 
 // --- Lógica de Auto-Deslizamiento ---
-const startAutoSlideDia1 = () => {
-  clearInterval(autoSlideIntervalDia1.value); // Limpia cualquier intervalo existente
-  autoSlideIntervalDia1.value = setInterval(nextSlideDia1, 2000); // Cambia cada 5 segundos
+const startAutoSlide = () => {
+  clearInterval(autoSlideInterval.value); // Limpia cualquier intervalo existente
+  autoSlideInterval.value = setInterval(nextSlide, 2000); // Cambia cada 5 segundos
 };
 
-const resetAutoSlideDia1 = () => {
-  clearInterval(autoSlideIntervalDia1.value);
-  startAutoSlideDia1();
+const resetAutoSlide = () => {
+  clearInterval(autoSlideInterval.value);
+  startAutoSlide();
 };
 
-const pauseAutoSlideDia1 = () => {
-  clearInterval(autoSlideIntervalDia1.value);
+const pauseAutoSlide = () => {
+  clearInterval(autoSlideInterval.value);
 };
 
 
@@ -128,15 +125,15 @@ const pauseAutoSlideDia1 = () => {
 onMounted(() => {
   // Usar setTimeout para asegurar que el DOM esté completamente renderizado
   setTimeout(() => {
-    updateCarouselDia1();
-    startAutoSlideDia1();
+    updateCarousel();
+    startAutoSlide();
   }, 300);
 
   window.addEventListener('resize', () => {
-    updateCarouselDia1();
+    updateCarousel();
     // Ajustar índices si es necesario
-    if (currentIndexDia1.value + visibleCards.value > programaDia1.value.length) {
-      currentIndexDia1.value = Math.max(0, programaDia1.value.length - visibleCards.value);
+    if (currentIndex.value + visibleCards.value > stands.value.length) {
+      currentIndex.value = Math.max(0, stands.value.length - visibleCards.value);
     }
   });
 });
@@ -144,7 +141,7 @@ onMounted(() => {
 
 onUnmounted(() => {
   // Limpiar el intervalo cuando el componente se desmonta para evitar fugas de memoria
-  clearInterval(autoSlideIntervalDia1.value);
+  clearInterval(autoSlideInterval.value);
 });
 
 
@@ -208,30 +205,29 @@ onUnmounted(() => {
           <div
             id="carousel"
             class="overflow-hidden relative"
-            @mouseenter="pauseAutoSlideDia1"
-            @mouseleave="startAutoSlideDia1"
+            @mouseenter="pauseAutoSlide"
+            @mouseleave="startAutoSlide"
           >
             <div
-              ref="carouselTrackDia1"
-              id="programa-track"
+              ref="carouselTrack"
+              id="stand-track"
               class="flex transition-transform duration-500 ease-in-out"
-              :style="{ transform: transformStyleDia1 }"
+              :style="{ transform: transformStyle }"
             >
-            <!-- class="programa-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4" -->
               <div
-                v-for="programa in programaDia1"
-                :key="programa.id"
-                class="programa-card flex-shrink-0 h-auto w-full md:w-auto xl:max-w-[388px] px-4"
-                :class="{ 'animate-fade': currentIndexDia1 === programaDia1.indexOf(programa) || currentIndexDia1 + 1 === programaDia1.indexOf(programa) || currentIndexDia1 + 2 === programaDia1.indexOf(programa) }"
+                v-for="stand in stands"
+                :key="stand.id"
+                class="stand-card flex-shrink-0 h-auto w-full md:w-auto xl:max-w-[388px] px-4"
+                :class="{ 'animate-fade': currentIndex === stands.indexOf(stand) || currentIndex + 1 === stands.indexOf(stand) || currentIndex + 2 === stands.indexOf(stand) }"
               >
                 <div class="">
                     <img
-                        :src="programa.imagen"
-                        :alt="programa.nombre"
+                        :src="stand.imagen"
+                        :alt="stand.nombre"
                         class=""
                       />
                 </div>
-                <!-- <pre> {{ programa }}</pre> -->
+                <!-- <pre> {{ stand }}</pre> -->
               </div>
             </div>
           </div>
@@ -241,7 +237,7 @@ onUnmounted(() => {
               id="prev"
               aria-label="Anterior"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
-              @click="prevSlideDia1"
+              @click="prevSlide"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M15 12L11 16M11 16L15 20M11 16H21M28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76516 28 12.8174 28 16Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -251,7 +247,7 @@ onUnmounted(() => {
               id="next"
               aria-label="Siguiente"
               class="nav-button z-10 w-12 h-12 flex items-center justify-center"
-              @click="nextSlideDia1"
+              @click="nextSlide"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                 <path d="M17 20L21 16M21 16L17 12M21 16H11M28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76516 28 12.8174 28 16Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
