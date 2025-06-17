@@ -3,11 +3,11 @@
     <div class="col-span-full sm:col-span-8" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
       <h2 class="titulo-seccion">Programa</h2>
       <p class="titulo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing.
+          Conoce la agenda y los horarios
       </p>
     </div>
     <div class="col-span-full sm:col-span-4" data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Descubre las pláticas que preparamos para ti con los temas principales en <span class="font-bold">tecnología e inclusión financiera</span>.</p>
     </div>
   </section>
   <div class="w-full" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">

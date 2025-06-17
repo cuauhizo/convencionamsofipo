@@ -3,9 +3,9 @@
     <div data-aos="fade-down" data-aos-anchor-placement="top-center">
       <h2 class="titulo-seccion">Patrocinadores</h2>
       <p class="titulo">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.
+          Gracias a las empresas que hacen posible este evento
       </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>En nuestra área de exposición se presentan <span class="font-bold">proveedores confiables</span> que conocen ampliamente las necesidades de las SOFIPOS y ofrecen servicios a la medida, alineados con las tendencias de mercado.</p>
     </div>
     <div class="container grid grid-cols-2 gap-4 justify-items-center items-center lg:py-12 md:grid-cols-3" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div class="max-w-sm rounded-2xl h-full flex flex-col" v-for="(patrocinador, index) in patrocinadores">

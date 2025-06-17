@@ -3,8 +3,8 @@
     <div class="mx-auto flex max-w-7xl flex-col items-start gap-10 md:flex-row">
       <div class="w-full md:sticky md:top-20 md:w-1/2 md:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <h2 class="titulo-seccion">Ponentes</h2>
-        <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="titulo">Personas expertas en el sector de las finanzas populares</p>
+        <p>Explora las visiones y trayectorias de los líderes del sector financiero que nos compartirán su experiencia.</p>
       </div>
       <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <div

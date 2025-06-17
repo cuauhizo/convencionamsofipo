@@ -184,15 +184,14 @@ onUnmounted(() => {
       <div class="px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
         <div class="grid grid-cols-1">
           <div class="
-          xl:max-w-[630px]
+          xl:max-w-[636px]
           xl:col-start-2"
           >
           <div class="">
             <h2 class="titulo-seccion">Stands</h2>
             <p class="titulo">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.
-            </p>
-            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                ¡Ubica los stands donde se encontrarán nuestros atrocinadores!</p>
+            <p class="mb-6">Conecta con proveedores que te ayudarán a llevar a tu empresa al siguiente nivel.</p>
             <button class="flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
               Consulta aqui el mapa
             </button>
