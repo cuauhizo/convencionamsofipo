@@ -41,43 +41,46 @@
 
 <script setup>
   import { ref } from 'vue'
+  import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayza.png';
+  import David_Romero from '@/assets/img/ponentes/David_Romero.png';
+  import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
 
   const ponentes = ref([
     {
       id: 1,
       nombre: 'Marlene Garayzar',
-      imagen: 'https://i.pravatar.cc/200',
-      descripcion: 'Estratega de Mercadotecnia y Líder Empresarial',
-      enlace: 'https://ejemplo.com/semblanza-marlene'
+      imagen: Marlene_Garayza,
+      descripcion: 'Presidenta de AMS',
+      enlace: 'https://convencionamsofipo.com/wp-content/uploads/2024/semblanzas/AMS_SEMBLANZA_CONVENCION-2024_MarleneGarayzar.pdf'
     },
     {
       id: 2,
-      nombre: 'Otro Ponente',
-      imagen: 'https://i.pravatar.cc/201',
-      descripcion: 'Especialista en Tecnología y Finanzas',
-      enlace: 'https://ejemplo.com/semblanza-otro'
+      nombre: 'David Romero',
+      imagen: David_Romero,
+      descripcion: 'Vicepresidente de AMS',
+      enlace: 'https://convencionamsofipo.com/wp-content/uploads/2024/semblanzas/AMS_SEMBLANZA_CONVENCION-2024_DavidRomero.pdf'
     },
     {
       id: 3,
-      nombre: 'Otro Ponente',
-      imagen: 'https://i.pravatar.cc/202',
-      descripcion: 'Especialista en Tecnología y Finanzas',
-      enlace: 'https://ejemplo.com/semblanza-otro'
+      nombre: 'Juan Francisco Fernández',
+      imagen: Juan_Francisco_Fernandez,
+      descripcion: 'CEO de Crediclub',
+      enlace: 'https://convencionamsofipo.com/wp-content/uploads/2024/semblanzas/AMS_SEMBLANZA_CONVENCION-2024_JuanFrancisco.pdf'
     },
-    {
-      id: 4,
-      nombre: 'Otro Ponente',
-      imagen: 'https://i.pravatar.cc/203',
-      descripcion: 'Especialista en Tecnología y Finanzas',
-      enlace: 'https://ejemplo.com/semblanza-otro'
-    },
-    {
-      id: 5,
-      nombre: 'Otro Ponente',
-      imagen: 'https://i.pravatar.cc/204',
-      descripcion: 'Especialista en Tecnología y Finanzas',
-      enlace: 'https://ejemplo.com/semblanza-otro'
-    },
+    // {
+    //   id: 4,
+    //   nombre: 'Otro Ponente',
+    //   imagen: 'https://i.pravatar.cc/203',
+    //   descripcion: 'Especialista en Tecnología y Finanzas',
+    //   enlace: 'https://ejemplo.com/semblanza-otro'
+    // },
+    // {
+    //   id: 5,
+    //   nombre: 'Otro Ponente',
+    //   imagen: 'https://i.pravatar.cc/204',
+    //   descripcion: 'Especialista en Tecnología y Finanzas',
+    //   enlace: 'https://ejemplo.com/semblanza-otro'
+    // },
   ])
 </script>
 

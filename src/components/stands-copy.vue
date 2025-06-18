@@ -46,7 +46,7 @@ const stands = ref([
   },
   {
     id: 7,
-    imagen: Stand2,
+    imagen: Stand1,
     nombre: "Mc Kroupenky",
     titulo: "Estratega de Mercadotecnia y líder empresarial"
   }
@@ -192,7 +192,7 @@ onUnmounted(() => {
             <p class="titulo">
                 ¡Ubica los stands donde se encontrarán nuestros atrocinadores!</p>
             <p class="mb-6">Conecta con proveedores que te ayudarán a llevar a tu empresa al siguiente nivel.</p>
-            <button class="flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
+            <button class="hidden flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
               Consulta aqui el mapa
             </button>
           </div>
@@ -200,7 +200,7 @@ onUnmounted(() => {
         </div>
       </div>
       <div class=""  data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
-        <div class="relative">
+        <div class="relative hidden">
           <div
             id="carousel"
             class="overflow-hidden relative"

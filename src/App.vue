@@ -87,9 +87,9 @@
   };
 
 useHead({
-  title: 'Inicio | 10a Convención | Lorem ipsum dolor sit amet,',
+  title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
   meta: [
-    { name: 'description', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
+    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' }
   ]
 })
 
@@ -237,21 +237,21 @@ useHead({
                 <span class="inline-flex gap-2.5 mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
                   <a
                     class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]"
-                    href="https://www.linkedin.com/company/#/"
+                    href="https://www.linkedin.com/company/amsofipo/?originalSubdomain=mx"
                     alt="Linkedin"
                     target="_blank">
                     Linkedin
                   </a>
                   <a
                     class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]"
-                    href="https://www.facebook.com/#/"
+                    href="https://www.facebook.com/Amsofipo/?locale=es_LA"
                     alt="Facebook"
                     target="_blank">
                     Facebook
                   </a>
                   <a
                     class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]"
-                    href="https://www.x.com/#"
+                    href="https://x.com/amsofipo"
                     alt="X"
                     target="_blank">
                     X
@@ -295,22 +295,22 @@ useHead({
                 <nav class="mb-10 list-none">
                   <ul>
                     <li class="">
-                      <a href="#" class="cursor-pointer hover:text-gray-500">
+                      <a href="https://www.gob.mx/shcp" target="_blank" alt="enlace a SHCP" class="cursor-pointer hover:text-gray-500">
                         SHCP
                       </a>
                     </li>
                     <li class="">
-                      <a href="#" class="cursor-pointer hover:text-gray-500">
+                      <a href="https://www.gob.mx/cnbv" target="_blank" alt="enlace a CNBV" class="cursor-pointer hover:text-gray-500">
                         CNBV
                       </a>
                     </li>
                     <li class="">
-                      <a href="#" class="cursor-pointer hover:text-gray-500">
+                      <a href="https://www.condusef.gob.mx/" target="_blank" alt="enlace a CONDUSEF" class="cursor-pointer hover:text-gray-500">
                         CONDUSEF
                       </a>
                     </li>
                     <li class="">
-                      <a href="#" class="cursor-pointer hover:text-gray-500">
+                      <a href="https://www.fira.gob.mx/Nd/index.jsp" target="_blank" alt="enlace a FIRA" class="cursor-pointer hover:text-gray-500">
                         FIRA
                       </a>
                     </li>
