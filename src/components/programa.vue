@@ -12,16 +12,16 @@
   </section>
   <div class="w-full" data-aos="zoom-in" data-aos-anchor-placement="center-bottom">
     <div class="md:flex max-w-4xl mx-auto gap-10 font-lemon-normal">
-      <button
+      <!-- <button
         class="w-full md:w-1/3 py-4 text-center text-lg font-extralight focus:outline-none"
         :class="{ 'active-tab-button': activeTab === 'tab1' }"
         @click="openTab('tab1')"
       >
         <h3>Miércoles 3 de Septiembre</h3>
-      </button>
+      </button> -->
 
       <button
-        class="w-full md:w-1/3 py-4 text-center text-lg font-extralight focus:outline-none"
+        class="w-full md:w-1/2 py-4 text-center text-lg font-extralight focus:outline-none"
         :class="{ 'active-tab-button': activeTab === 'tab2' }"
         @click="openTab('tab2')"
       >
@@ -29,7 +29,7 @@
       </button>
 
       <button
-        class="w-full md:w-1/3 py-4 text-center text-lg font-extralight focus:outline-none"
+        class="w-full md:w-1/2 py-4 text-center text-lg font-extralight focus:outline-none"
         :class="{ 'active-tab-button': activeTab === 'tab3' }"
         @click="openTab('tab3')"
       >
@@ -37,7 +37,7 @@
       </button>
     </div>
 
-    <div id="tab1" class="tabcontent py-4" :class="{ 'hidden': activeTab !== 'tab1' }">
+    <!-- <div id="tab1" class="tabcontent py-4" :class="{ 'hidden': activeTab !== 'tab1' }">
       <div class="relative overflow-hidden">
         <div
           id="carousel"
@@ -51,7 +51,6 @@
             class="flex transition-transform duration-500 ease-in-out justify-center"
             :style="{ transform: transformStyleDia1 }"
           >
-          <!-- class="programa-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4" -->
             <div
               v-for="programa in programaDia1"
               :key="programa.id"
@@ -71,7 +70,6 @@
                     <p class="text-sm">{{ programa.title }}</p>
                   </div>
                 </div>
-                <!-- Mostrar reparto si existe -->
                 <div v-if="programa.reparto" class="mt-4">
                     <div class="grid grid-cols-6 font-raleway" v-for="(ponente, key) in programa.reparto" :key="key">
                       <p class="col-span-5">{{ ponente.nombre }}</p>
@@ -106,7 +104,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <div id="tab2" class="tabcontent p-4" :class="{ 'hidden': activeTab !== 'tab2' }">
       <div class="relative">
@@ -145,8 +143,8 @@
                 <!-- Mostrar reparto si existe -->
                 <div v-if="programa2.reparto" class="mt-4">
                     <div class="grid grid-cols-6 font-raleway" v-for="(ponente, key) in programa2.reparto" :key="key">
-                      <p class="col-span-5">{{ ponente.nombre }}</p>
-                      <p class="col-span-1 text-xs">{{ ponente.sofipo }}</p>
+                      <p class="col-span-4">{{ ponente.nombre }}</p>
+                      <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
                     </div>
                 </div>
               </div>
@@ -216,8 +214,8 @@
                 <!-- Mostrar reparto si existe -->
                 <div v-if="programa3.reparto" class="mt-4">
                     <div class="grid grid-cols-6 font-raleway" v-for="(ponente, key) in programa3.reparto" :key="key">
-                      <p class="col-span-5">{{ ponente.nombre }}</p>
-                      <p class="col-span-1 text-xs">{{ ponente.sofipo }}</p>
+                      <p class="col-span-4">{{ ponente.nombre }}</p>
+                      <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
                     </div>
                 </div>
               </div>
@@ -257,7 +255,7 @@ import { ref, onMounted, onUnmounted, computed, watch, nextTick } from 'vue';
 
   // `activeTab` es una ref reactiva que almacena el nombre de la pestaña actualmente activa.
 // La inicializamos con 'tab1' para que esa pestaña esté visible por defecto al cargar el componente.
-const activeTab = ref('tab1');
+const activeTab = ref('tab2');
 
 /**
  * Función para cambiar la pestaña activa.
@@ -274,6 +272,8 @@ const openTab = (tabName) => {
 
 // Normalmente, estos datos se obtendrían de una API o se pasarían como un `prop`,
 // pero para este ejemplo, los codificaremos aquí.
+
+// Miércoles 3 de Septiembre
 const programaDia1 = ref([
   {
     id: 1,
@@ -284,6 +284,7 @@ const programaDia1 = ref([
   },
 ]);
 
+// Jueves 4 de Septiembre
 const programaDia2 = ref([
   {
     id: 1,
@@ -330,17 +331,9 @@ const programaDia2 = ref([
         sofipo: "CONDUSEF"
       },
       ponete5: {
-        nombre: "Act. Alán Elizondo Flores",
-        sofipo: "FIRA"
-      },
-      ponete6: {
-        nombre: "Mtro. Luis Antonio Ramírez Pineda",
-        sofipo: "NAFIN"
-      },
-      ponete7: {
         nombre: "Marlene Garayzar Gómez",
-        sofipo: "AMSOFIPO"
-      }
+        sofipo: "AMS"
+      },
     }
   },
   {
@@ -359,35 +352,14 @@ const programaDia2 = ref([
   },
   {
     id: 7,
-    horario: "17:00 - 17:50",
-    actividad: "Panel: Mujeres en Confianza",
-    name: "",
-    title: "",
-    reparto: {
-      ponete1: {
-        nombre: "Marlene Garayzar Gómez",
-        sofipo: "AMSOFIPO"
-      },
-      ponete2: {
-        nombre: "Regina García Cuellar",
-        sofipo: "ABM"
-      },
-      ponete3: {
-        nombre: " ",
-        sofipo: "Moderador"
-      }
-    }
-  },
-  {
-    id: 8,
-    horario: "17:50 - 18:30",
+    horario: "17:00 - 17:40",
     actividad: "Panel: Factores de desarrollo en beneficio de la Inclusión Financiera",
     name: "",
     title: "",
     reparto: {
       ponete1: {
         nombre: "Altagracia Gómez",
-        sofipo: "Consejo Asesor Empresarial"
+        sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
         nombre: "Dr. Alfredo Navarrete",
@@ -395,7 +367,7 @@ const programaDia2 = ref([
       },
       ponete3: {
         nombre: "Vidal Llerenas",
-        sofipo: "S. Economía"
+        sofipo: "Sría. Economía"
       },
       ponete4: {
         nombre: "Alicia Salgado",
@@ -404,14 +376,38 @@ const programaDia2 = ref([
     }
   },
   {
+    id: 8,
+    horario: "17:40 - 18:10",
+    actividad: "Panel: Mujeres en Confianza",
+    name: "Presentación de Convenio de apoyo a PYMEs con Secretaría de Economía y anuncio del programa de garantías con NAFIN",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        sofipo: ""
+      },
+    }
+  },
+  {
     id: 9,
     horario: "19:00 - 24:00",
     actividad: "Cóctel de bienvenida",
-    name: "",
+    name: "Drink & Talk Mujeres en el sector financiero",
     title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Marlene Garayzar",
+        sofipo: "AMSOFIPO"
+      },
+      ponete2: {
+        nombre: "Regina García Cuellar",
+        sofipo: "ABM"
+      },
+    }
   }
 ]);
 
+// Viernes 5 de Septiembre
 const programaDia3 = ref([
   {
     id: 1,
@@ -430,7 +426,7 @@ const programaDia3 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Graciela Marquez",
+        nombre: "Graciela Márquez",
         sofipo: "INEGI"
       },
     }
@@ -438,7 +434,7 @@ const programaDia3 = ref([
   {
     id: 3,
     horario: "10:10 - 10:50",
-    actividad: "",
+    actividad: "La Banca de Desarrollo trabajo cercano con las SOFIPOS",
     name: "",
     title: "",
     reparto: {
@@ -448,7 +444,7 @@ const programaDia3 = ref([
       },
       ponete2: {
         nombre: "Mtro. Javier Vázquez",
-        sofipo: "NAFIN"
+        sofipo: "Nafin"
       },
     }
   },
@@ -477,7 +473,7 @@ const programaDia3 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Carlos Marmolejo Finsus",
+        nombre: "Carlos Marmolejo",
         sofipo: "Finsus"
       },
       ponete2: {
@@ -590,7 +586,7 @@ const programaDia3 = ref([
   {
     id: 11,
     horario: "16:10 - 17:00",
-    actividad: "Panel: Transformando como te conectas con tu dinero",
+    actividad: "Panel: Transformando cómo te conectas con tu dinero",
     name: "",
     title: "",
     reparto: {
@@ -603,7 +599,7 @@ const programaDia3 = ref([
         sofipo: "Crediclub"
       },
       ponete3: {
-        nombre: "Marlene Garaizar",
+        nombre: "Marlene Garayzar",
         sofipo: "Stori"
       },
       ponete4: {
@@ -641,7 +637,7 @@ const programaDia3 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Aurora",
+        nombre: "Aurora Cervantes",
         sofipo: "CNBV"
       },
       ponete2: {
