@@ -89,8 +89,19 @@
 useHead({
   title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
   meta: [
-    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' }
-  ]
+    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' },
+    { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
+    { property: 'og:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.' },
+    { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+    { property: 'og:url', content: 'https://convencionamsofipo.com/' },
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
+    { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
+    { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' }
+  ],
 })
 
 </script>
@@ -101,7 +112,7 @@ useHead({
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15">
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
         <a href="./" class="w-1/3 max-w-[126px]">
-          <img src="@/assets/img/logo-convension.svg" alt="Logo tolko" class="w-full"/>
+          <img src="@/assets/img/logo-convension.svg" alt="Logo tolko" class="w-full" width="127" height="32" loading="lazy" />
         </a>
         <div class="flex items-center justify-end gap-2 text-[14px]">
           <input type="checkbox" id="menu" class="peer hidden" />

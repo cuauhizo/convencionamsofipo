@@ -29,6 +29,8 @@
                 class="transition-all duration-300 hover:scale-110 object-contain"
                 :src="sofipo.src"
                 :alt="sofipo.alt"
+                width="180"
+                height="96"
                 loading="lazy"
               />
             </a>
