@@ -112,7 +112,7 @@ useHead({
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15">
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
         <a href="./" class="w-1/3 max-w-[126px]">
-          <img src="@/assets/img/logo-convension.svg" alt="Logo tolko" class="w-full" width="127" height="32" loading="lazy" />
+          <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" loading="lazy" />
         </a>
         <div class="flex items-center justify-end gap-2 text-[14px]">
           <input type="checkbox" id="menu" class="peer hidden" />
@@ -241,7 +241,7 @@ useHead({
         <div class="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-12 md:gap-x-8">
             <div class="text-[15px] md:col-span-4 xl:col-span-6 max-w-md">
               <a class="flex items-center justify-start">
-                <img src="@/assets/img/logo-convension.svg" alt="Logo convension" />
+                <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" />
               </a>
               <!-- Social Icons -->
               <div class="mt-4">
