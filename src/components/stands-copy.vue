@@ -1,54 +1,67 @@
 <script setup>
   import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue';
   import Stand1 from '@/assets/img/Stand1.png';
-  import Stand2 from '@/assets/img/bg-programa.png';
+  import Stand2 from '@/assets/img/stands/stand-02-preven.png';
+  import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
 
   // carrusel
 
 // Normalmente, estos datos se obtendrían de una API o se pasarían como un `prop`,
 // pero para este ejemplo, los codificaremos aquí.
 const stands = ref([
-  {
-    id: 1,
-    imagen: Stand1,
-    nombre: "Circulo de credito",
-    titulo: "Circulo de credito",
-  },
+  // {
+  //   id: 1,
+  //   imagen: Stand1,
+  //   nombre: "Circulo de credito",
+  //   titulo: "Circulo de credito",
+  // },
   {
     id: 2,
-    imagen: Stand1,
-    nombre: "Bajaware",
-    titulo: "Bajaware"
+    imagen: Stand2,
+    nombre: "Preven",
+    titulo: "Preven"
   },
+  // {
+  //   id: 3,
+  //   imagen: Stand1,
+  //   nombre: "Mc Kroupenky",
+  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
+  // },
+  // {
+  //   id: 4,
+  //   imagen: Stand1,
+  //   nombre: "Mc Kroupenky",
+  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
+  // },
+  // {
+  //   id: 5,
+  //   imagen: Stand1,
+  //   nombre: "Mc Kroupenky",
+  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
+  // },
+  // {
+  //   id: 6,
+  //   imagen: Stand1,
+  //   nombre: "Mc Kroupenky",
+  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
+  // },
+  // {
+  //   id: 7,
+  //   imagen: Stand1,
+  //   nombre: "Mc Kroupenky",
+  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
+  // },
+  // {
+  //   id: 8,
+  //   imagen: Stand1,
+  //   nombre: "Mc Kroupenky",
+  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
+  // },
   {
-    id: 3,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 4,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 5,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 6,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 7,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
+    id: 9,
+    imagen: Stand9,
+    nombre: "Círculo de crédito",
+    titulo: "Círculo de crédito"
   }
 ]);
 
@@ -192,15 +205,20 @@ onUnmounted(() => {
             <p class="titulo">
                 ¡Ubica los stands donde se encontrarán nuestros atrocinadores!</p>
             <p class="mb-6">Conecta con proveedores que te ayudarán a llevar a tu empresa al siguiente nivel.</p>
-            <button class="hidden flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
+            <a
+              href="https://convencionamsofipo.com/mapa/mapa.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2"
+            >
               Consulta aqui el mapa
-            </button>
+            </a>
           </div>
         </div>
         </div>
       </div>
       <div class=""  data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
-        <div class="relative hidden">
+        <div class="relative">
           <div
             id="carousel"
             class="overflow-hidden relative"

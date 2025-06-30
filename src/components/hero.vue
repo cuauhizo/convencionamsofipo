@@ -1,17 +1,17 @@
 <template>
   <section id="section1" class="container flex flex-wrap justify-items-end items-end min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center xl:min-h-[695px]">
     <div class="w-full md:w-2/3" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="sr-only">10<sup>a</sup> Convención</h1>
-      <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
+      <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
+      <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
         Seguridad y confianza:<br>
         <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
-      </h2>
+      </h2> 
       <button class="flex gap-2 rounded-full transition-all mt-4 duration-500 text-white text-[1.246rem] font-lemon-normal justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-3.5 md:text-[1.402rem]">
         <span>10<sup>a</sup></span> Convención
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" stroke="#1DC270" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-      </button>
+      </button> -->
 
       <div class="mt-6 md:max-w-[497.23px]">
         <div class="grid grid-cols-9 gap-2">
@@ -40,7 +40,7 @@
     </div>
     <div class="space-y-6 md:space-y-8 w-full md:w-1/3" data-aos="fade-left">
       <h3 class="uppercase text-end leading-7">
-        <span class="text-[2.244rem] font-lemon-bold">3 al 5 </span><br>
+        <span class="text-[2.244rem] font-lemon-bold">3 al 4 </span><br>
         <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
         <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
         <span class="text-[1.246rem] font-lemon-light">Juitepec Morelos</span>

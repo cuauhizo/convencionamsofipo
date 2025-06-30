@@ -25,7 +25,7 @@
         :class="{ 'active-tab-button': activeTab === 'tab2' }"
         @click="openTab('tab2')"
       >
-        <h3>Jueves 4 de Septiembre</h3>
+        <h3>Jueves 3 de Septiembre</h3>
       </button>
 
       <button
@@ -33,7 +33,7 @@
         :class="{ 'active-tab-button': activeTab === 'tab3' }"
         @click="openTab('tab3')"
       >
-        <h3>Viernes 5 de Septiembre</h3>
+        <h3>Viernes 4 de Septiembre</h3>
       </button>
     </div>
 

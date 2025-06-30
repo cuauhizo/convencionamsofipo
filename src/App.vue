@@ -241,7 +241,7 @@ useHead({
         <div class="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-12 md:gap-x-8">
             <div class="text-[15px] md:col-span-4 xl:col-span-6 max-w-md">
               <a class="flex items-center justify-start">
-                <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" />
+                <img src="@/assets/img/logo-convension.svg" alt="Logo convension" width="127" height="32" />
               </a>
               <!-- Social Icons -->
               <div class="mt-4">
