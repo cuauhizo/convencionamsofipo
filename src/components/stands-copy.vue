@@ -2,7 +2,10 @@
   import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue';
   import Stand1 from '@/assets/img/Stand1.png';
   import Stand2 from '@/assets/img/stands/stand-02-preven.png';
+  import Stand3 from '@/assets/img/stands/stand-03-gmc360.png';
+  import Stand7 from '@/assets/img/stands/stand-07-buro-de-credito.png';
   import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
+  import Stand11 from '@/assets/img/stands/stand-11-y-&-g.png';
 
   // carrusel
 
@@ -21,12 +24,12 @@ const stands = ref([
     nombre: "Preven",
     titulo: "Preven"
   },
-  // {
-  //   id: 3,
-  //   imagen: Stand1,
-  //   nombre: "Mc Kroupenky",
-  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
-  // },
+  {
+    id: 3,
+    imagen: Stand3,
+    nombre: "GMC360",
+    titulo: "GMC360"
+  },
   // {
   //   id: 4,
   //   imagen: Stand1,
@@ -45,12 +48,12 @@ const stands = ref([
   //   nombre: "Mc Kroupenky",
   //   titulo: "Estratega de Mercadotecnia y líder empresarial"
   // },
-  // {
-  //   id: 7,
-  //   imagen: Stand1,
-  //   nombre: "Mc Kroupenky",
-  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
-  // },
+  {
+    id: 7,
+    imagen: Stand7,
+    nombre: "Buro de Crédito",
+    titulo: "Buro de Crédito"
+  },
   // {
   //   id: 8,
   //   imagen: Stand1,
@@ -62,7 +65,19 @@ const stands = ref([
     imagen: Stand9,
     nombre: "Círculo de crédito",
     titulo: "Círculo de crédito"
-  }
+  },
+  // {
+  //   id: 10,
+  //   imagen: Stand10,
+  //   nombre: "Y&g",
+  //   titulo: "Y&g"
+  // },
+  {
+    id: 11,
+    imagen: Stand11,
+    nombre: "Y&g",
+    titulo: "Y&g"
+  },
 ]);
 
 // --- Estado y Lógica del Carrusel ---
