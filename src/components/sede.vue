@@ -26,9 +26,11 @@
           Hotel Sumiya
       </p>
       <p class="mb-6">Interior Fraccionamiento, Cam. Real a Sumiya S/N, Jose G. Parres, C. P. 62564 Jiutepec, Morelos.</p>
-      <button class="hidden flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
-        Conoce los costos
-      </button>
+      <div class="hidden">
+        <button class="flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
+          Conoce los costos
+        </button>
+      </div>
     </div>
   </section>
 </template>
