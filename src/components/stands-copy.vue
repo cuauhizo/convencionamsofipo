@@ -6,6 +6,7 @@
   import Stand7 from '@/assets/img/stands/stand-07-buro-de-credito.png';
   import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
   import Stand11 from '@/assets/img/stands/stand-11-y-&-g.png';
+  import Stand14 from '@/assets/img/stands/stand-14-hr-ratings.png';
 
   // carrusel
 
@@ -72,9 +73,27 @@ const stands = ref([
   //   nombre: "Y&g",
   //   titulo: "Y&g"
   // },
+  // {
+  //   id: 11,
+  //   imagen: Stand11,
+  //   nombre: "Y&g",
+  //   titulo: "Y&g"
+  // },
+  // {
+  //   id: 12,
+  //   imagen: Stand11,
+  //   nombre: "Y&g",
+  //   titulo: "Y&g"
+  // },
+  // {
+  //   id: 13,
+  //   imagen: Stand11,
+  //   nombre: "Y&g",
+  //   titulo: "Y&g"
+  // },
   {
-    id: 11,
-    imagen: Stand11,
+    id: 14,
+    imagen: Stand14,
     nombre: "Y&g",
     titulo: "Y&g"
   },

@@ -1,7 +1,7 @@
 <template>
-  <section id="section1" class="container flex flex-wrap justify-items-end items-end min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center xl:min-h-[695px]">
-    <div class="w-full md:w-2/3" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
+  <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem] xl:min-h-[695px]">
+    <div class="w-full" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+      <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
       <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
         Seguridad y confianza:<br>
         <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
@@ -13,7 +13,7 @@
           </svg>
       </button> -->
 
-      <div class="mt-6 md:max-w-[497.23px]">
+      <!-- <div class="mt-6 md:max-w-[497.23px]">
         <div class="grid grid-cols-9 gap-2">
             <a v-for="(sofipo, index) in sofipos"
               :key="sofipo.id"
@@ -36,10 +36,10 @@
             </a>
         </div>
 
-      </div>
+      </div> -->
     </div>
-    <div class="space-y-6 md:space-y-8 w-full md:w-1/3" data-aos="fade-left">
-      <h3 class="uppercase text-end leading-7">
+    <div class="space-y-6 md:space-y-8 w-full" data-aos="fade-left">
+      <h3 class="uppercase text-center leading-7">
         <span class="text-[2.244rem] font-lemon-bold">3 y 4 </span><br>
         <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
         <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>

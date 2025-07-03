@@ -17,11 +17,11 @@
   }
 
   .bg-programa {
-    background-image: url('@/assets/img/bg-programa.png');
-    background-size: cover;
+    background: #0c254d;
+    background: linear-gradient(45deg,#0c254d 0%, #440076 40%, #0c254d 80%);
+    background: -webkit-linear-gradient(45deg,#0c254d 0%, #440076 40%, #0c254d 80%);
+    background: -moz-linear-gradient(45deg,#0c254d 0%, #440076 40%, #0c254d 80%);
   }
-
-  
 
   .titulo-seccion {
     @apply text-sm font-normal font-lemon-normal uppercase tracking-[0.56px]

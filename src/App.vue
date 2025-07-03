@@ -1,6 +1,7 @@
 <script setup>
   import { ref, onMounted, onUnmounted, reactive } from 'vue';
   import { useHead } from '@vueuse/head'
+  import HeroOffline from '@/components/hero_offline.vue'
   import Hero from '@/components/hero.vue'
   import Patrocinadores from '@/components/patrocinadores.vue'
   import Ponentes from '@/components/ponentes.vue'
@@ -202,13 +203,13 @@ useHead({
 
   <!-- Main -->
   <main>
-    <Hero/>
+    <HeroOffline/>
+    <!-- <Hero/>
     <Patrocinadores/>
     <Ponentes/>
     <Programa/>
-    <!-- <Stands/> -->
     <StandsCopy/>
-    <Sede/>
+    <Sede/> -->
 
     <button class="btn-irArriba"
       @click="scrollToTop"
