@@ -48,7 +48,7 @@
               <div v-if="programa1.reparto" class="mt-4">
                   <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa1.reparto" :key="key">
                     <p class="col-span-4">{{ ponente.nombre }}</p>
-                    <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
+                    <p class="col-span-2">{{ ponente.sofipo }}</p>
                   </div>
               </div>
             </div>
@@ -77,7 +77,7 @@
               <div v-if="programa2.reparto" class="mt-4">
                   <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa2.reparto" :key="key">
                     <p class="col-span-4">{{ ponente.nombre }}</p>
-                    <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
+                    <p class="col-span-2">{{ ponente.sofipo }}</p>
                   </div>
               </div>
             </div>
@@ -135,19 +135,23 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Dr. Edgar Amador Zamora",
+        // nombre: "Dr. Edgar Amador Zamora",
+        nombre: "",
         sofipo: "SHCP"
       },
       ponete2: {
-        nombre: "Dr. Jesús De la Fuente Rodríguez",
+        // nombre: "Dr. Jesús De la Fuente Rodríguez",
+        nombre: "",
         sofipo: "CNBV"
       },
       ponete3: {
-        nombre: "Dra. Galia Borja Gómez",
+        // nombre: "Dra. Galia Borja Gómez",
+        nombre: "",
         sofipo: "BANXICO"
       },
       ponete4: {
-        nombre: "Lic. Oscar Rosado Jiménez",
+        // nombre: "Lic. Oscar Rosado Jiménez",
+        nombre: "",
         sofipo: "CONDUSEF"
       },
       ponete5: {
@@ -178,19 +182,23 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Altagracia Gómez",
+        // nombre: "Altagracia Gómez",
+        nombre: "",
         sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
-        nombre: "Dr. Alfredo Navarrete",
+        // nombre: "Dr. Alfredo Navarrete",
+        nombre: "",
         sofipo: "UBVA"
       },
       ponete3: {
-        nombre: "Vidal Llerenas",
+        // nombre: "Vidal Llerenas",
+        nombre: "",
         sofipo: "Sría. Economía"
       },
       ponete4: {
-        nombre: "Alicia Salgado",
+        // nombre: "Alicia Salgado",
+        nombre: "",
         sofipo: "Moderador"
       }
     }
@@ -221,7 +229,8 @@ const programaDia1 = ref([
         sofipo: "AMSOFIPO"
       },
       ponete2: {
-        nombre: "Regina García Cuellar",
+        // nombre: "Regina García Cuellar",
+        nombre: "",
         sofipo: "ABM"
       },
     }
@@ -247,7 +256,8 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Graciela Márquez",
+        // nombre: "Graciela Márquez",
+        nombre: "",
         sofipo: "INEGI"
       },
     }
@@ -260,11 +270,13 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Act. Alán Elizondo",
+        // nombre: "Act. Alán Elizondo",
+        nombre: "",
         sofipo: "FIRA"
       },
       ponete2: {
-        nombre: "Mtro. Javier Vázquez",
+        // nombre: "Mtro. Javier Vázquez",
+        nombre: "",
         sofipo: "Nafin"
       },
     }
@@ -300,15 +312,18 @@ const programaDia2 = ref([
         sofipo: ""
       },
       ponete2: {
-        nombre: "Rafael Nieves",
+        // nombre: "Rafael Nieves",
+        nombre: "",
         sofipo: "Capital Activo"
       },
       ponete3: {
-        nombre: "Alejandro Toubeth",
+        // nombre: "Alejandro Toubeth",
+        nombre: "",
         sofipo: "Xepelin"
       },
       ponete4: {
-        nombre: "Sebastián Estrada",
+        // nombre: "Sebastián Estrada",
+        nombre: "",
         sofipo: "Moderador"
       }
     }
@@ -321,15 +336,18 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Dr. Othón Moreno",
+        // nombre: "Dr. Othón Moreno",
+        nombre: "",
         sofipo: "Banxico"
       },
       ponete2: {
-        nombre: "José Merino",
+        // nombre: "José Merino",
+        nombre: "",
         sofipo: "Agencia Digital"
       },
       ponete3: {
-        nombre: "Mary Pilly Loo",
+        // nombre: "Mary Pilly Loo",
+        nombre: "",
         sofipo: "CNBV"
       },
       ponete4: {
@@ -414,11 +432,13 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Stefhan Muller",
+        // nombre: "Stefhan Muller",
+        nombre: "",
         sofipo: "Klar"
       },
       ponete2: {
-        nombre: "Juan Francisco Fernández",
+        // nombre: "Juan Francisco Fernández",
+        nombre: "",
         sofipo: "Crediclub"
       },
       ponete3: {
@@ -426,7 +446,8 @@ const programaDia2 = ref([
         sofipo: "Stori"
       },
       ponete4: {
-        nombre: "Diego Paires",
+        // nombre: "Diego Paires",
+        nombre: "",
         sofipo: "SAE"
       },
       ponete5: {
@@ -460,19 +481,23 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Aurora Cervantes",
+        // nombre: "Aurora Cervantes",
+        nombre: "",
         sofipo: "CNBV"
       },
       ponete2: {
-        nombre: "Elizabeth Noriega",
+        // nombre: "Elizabeth Noriega",
+        nombre: "",
         sofipo: "Condusef"
       },
       ponete2: {
-        nombre: "Viviana Garza",
+        // nombre: "Viviana Garza",
+        nombre: "",
         sofipo: "Banxico"
       },
       ponete2: {
-        nombre: "Jeanette Leyva “El Financiero”",
+        // nombre: "Jeanette Leyva “El Financiero”",
+        nombre: "",
         sofipo: "Moderador"
       }
     }
@@ -485,15 +510,18 @@ const programaDia2 = ref([
     title: "Gobernadora del Estado de Morelos",
     reparto: {
       ponete1: {
-        nombre: "David Romero Morfin",
+        // nombre: "David Romero Morfin",
+        nombre: "",
         sofipo: "AMSOFIPO"
       },
       ponete2: {
-        nombre: "Act. Alán Elizondo",
+        // nombre: "Act. Alán Elizondo",
+        nombre: "",
         sofipo: "FIRA"
       },
       ponete3: {
-        nombre: "Mto. Javier Vázquez",
+        // nombre: "Mto. Javier Vázquez",
+        nombre: "",
         sofipo: "Nafin"
       }
     }
