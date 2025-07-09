@@ -5,6 +5,7 @@
   import Stand3 from '@/assets/img/stands/stand-03-gmc360.png';
   import Stand7 from '@/assets/img/stands/stand-07-buro-de-credito.png';
   import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
+  import Stand10 from '@/assets/img/stands/stand-10-efisys.png';
   import Stand11 from '@/assets/img/stands/stand-11-y-&-g.png';
   import Stand14 from '@/assets/img/stands/stand-14-hr-ratings.png';
 
@@ -67,12 +68,12 @@ const stands = ref([
     nombre: "Círculo de crédito",
     titulo: "Círculo de crédito"
   },
-  // {
-  //   id: 10,
-  //   imagen: Stand10,
-  //   nombre: "Y&g",
-  //   titulo: "Y&g"
-  // },
+  {
+    id: 10,
+    imagen: Stand10,
+    nombre: "Efisys",
+    titulo: "Efisys"
+  },
   // {
   //   id: 11,
   //   imagen: Stand11,

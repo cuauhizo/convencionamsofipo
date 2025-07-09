@@ -37,7 +37,7 @@
   // import bajaware from '@/assets/img/patrocinadores/bajaware.png';
   import circulo_de_credito from '@/assets/img/patrocinadores/circulo_de_credito.png';
   import gmc360 from '@/assets/img/patrocinadores/gmc360.png';
-  // import efisys from '@/assets/img/patrocinadores/efisys.png';
+  import efisys from '@/assets/img/patrocinadores/efisys.png';
   // import finvero from '@/assets/img/patrocinadores/finvero.png';
   // import fitch_ratings from '@/assets/img/patrocinadores/fitch_ratings.png';
   import preven from '@/assets/img/patrocinadores/preven.png';
@@ -52,13 +52,13 @@
     // { id: 1, url: '#', src: bajaware, alt: 'bajaware' },
     { id: 2, url: '#', src: circulo_de_credito, alt: 'circulo de crédito' },
     { id: 3, url: '#', src: gmc360, alt: 'gmc360' },
-    // { id: 4, url: '#', src: efisys, alt: 'efisys' },
     // { id: 5, url: '#', src: finvero, alt: 'finvero' },
+    // { id: 4, url: '#', src: sekura, alt: 'fin amigo' },
     // { id: 6, url: '#', src: fitch_ratings, alt: 'fitch_ratings' },
     { id: 7, url: '#', src: preven, alt: 'preven' },
     // { id: 8, url: '#', src: mc_collect, alt: 'mc_collect' },
     { id: 9, url: '#', src: buro_de_credito, alt: 'buro de crédito' },
-    // { id: 10, url: '#', src: sekura, alt: 'fin amigo' },
+    { id: 10, url: '#', src: efisys, alt: 'efisys' },
     // { id: 11, url: '#', src: tecreo, alt: 'tecreo' },
     { id: 12, url: '#', src: y_g, alt: 'y&g' },
     // { id: 13, url: '#', src: y_g, alt: 'y_g' },

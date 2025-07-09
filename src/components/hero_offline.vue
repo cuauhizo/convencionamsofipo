@@ -1,5 +1,5 @@
 <template>
-  <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem] xl:min-h-[695px]">
+  <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem]">
     <div class="w-full" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
       <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
       <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
