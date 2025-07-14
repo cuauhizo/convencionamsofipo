@@ -1,18 +1,18 @@
 // src/router/index.js
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, createMemoryHistory } from 'vue-router'; // ¡Importa createMemoryHistory!
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/HomeView.vue'), // Asegúrate de que tus componentes de vista estén en una carpeta `views`
+    component: () => import('@/views/HomeView.vue'),
   },
   {
     path: '/demo',
     name: 'Demo',
     component: () => import('@/views/DemoView.vue'),
   },
-  // Puedes añadir una ruta comodín para 404
+  // Ruta comodín para 404
   {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
@@ -21,7 +21,10 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  // **Esta es la línea clave que debes cambiar**
+  // Usa createMemoryHistory() para SSR (cuando 'window' no existe)
+  // y createWebHistory() para el cliente (navegador)
+  history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
   routes,
 });
 

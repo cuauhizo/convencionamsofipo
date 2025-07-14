@@ -51,6 +51,8 @@
 
 <script setup>
   import { ref } from 'vue'
+  import { useHead } from '@vueuse/head'
+
   import amextra from '@/assets/img/sofipos/amextra.png';
   import asp from '@/assets/img/sofipos/asp.png';
   import bbcd from '@/assets/img/sofipos/bbcd.png';
@@ -104,6 +106,25 @@
     { id: 23, url: 'https://www.financierasumate.com.mx/', src: sumate, alt: 'Sumate' },
     { id: 25, url: 'https://xepelin.com/mx', src: xepelin, alt: 'Xepelin' },
   ])
+
+  useHead({
+  title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
+  meta: [
+    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' },
+    { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
+    { property: 'og:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.' },
+    { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+    { property: 'og:url', content: 'https://convencionamsofipo.com/' },
+    { property: 'og:type', content: 'website' },
+
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
+    { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
+    { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+    { name: 'twitter:url', content: 'https://convencionamsofipo.com/' }
+  ],
+})
 </script>
 
 <style scoped>
