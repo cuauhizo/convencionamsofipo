@@ -44,7 +44,7 @@
   import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayza.png';
   import David_Romero from '@/assets/img/ponentes/David_Romero.png';
   import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
-  import alejandro_tobier from '@/assets/img/ponentes/alejandro-tobier.png';
+  import Alejandro_Tobier from '@/assets/img/ponentes/Alejandro_Tobier.png';
 
   const ponentes = ref([
     {
@@ -52,28 +52,28 @@
       nombre: 'Marlene Garayzar',
       imagen: Marlene_Garayza,
       descripcion: 'Presidenta de AMS',
-      enlace: '../src/assets/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
+      enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
     },
     {
       id: 2,
       nombre: 'David Romero',
       imagen: David_Romero,
       descripcion: 'Vicepresidente de AMS',
-      enlace: '../src/assets/semblanzas/AMS_semblanza_David_Romero.pdf'
+      enlace: '../semblanzas/AMS_semblanza_David_Romero.pdf'
     },
     {
       id: 3,
       nombre: 'Juan Francisco Fernández',
       imagen: Juan_Francisco_Fernandez,
       descripcion: 'CEO de Crediclub',
-      enlace: '../src/assets/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf'
+      enlace: '../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf'
     },
     {
       id: 4,
       nombre: 'Alejandro Tobier',
-      imagen: alejandro_tobier,
+      imagen: Alejandro_Tobier,
       descripcion: 'Country Manager MX',
-      enlace: '../src/assets/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf'
+      enlace: '../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf'
     },
     // {
     //   id: 5,
