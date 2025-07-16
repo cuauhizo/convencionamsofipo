@@ -3,6 +3,7 @@
   import Stand1 from '@/assets/img/Stand1.png';
   import Stand2 from '@/assets/img/stands/stand-02-preven.png';
   import Stand3 from '@/assets/img/stands/stand-03-gmc360.png';
+  import Stand5 from '@/assets/img/stands/stand-05-unico.png';
   import Stand7 from '@/assets/img/stands/stand-07-buro-de-credito.png';
   import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
   import Stand10 from '@/assets/img/stands/stand-10-efisys.png';
@@ -38,12 +39,12 @@ const stands = ref([
   //   nombre: "Mc Kroupenky",
   //   titulo: "Estratega de Mercadotecnia y líder empresarial"
   // },
-  // {
-  //   id: 5,
-  //   imagen: Stand1,
-  //   nombre: "Mc Kroupenky",
-  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
-  // },
+  {
+    id: 5,
+    imagen: Stand5,
+    nombre: "Unico",
+    titulo: "Unico"
+  },
   // {
   //   id: 6,
   //   imagen: Stand1,
@@ -247,7 +248,7 @@ onUnmounted(() => {
               rel="noopener noreferrer"
               class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2"
             >
-              Consulta aqui el mapa
+              Consulta aquí el mapa
             </a>
           </div>
         </div>

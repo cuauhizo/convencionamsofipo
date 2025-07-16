@@ -44,7 +44,11 @@
   import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayza.png';
   import David_Romero from '@/assets/img/ponentes/David_Romero.png';
   import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
-  import Alejandro_Tobier from '@/assets/img/ponentes/Alejandro_Tobier.png';
+  import Alejandro_Toiber from '@/assets/img/ponentes/Alejandro_Toiber.png';
+  import Oscar_Rosado from '@/assets/img/ponentes/Oscar_Rosado.png';
+  import Manuel_Contreras from '@/assets/img/ponentes/Manuel_Contreras.png';
+  import Alan_Elizondo from '@/assets/img/ponentes/Alan_Elizondo.png';
+  
 
   const ponentes = ref([
     {
@@ -70,18 +74,39 @@
     },
     {
       id: 4,
-      nombre: 'Alejandro Tobier',
-      imagen: Alejandro_Tobier,
+      nombre: 'Alejandro Toiber',
+      imagen: Alejandro_Toiber,
       descripcion: 'Country Manager MX',
       enlace: '../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf'
     },
+    {
+      id: 5,
+      nombre: 'Oscar Rosado',
+      imagen: Oscar_Rosado,
+      descripcion: 'Presidente de CONDUSEF',
+      enlace: '../semblanzas/AMS_semblanza_Oscar_Rosado.pdf'
+    },
+    {
+      id: 6,
+      nombre: 'Manuel Contreras',
+      imagen: Manuel_Contreras,
+      descripcion: 'Product Manager de Oracle',
+      enlace: '../semblanzas/AMS_semblanza_Manuel_Contreras_Rico.pdf'
+    },
+    {
+      id: 7,
+      nombre: 'Alan Elizondo',
+      imagen: Alan_Elizondo,
+      descripcion: 'Director General de FIRA',
+      enlace: '../semblanzas/AMS_semblanza_Alan_Elizondo.pdf'
+    }
     // {
     //   id: 5,
     //   nombre: 'Otro Ponente',
     //   imagen: 'https://i.pravatar.cc/204',
     //   descripcion: 'Especialista en Tecnología y Finanzas',
     //   enlace: 'https://ejemplo.com/semblanza-otro'
-    // },
+    // }
   ])
 </script>
 

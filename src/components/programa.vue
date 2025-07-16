@@ -47,8 +47,18 @@
               <!-- Mostrar reparto si existe -->
               <div v-if="programa1.reparto" class="mt-4">
                   <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa1.reparto" :key="key">
-                    <p class="col-span-4">{{ ponente.nombre }}</p>
-                    <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
+                    <p class="col-span-4">{{ ponente.nombre }} <br>
+                      <a
+                        v-if="ponente.enlace"
+                        :href="ponente.enlace"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-xs underline"
+                      >
+                        Ver Semblanza
+                      </a>
+                    </p>
+                    <p class="col-span-2">{{ ponente.sofipo }}</p>
                   </div>
               </div>
             </div>
@@ -76,8 +86,17 @@
               <!-- Mostrar reparto si existe -->
               <div v-if="programa2.reparto" class="mt-4">
                   <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa2.reparto" :key="key">
-                    <p class="col-span-4">{{ ponente.nombre }}</p>
-                    <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
+                    <p class="col-span-4">{{ ponente.nombre }} <br>
+                      <a
+                        v-if="ponente.enlace"
+                        :href="ponente.enlace"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-xs underline"
+                      >
+                        Ver Semblanza
+                      </a></p>
+                    <p class="col-span-2">{{ ponente.sofipo }}</p>
                   </div>
               </div>
             </div>
@@ -137,26 +156,29 @@ const programaDia1 = ref([
       ponete1: {
         // nombre: "Dr. Edgar Amador Zamora",
         nombre: "",
+        enlace: "",
         sofipo: "SHCP"
       },
       ponete2: {
         // nombre: "Dr. Jesús De la Fuente Rodríguez",
         nombre: "",
+        enlace: "",
         sofipo: "CNBV"
       },
       ponete3: {
         // nombre: "Dra. Galia Borja Gómez",
         nombre: "",
+        enlace: "",
         sofipo: "BANXICO"
       },
       ponete4: {
-        // nombre: "Lic. Oscar Rosado Jiménez",
-        nombre: "",
+        nombre: "Lic. Oscar Rosado Jiménez",
+        enlace: "../semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
         sofipo: "CONDUSEF"
       },
       ponete5: {
-        // nombre: "Marlene Garayzar Gómez",
-        nombre: "",
+        nombre: "Marlene Garayzar",
+        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMS"
       },
     }
@@ -185,21 +207,25 @@ const programaDia1 = ref([
       ponete1: {
         // nombre: "Altagracia Gómez",
         nombre: "",
+        enlace: "",
         sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
         // nombre: "Dr. Alfredo Navarrete",
         nombre: "",
+        enlace: "",
         sofipo: "UBVA"
       },
       ponete3: {
         // nombre: "Vidal Llerenas",
         nombre: "",
+        enlace: "",
         sofipo: "Sría. Economía"
       },
       ponete4: {
         // nombre: "Alicia Salgado",
         nombre: "",
+        enlace: "",
         sofipo: "Moderador"
       }
     }
@@ -214,6 +240,7 @@ const programaDia1 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
     }
@@ -226,13 +253,14 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Marlene Garayzar",
-        nombre: "",
+        nombre: "Marlene Garayzar",
+        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMSOFIPO"
       },
       ponete2: {
         // nombre: "Regina García Cuellar",
         nombre: "",
+        enlace: "",
         sofipo: "ABM"
       },
     }
@@ -260,6 +288,7 @@ const programaDia2 = ref([
       ponete1: {
         // nombre: "Graciela Márquez",
         nombre: "",
+        enlace: "",
         sofipo: "INEGI"
       },
     }
@@ -274,11 +303,13 @@ const programaDia2 = ref([
       ponete1: {
         // nombre: "Act. Alán Elizondo",
         nombre: "",
+        enlace: "",
         sofipo: "FIRA"
       },
       ponete2: {
         // nombre: "Mtro. Javier Vázquez",
         nombre: "",
+        enlace: "",
         sofipo: "Nafin"
       },
     }
@@ -292,10 +323,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }
@@ -310,22 +343,25 @@ const programaDia2 = ref([
       ponete1: {
         // nombre: "Carlos Marmolejo",
         nombre: "",
+        enlace: "",
         // sofipo: "Finsus"
         sofipo: ""
       },
       ponete2: {
         // nombre: "Rafael Nieves",
         nombre: "",
+        enlace: "",
         sofipo: "Capital Activo"
       },
       ponete3: {
-        // nombre: "Alejandro Toubeth",
-        nombre: "",
+        nombre: "Alejandro Toiber",
+        enlace: "../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
         sofipo: "Xepelin"
       },
       ponete4: {
         // nombre: "Sebastián Estrada",
         nombre: "",
+        enlace: "",
         sofipo: "Moderador"
       }
     }
@@ -340,20 +376,24 @@ const programaDia2 = ref([
       ponete1: {
         // nombre: "Dr. Othón Moreno",
         nombre: "",
+        enlace: "",
         sofipo: "Banxico"
       },
       ponete2: {
         // nombre: "José Merino",
         nombre: "",
+        enlace: "",
         sofipo: "Agencia Digital"
       },
       ponete3: {
         // nombre: "Mary Pilly Loo",
         nombre: "",
+        enlace: "",
         sofipo: "CNBV"
       },
       ponete4: {
         nombre: "",
+        enlace: "",
         sofipo: "Moderador"
       }
     }
@@ -367,10 +407,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }
@@ -384,10 +426,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }
@@ -401,10 +445,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }
@@ -418,10 +464,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }
@@ -436,25 +484,29 @@ const programaDia2 = ref([
       ponete1: {
         // nombre: "Stefhan Muller",
         nombre: "",
+        enlace: "",
         sofipo: "Klar"
       },
       ponete2: {
-        // nombre: "Juan Francisco Fernández",
-        nombre: "",
+        nombre: "Juan Francisco Fernández",
+        enlace: "../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
         sofipo: "Crediclub"
       },
       ponete3: {
         // nombre: "Marlene Garayzar",
         nombre: "",
+        enlace: "",
         sofipo: "Stori"
       },
       ponete4: {
         // nombre: "Diego Paires",
         nombre: "",
+        enlace: "",
         sofipo: "SAE"
       },
       ponete5: {
         nombre: "",
+        enlace: "",
         sofipo: "Moderador"
       }
     }
@@ -468,10 +520,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }
@@ -486,21 +540,25 @@ const programaDia2 = ref([
       ponete1: {
         // nombre: "Aurora Cervantes",
         nombre: "",
+        enlace: "",
         sofipo: "CNBV"
       },
       ponete2: {
         // nombre: "Elizabeth Noriega",
         nombre: "",
+        enlace: "",
         sofipo: "Condusef"
       },
       ponete2: {
         // nombre: "Viviana Garza",
         nombre: "",
+        enlace: "",
         sofipo: "Banxico"
       },
       ponete2: {
         // nombre: "Jeanette Leyva “El Financiero”",
         nombre: "",
+        enlace: "",
         sofipo: "Moderador"
       }
     }
@@ -509,22 +567,26 @@ const programaDia2 = ref([
     id: 14,
     horario: "18:00 - 18:30",
     actividad: "Clausura",
-    name: "Margarita Gonzalez Saravia",
-    title: "Gobernadora del Estado de Morelos",
+    // name: "Margarita Gonzalez Saravia",
+    // title: "Gobernadora del Estado de Morelos",
+    name: "",
+    title: "",
     reparto: {
       ponete1: {
-        // nombre: "David Romero Morfin",
-        nombre: "",
+        nombre: "David Romero",
+        enlace: "../semblanzas/AMS_semblanza_David_Romero.pdf",
         sofipo: "AMSOFIPO"
       },
       ponete2: {
         // nombre: "Act. Alán Elizondo",
         nombre: "",
+        enlace: "",
         sofipo: "FIRA"
       },
       ponete3: {
         // nombre: "Mto. Javier Vázquez",
         nombre: "",
+        enlace: "",
         sofipo: "Nafin"
       }
     }
@@ -538,10 +600,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       },
       ponete2: {
         nombre: "",
+        enlace: "",
         sofipo: ""
       }
     }

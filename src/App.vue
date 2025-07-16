@@ -135,14 +135,14 @@
                     'py-2 px-2 rounded-full hover:bg-white hover:text-black',
                     activeSection === 'section7' ? 'bg-white text-[#3a3a82]' : ''
                   ]">Demo</router-link>
-              </li> -->
+              </li>
               <li>
                 <a href="#"
                 class="flex items-center gap-2 bg-black text-white w-fit mx-auto rounded-full shadow-sm py-1 px-1.5 pr-2 transition-all duration-500">
                   <i><img src="@/assets/img/icon-contacto.svg" alt="icono contacto"></i>
                   <span style="vertical-align: inherit"><span style="vertical-align: inherit">Contacto</span></span>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
