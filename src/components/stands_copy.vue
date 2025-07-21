@@ -239,7 +239,7 @@ onUnmounted(() => {
           <div class="">
             <h2 class="titulo-seccion">Stands</h2>
             <p class="titulo">
-                ¡Ubica los stands donde se encontrarán nuestros atrocinadores!</p>
+                ¡Ubica los stands donde se encontrarán nuestros patrocinadores!</p>
             <p class="mb-6">Conecta con proveedores que te ayudarán a llevar a tu empresa al siguiente nivel.</p>
             <!-- href="https://convencionamsofipo.com/mapa/index.html" -->
             <a
