@@ -12,7 +12,8 @@
     "@vueuse/head": "^2.0.0",
     "aos": "^2.3.4",
     "vite-ssg": "27.0.1",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

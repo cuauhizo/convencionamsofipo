@@ -1,14 +1,5 @@
 <script setup>
   import { ref, onMounted, onUnmounted, reactive } from 'vue';
-  import { useHead } from '@vueuse/head'
-  import HeroOffline from '@/components/hero_offline.vue'
-  import Hero from '@/components/hero.vue'
-  import Patrocinadores from '@/components/patrocinadores.vue'
-  import Ponentes from '@/components/ponentes.vue'
-  import Programa from '@/components/programa.vue'
-  import Stands from '@/components/stands.vue'
-  import StandsCopy from '@/components/stands-copy.vue'
-  import Sede from '@/components/sede.vue'
   import Responsive from '@/components/responsive.vue'
 
   const anio = ref(new Date().getFullYear());
@@ -20,11 +11,6 @@
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  // const handleScroll = () => {
-  //   const scrollTop = window.scrollY;
-  //   showScrollTopButton.value = scrollTop > 0;
-  // };
 
   const handleScroll = () => {
   const scrollTop = window.scrollY;
@@ -43,13 +29,10 @@
     }
   };
 
-
-
   const cerrarMenu = () => {
     const checkbox = document.getElementById("menu");
     if (checkbox) checkbox.checked = false;
   };
-
 
   onMounted(() => {
     window.addEventListener('scroll', handleScroll);
@@ -65,48 +48,6 @@
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-  // ================== Modal ================
-  const modal = reactive({
-    mostrar: false,
-    animar: false,
-  });
-
-  const mostrarModal = (servicio) => {
-    modal.mostrar = true;
-    modal.servicio = servicio;
-    setTimeout(() => {
-      modal.animar = true;
-    }, 300);
-  };
-
-  const ocultarModal = () => {
-    modal.animar = false;
-    setTimeout(() => {
-      modal.mostrar = false;
-    }, 300);
-  };
-
-useHead({
-  title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
-  meta: [
-    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' },
-    { name: 'robots', content: 'noindex' },
-    { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
-    { property: 'og:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.' },
-    { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
-    { property: 'og:url', content: 'https://convencionamsofipo.com/' },
-    { property: 'og:type', content: 'website' },
-
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
-    { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
-    { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
-    { name: 'twitter:url', content: 'https://convencionamsofipo.com/' }
-  ],
-})
-
 </script>
 
 <template>
@@ -189,13 +130,19 @@ useHead({
                   >Sede</a
                 >
               </li>
+              <!-- <li>
+                <router-link to="/demo" :class="[
+                    'py-2 px-2 rounded-full hover:bg-white hover:text-black',
+                    activeSection === 'section7' ? 'bg-white text-[#3a3a82]' : ''
+                  ]">Demo</router-link>
+              </li>
               <li>
                 <a href="#"
                 class="flex items-center gap-2 bg-black text-white w-fit mx-auto rounded-full shadow-sm py-1 px-1.5 pr-2 transition-all duration-500">
                   <i><img src="@/assets/img/icon-contacto.svg" alt="icono contacto"></i>
                   <span style="vertical-align: inherit"><span style="vertical-align: inherit">Contacto</span></span>
                 </a>
-              </li>
+              </li>-->
             </ul>
           </div>
         </div>
@@ -205,14 +152,7 @@ useHead({
 
   <!-- Main -->
   <main>
-    <!-- <HeroOffline/> -->
-    <Hero/>
-    <Patrocinadores/>
-    <Ponentes/>
-    <Programa/>
-    <StandsCopy/>
-    <Sede/>
-
+    <router-view></router-view>
     <button class="btn-irArriba"
       @click="scrollToTop"
       v-show="showScrollTopButton"
@@ -235,7 +175,6 @@ useHead({
           d="m4.5 12.75 7.5-7.5 7.5 7.5" />
       </svg>
     </button>
-
   </main>
 
   <!-- Footer -->

@@ -37,7 +37,8 @@
   // import bajaware from '@/assets/img/patrocinadores/bajaware.png';
   import circulo_de_credito from '@/assets/img/patrocinadores/circulo_de_credito.png';
   import gmc360 from '@/assets/img/patrocinadores/gmc360.png';
-  // import efisys from '@/assets/img/patrocinadores/efisys.png';
+  import efisys from '@/assets/img/patrocinadores/efisys.png';
+  import unico from '@/assets/img/patrocinadores/unico.png';
   // import finvero from '@/assets/img/patrocinadores/finvero.png';
   // import fitch_ratings from '@/assets/img/patrocinadores/fitch_ratings.png';
   import preven from '@/assets/img/patrocinadores/preven.png';
@@ -50,19 +51,19 @@
 
   const patrocinadores = ref([
     // { id: 1, url: '#', src: bajaware, alt: 'bajaware' },
-    { id: 2, url: '#', src: circulo_de_credito, alt: 'circulo de crédito' },
-    { id: 3, url: '#', src: gmc360, alt: 'gmc360' },
-    // { id: 4, url: '#', src: efisys, alt: 'efisys' },
-    // { id: 5, url: '#', src: finvero, alt: 'finvero' },
+    { id: 2, url: 'https://www.circulodecredito.com.mx/home', src: circulo_de_credito, alt: 'Circulo de Crédito' },
+    { id: 3, url: 'https://www.gmc360.com.mx/', src: gmc360, alt: 'GMC360' },
+    // { id: 4, url: '#', src: sekura, alt: 'fin amigo' },
+    { id: 5, url: 'https://empresas-mx.unico.io/hc/es-mx', src: unico, alt: 'Unico' },
     // { id: 6, url: '#', src: fitch_ratings, alt: 'fitch_ratings' },
-    { id: 7, url: '#', src: preven, alt: 'preven' },
+    { id: 7, url: 'https://preven.mx/', src: preven, alt: 'Preven' },
     // { id: 8, url: '#', src: mc_collect, alt: 'mc_collect' },
-    { id: 9, url: '#', src: buro_de_credito, alt: 'buro de crédito' },
-    // { id: 10, url: '#', src: sekura, alt: 'fin amigo' },
+    { id: 9, url: 'https://www.burodecredito.com.mx/', src: buro_de_credito, alt: 'Buro de Crédito' },
+    { id: 10, url: 'https://efisys.com.mx/', src: efisys, alt: 'Efisys' },
     // { id: 11, url: '#', src: tecreo, alt: 'tecreo' },
-    { id: 12, url: '#', src: y_g, alt: 'y&g' },
+    { id: 12, url: 'https://ygconsultores.com.mx/', src: y_g, alt: 'Y&G' },
     // { id: 13, url: '#', src: y_g, alt: 'y_g' },
-    { id: 14, url: '#', src: hr_ratings, alt: 'hr ratings' },
+    { id: 14, url: 'https://www.hrratings.com/', src: hr_ratings, alt: 'HR Ratings' },
   ])
 </script>
 

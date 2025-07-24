@@ -41,9 +41,14 @@
 
 <script setup>
   import { ref } from 'vue'
-  import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayza.png';
+  import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayzar.png';
   import David_Romero from '@/assets/img/ponentes/David_Romero.png';
   import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
+  import Alejandro_Toiber from '@/assets/img/ponentes/Alejandro_Toiber.png';
+  import Oscar_Rosado from '@/assets/img/ponentes/Oscar_Rosado.png';
+  import Manuel_Contreras from '@/assets/img/ponentes/Manuel_Contreras.png';
+  import Alan_Elizondo from '@/assets/img/ponentes/Alan_Elizondo.png';
+  
 
   const ponentes = ref([
     {
@@ -51,36 +56,57 @@
       nombre: 'Marlene Garayzar',
       imagen: Marlene_Garayza,
       descripcion: 'Presidenta de AMS',
-      enlace: 'https://convencionamsofipo.com/wp-content/uploads/2024/semblanzas/AMS_SEMBLANZA_CONVENCION-2024_MarleneGarayzar.pdf'
+      enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
     },
     {
       id: 2,
       nombre: 'David Romero',
       imagen: David_Romero,
       descripcion: 'Vicepresidente de AMS',
-      enlace: 'https://convencionamsofipo.com/wp-content/uploads/2024/semblanzas/AMS_SEMBLANZA_CONVENCION-2024_DavidRomero.pdf'
+      enlace: '../semblanzas/AMS_semblanza_David_Romero.pdf'
     },
     {
       id: 3,
       nombre: 'Juan Francisco Fernández',
       imagen: Juan_Francisco_Fernandez,
       descripcion: 'CEO de Crediclub',
-      enlace: 'https://convencionamsofipo.com/wp-content/uploads/2024/semblanzas/AMS_SEMBLANZA_CONVENCION-2024_JuanFrancisco.pdf'
+      enlace: '../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf'
     },
-    // {
-    //   id: 4,
-    //   nombre: 'Otro Ponente',
-    //   imagen: 'https://i.pravatar.cc/203',
-    //   descripcion: 'Especialista en Tecnología y Finanzas',
-    //   enlace: 'https://ejemplo.com/semblanza-otro'
-    // },
+    {
+      id: 4,
+      nombre: 'Alejandro Toiber',
+      imagen: Alejandro_Toiber,
+      descripcion: 'Country Manager MX',
+      enlace: '../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf'
+    },
+    {
+      id: 5,
+      nombre: 'Oscar Rosado',
+      imagen: Oscar_Rosado,
+      descripcion: 'Presidente de CONDUSEF',
+      enlace: '../semblanzas/AMS_semblanza_Oscar_Rosado.pdf'
+    },
+    {
+      id: 6,
+      nombre: 'Manuel Contreras',
+      imagen: Manuel_Contreras,
+      descripcion: 'Product Manager de Oracle',
+      enlace: '../semblanzas/AMS_semblanza_Manuel_Contreras_Rico.pdf'
+    },
+    {
+      id: 7,
+      nombre: 'Alan Elizondo',
+      imagen: Alan_Elizondo,
+      descripcion: 'Director General de FIRA',
+      enlace: '../semblanzas/AMS_semblanza_Alan_Elizondo.pdf'
+    }
     // {
     //   id: 5,
     //   nombre: 'Otro Ponente',
     //   imagen: 'https://i.pravatar.cc/204',
     //   descripcion: 'Especialista en Tecnología y Finanzas',
     //   enlace: 'https://ejemplo.com/semblanza-otro'
-    // },
+    // }
   ])
 </script>
 
