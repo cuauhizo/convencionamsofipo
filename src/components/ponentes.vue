@@ -41,13 +41,16 @@
 
 <script setup>
   import { ref } from 'vue'
-  import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayza.png';
+  import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayzar.png';
   import David_Romero from '@/assets/img/ponentes/David_Romero.png';
   import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
   import Alejandro_Toiber from '@/assets/img/ponentes/Alejandro_Toiber.png';
   import Oscar_Rosado from '@/assets/img/ponentes/Oscar_Rosado.png';
   import Manuel_Contreras from '@/assets/img/ponentes/Manuel_Contreras.png';
   import Alan_Elizondo from '@/assets/img/ponentes/Alan_Elizondo.png';
+  import Carlos_Marmolejo from '@/assets/img/ponentes/Carlos_Marmolejo.png';
+  import Marcela_Galicia from '@/assets/img/ponentes/Marcela_Galicia.png';
+  
   
 
   const ponentes = ref([
@@ -99,7 +102,21 @@
       imagen: Alan_Elizondo,
       descripcion: 'Director General de FIRA',
       enlace: '../semblanzas/AMS_semblanza_Alan_Elizondo.pdf'
-    }
+    },
+    {
+      id: 5,
+      nombre: 'Carlos Marmolejo',
+      imagen: Carlos_Marmolejo,
+      descripcion: 'CEO de FINSUS',
+      enlace: '../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf'
+    },
+    {
+      id: 5,
+      nombre: 'Marcela Galicia',
+      imagen: Marcela_Galicia,
+      descripcion: 'Directora Senior De Instituciones Financieras No Bancarias En Fitch Ratings',
+      enlace: '../semblanzas/AMS_semblanza_Marcela_Galicia.pdf'
+    },
     // {
     //   id: 5,
     //   nombre: 'Otro Ponente',
@@ -107,7 +124,10 @@
     //   descripcion: 'Especialista en Tecnología y Finanzas',
     //   enlace: 'https://ejemplo.com/semblanza-otro'
     // }
+    
   ])
+
+  
 </script>
 
 

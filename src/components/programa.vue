@@ -341,11 +341,9 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Carlos Marmolejo",
-        nombre: "",
-        enlace: "",
-        // sofipo: "Finsus"
-        sofipo: ""
+        nombre: "Carlos Marmolejo",
+        enlace: "../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+        sofipo: "Finsus"
       },
       ponete2: {
         // nombre: "Rafael Nieves",
