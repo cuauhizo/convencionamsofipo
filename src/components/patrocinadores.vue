@@ -34,6 +34,7 @@
 
 <script setup>
   import { ref } from 'vue'
+  import fimpe from '@/assets/img/patrocinadores/fimpe.png';
   // import bajaware from '@/assets/img/patrocinadores/bajaware.png';
   import circulo_de_credito from '@/assets/img/patrocinadores/circulo_de_credito.png';
   import gmc360 from '@/assets/img/patrocinadores/gmc360.png';
@@ -50,6 +51,7 @@
   import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.png';
 
   const patrocinadores = ref([
+    { id: 1, url: 'https://fimpe.org/', src: fimpe, alt: 'Fimpe' },
     // { id: 1, url: '#', src: bajaware, alt: 'bajaware' },
     { id: 2, url: 'https://www.circulodecredito.com.mx/home', src: circulo_de_credito, alt: 'Circulo de Crédito' },
     { id: 3, url: 'https://www.gmc360.com.mx/', src: gmc360, alt: 'GMC360' },

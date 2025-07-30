@@ -1,6 +1,6 @@
 <script setup>
   import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue';
-  import Stand1 from '@/assets/img/Stand1.png';
+  import Stand1 from '@/assets/img/Stands/stand-01-fimpe.png';
   import Stand2 from '@/assets/img/stands/stand-02-preven.png';
   import Stand3 from '@/assets/img/stands/stand-03-gmc360.png';
   import Stand5 from '@/assets/img/stands/stand-05-unico.png';
@@ -15,12 +15,12 @@
 // Normalmente, estos datos se obtendrían de una API o se pasarían como un `prop`,
 // pero para este ejemplo, los codificaremos aquí.
 const stands = ref([
-  // {
-  //   id: 1,
-  //   imagen: Stand1,
-  //   nombre: "Circulo de credito",
-  //   titulo: "Circulo de credito",
-  // },
+  {
+    id: 1,
+    imagen: Stand1,
+    nombre: "Fimpe",
+    titulo: "Fimpe",
+  },
   {
     id: 2,
     imagen: Stand2,
