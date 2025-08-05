@@ -286,9 +286,8 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Graciela Márquez",
-        nombre: "",
-        enlace: "",
+        nombre: "Mauricio Rodríguez",
+        enlace: "../semblanzas/AMS_semblanza_Mauricio_Rodríguez.pdf",
         sofipo: "INEGI"
       },
     }

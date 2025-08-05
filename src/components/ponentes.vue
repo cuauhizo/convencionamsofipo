@@ -50,6 +50,7 @@
   import Alan_Elizondo from '@/assets/img/ponentes/Alan_Elizondo.png';
   import Carlos_Marmolejo from '@/assets/img/ponentes/Carlos_Marmolejo.png';
   import Marcela_Galicia from '@/assets/img/ponentes/Marcela_Galicia.png';
+  import Mauricio_Rodriguez from '@/assets/img/ponentes/Mauricio_Rodriguez.png';
   
   
 
@@ -104,18 +105,25 @@
       enlace: '../semblanzas/AMS_semblanza_Alan_Elizondo.pdf'
     },
     {
-      id: 5,
+      id: 8,
       nombre: 'Carlos Marmolejo',
       imagen: Carlos_Marmolejo,
       descripcion: 'CEO de FINSUS',
       enlace: '../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf'
     },
     {
-      id: 5,
+      id: 9,
       nombre: 'Marcela Galicia',
       imagen: Marcela_Galicia,
       descripcion: 'Directora Senior De Instituciones Financieras No Bancarias En Fitch Ratings',
       enlace: '../semblanzas/AMS_semblanza_Marcela_Galicia.pdf'
+    },
+    {
+      id: 10,
+      nombre: 'Mauricio Rodríguez',
+      imagen: Mauricio_Rodriguez,
+      descripcion: 'Titular De La Unidad De Estadísticas Sociodemográficas',
+      enlace: '../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf'
     },
     // {
     //   id: 5,
