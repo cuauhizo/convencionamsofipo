@@ -160,9 +160,8 @@ const programaDia1 = ref([
         sofipo: "SHCP"
       },
       ponete2: {
-        // nombre: "Dr. Jesús De la Fuente Rodríguez",
-        nombre: "",
-        enlace: "",
+        nombre: "Dr. Jesús De la Fuente Rodríguez",
+        enlace: '../semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf',
         sofipo: "CNBV"
       },
       ponete3: {
@@ -211,9 +210,8 @@ const programaDia1 = ref([
         sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
-        // nombre: "Dr. Alfredo Navarrete",
-        nombre: "",
-        enlace: "",
+        nombre: "Dr. Alfredo Navarrete",
+        enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
         sofipo: "UBVA"
       },
       ponete3: {
@@ -287,7 +285,7 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Mauricio Rodríguez",
-        enlace: "../semblanzas/AMS_semblanza_Mauricio_Rodríguez.pdf",
+        enlace: "../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
         sofipo: "INEGI"
       },
     }

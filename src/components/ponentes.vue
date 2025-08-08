@@ -11,7 +11,7 @@
           v-for="ponente in ponentes"
           :key="ponente.id"
           :id="`ponente-${ponente.id}`"
-          class="max-w-[276px] rounded-2xl bg-perfil p-6 text-center shadow-lg"
+          class="max-w-[230px] rounded-2xl bg-perfil p-6 text-center shadow-lg flex flex-col justify-between"
         >
           <h3 class="text-sm">{{ ponente.nombre }}</h3>
           <img
@@ -51,7 +51,9 @@
   import Carlos_Marmolejo from '@/assets/img/ponentes/Carlos_Marmolejo.png';
   import Marcela_Galicia from '@/assets/img/ponentes/Marcela_Galicia.png';
   import Mauricio_Rodriguez from '@/assets/img/ponentes/Mauricio_Rodriguez.png';
-  
+  import Jesus_de_la_Fuente from '@/assets/img/ponentes/Jesus_de_la_Fuente.png';
+  import Marco_Antonio_Mares from '@/assets/img/ponentes/Marco_Antonio_Mares.png';
+  import Alfredo_Navarrete from '@/assets/img/ponentes/Alfredo_Navarrete.png';
   
 
   const ponentes = ref([
@@ -124,6 +126,27 @@
       imagen: Mauricio_Rodriguez,
       descripcion: 'Titular De La Unidad De Estadísticas Sociodemográficas',
       enlace: '../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf'
+    },
+    {
+      id: 11,
+      nombre: 'Jesús de la Fuente',
+      imagen: Jesus_de_la_Fuente,
+      descripcion: 'Presidente de la CNBV',
+      enlace: '../semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf'
+    },
+    {
+      id: 12,
+      nombre: 'Marco Antonio Mares',
+      imagen: Marco_Antonio_Mares,
+      descripcion: 'Periodista',
+      enlace: '../semblanzas/AMS_semblanza_Marco_Antonio_Mares.pdf'
+    },
+    {
+      id: 13,
+      nombre: 'Alfredo Navarrete',
+      imagen: Alfredo_Navarrete,
+      descripcion: 'Titular de la unidad de banca, valores y ahorro de la SHCP',
+      enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf'
     },
     // {
     //   id: 5,
