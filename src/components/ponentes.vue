@@ -54,7 +54,9 @@
   import Jesus_de_la_Fuente from '@/assets/img/ponentes/Jesus_de_la_Fuente.png';
   import Marco_Antonio_Mares from '@/assets/img/ponentes/Marco_Antonio_Mares.png';
   import Alfredo_Navarrete from '@/assets/img/ponentes/Alfredo_Navarrete.png';
-  
+  import Galia_Borja_Gomez from '@/assets/img/ponentes/Galia_Borja_gomez.png';
+  import Juan_Pablo_Zorrilla from '@/assets/img/ponentes/Juan_Pablo_Zorrilla.png';
+  import Oscar_Salcedo from '@/assets/img/ponentes/Oscar_Salcedo.png';
 
   const ponentes = ref([
     {
@@ -148,6 +150,27 @@
       descripcion: 'Titular de la unidad de banca, valores y ahorro de la SHCP',
       enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf'
     },
+    {
+      id: 14,
+      nombre: 'Galia Borja Gómez',
+      imagen: Galia_Borja_Gomez,
+      descripcion: 'Subgobernadora Del Banco De México',
+      enlace: '../semblanzas/AMS_semblanza_Galia_Borja.pdf'
+    },
+    {
+      id: 15,
+      nombre: 'Oscar Salcedo',
+      imagen: Oscar_Salcedo,
+      descripcion: 'Director General Adjunto de ASP Integra Opciones',
+      enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf'
+    },
+    {
+      id: 16,
+      nombre: 'Juan Pablo Zorrilla',
+      imagen: Juan_Pablo_Zorrilla,
+      descripcion: 'Co-Fundador y Co-CEO de Bravo',
+      enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf'
+    },
     // {
     //   id: 5,
     //   nombre: 'Otro Ponente',
@@ -155,10 +178,8 @@
     //   descripcion: 'Especialista en Tecnología y Finanzas',
     //   enlace: 'https://ejemplo.com/semblanza-otro'
     // }
-    
   ])
 
-  
 </script>
 
 

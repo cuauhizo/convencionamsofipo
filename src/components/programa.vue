@@ -46,7 +46,7 @@
               </div>
               <!-- Mostrar reparto si existe -->
               <div v-if="programa1.reparto" class="mt-4">
-                  <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa1.reparto" :key="key">
+                  <div class="grid grid-cols-6 gap-3 mb-3 font-raleway items-center" v-for="(ponente, key) in programa1.reparto" :key="key">
                     <p class="col-span-4">{{ ponente.nombre }} <br>
                       <a
                         v-if="ponente.enlace"
@@ -85,7 +85,7 @@
               </div>
               <!-- Mostrar reparto si existe -->
               <div v-if="programa2.reparto" class="mt-4">
-                  <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa2.reparto" :key="key">
+                  <div class="grid grid-cols-6 gap-3 mb-3 font-raleway items-center" v-for="(ponente, key) in programa2.reparto" :key="key">
                     <p class="col-span-4">{{ ponente.nombre }} <br>
                       <a
                         v-if="ponente.enlace"
@@ -154,9 +154,8 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Dr. Edgar Amador Zamora",
-        nombre: "",
-        enlace: "",
+        nombre: "Dr. Alfredo Navarrete Martínez",
+        enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
         sofipo: "SHCP"
       },
       ponete2: {
@@ -165,9 +164,8 @@ const programaDia1 = ref([
         sofipo: "CNBV"
       },
       ponete3: {
-        // nombre: "Dra. Galia Borja Gómez",
-        nombre: "",
-        enlace: "",
+        nombre: "Dra. Galia Borja Gómez",
+        enlace: '../semblanzas/AMS_semblanza_Galia_Borja.pdf',
         sofipo: "BANXICO"
       },
       ponete4: {
@@ -184,7 +182,7 @@ const programaDia1 = ref([
   },
   {
     id: 5,
-    horario: "15:00 - 16:00",
+    horario: "15:45 - 16:00",
     actividad: "Receso",
     name: "",
     title: "",
@@ -210,7 +208,7 @@ const programaDia1 = ref([
         sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
-        nombre: "Dr. Alfredo Navarrete",
+        nombre: "Dr. Alfredo Navarrete Martínez",
         enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
         sofipo: "UBVA"
       },
@@ -245,7 +243,22 @@ const programaDia1 = ref([
   },
   {
     id: 9,
-    horario: "19:00 - 24:00",
+    horario: "18:10 - 18:40",
+    // actividad: "Panel: Mujeres en Confianza",
+    actividad: "",
+    name: "Mujeres en el sector financiero",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Marlene Garayzar",
+        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        sofipo: "AMSOFIPO"
+      },
+    }
+  },
+  {
+    id: 10,
+    horario: "19:30 - 24:00",
     actividad: "Cóctel de bienvenida",
     name: "Drink & Talk Mujeres en el sector financiero",
     title: "",
@@ -298,8 +311,7 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Act. Alán Elizondo",
-        nombre: "",
+        nombre: "Act. Alán Elizondo",
         enlace: "",
         sofipo: "FIRA"
       },
@@ -354,6 +366,11 @@ const programaDia2 = ref([
         sofipo: "Xepelin"
       },
       ponete4: {
+        nombre: "Oscar Salcedo Yúdico",
+        enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
+        sofipo: "ASP Integra Opciones"
+      },
+      ponete5: {
         // nombre: "Sebastián Estrada",
         nombre: "",
         enlace: "",
@@ -416,13 +433,13 @@ const programaDia2 = ref([
     id: 8,
     horario: "13:20 - 14:00",
     actividad: "Uso de IA para el fortalecimiento de la Infraestructura tecnológica",
-    name: "Oracle",
+    name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "",
+        nombre: "Manuel Contreras Rico",
         enlace: "",
-        sofipo: ""
+        sofipo: "Oracle"
       },
       ponete2: {
         nombre: "",
@@ -454,7 +471,8 @@ const programaDia2 = ref([
     id: 10,
     horario: "15:30 - 16:10",
     actividad: "Avances y retos en la Digitalización de servicios financieros",
-    name: "Dra. Lucia Buenrostro",
+    // name: "Dra. Lucia Buenrostro",
+    name: "",
     title: "",
     reparto: {
       ponete1: {
@@ -487,12 +505,6 @@ const programaDia2 = ref([
         enlace: "../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
         sofipo: "Crediclub"
       },
-      ponete3: {
-        // nombre: "Marlene Garayzar",
-        nombre: "",
-        enlace: "",
-        sofipo: "Stori"
-      },
       ponete4: {
         // nombre: "Diego Paires",
         nombre: "",
@@ -500,7 +512,12 @@ const programaDia2 = ref([
         sofipo: "SAE"
       },
       ponete5: {
-        nombre: "",
+        nombre: "Juan Pablo Zorrilla",
+        enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
+        sofipo: "Bravo"
+      },
+      ponete6: {
+        nombre: "Marco Antonio Mares",
         enlace: "",
         sofipo: "Moderador"
       }
@@ -568,13 +585,12 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "David Romero",
-        enlace: "../semblanzas/AMS_semblanza_David_Romero.pdf",
+        nombre: "Marlene Garayzar",
+        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMSOFIPO"
       },
       ponete2: {
-        // nombre: "Act. Alán Elizondo",
-        nombre: "",
+        nombre: "Act. Alán Elizondo",
         enlace: "",
         sofipo: "FIRA"
       },
