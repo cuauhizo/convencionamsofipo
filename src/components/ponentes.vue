@@ -8,10 +8,14 @@
       </div>
       <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <div
-          v-for="ponente in ponentes"
+          v-for="(ponente, index) in ponentes"
           :key="ponente.id"
           :id="`ponente-${ponente.id}`"
           class="max-w-[230px] rounded-2xl bg-perfil p-6 text-center shadow-lg flex flex-col justify-between"
+          :class="{
+            'transform lg:-translate-y-5': index % 2 === 0,
+            'transform lg:translate-y-5': index % 2 !== 0
+          }"
         >
           <h3 class="text-sm">{{ ponente.nombre }}</h3>
           <img
