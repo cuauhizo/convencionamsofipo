@@ -9,6 +9,8 @@
   import Stand10 from '@/assets/img/stands/stand-10-efisys.png';
   import Stand11 from '@/assets/img/stands/stand-11-y-&-g.png';
   import Stand14 from '@/assets/img/stands/stand-14-hr-ratings.png';
+  // import StandBonsaif from '@/assets/img/stands/stand-bonsaif.png';
+  
 
   // carrusel
 
@@ -99,6 +101,12 @@ const stands = ref([
     nombre: "Y&g",
     titulo: "Y&g"
   },
+  // {
+  //   id: 15,
+  //   imagen: StandBonsaif,
+  //   nombre: "Bonsaif",
+  //   titulo: "Bonsaif"
+  // },
 ]);
 
 // --- Estado y Lógica del Carrusel ---

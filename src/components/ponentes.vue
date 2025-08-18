@@ -46,7 +46,7 @@
 <script setup>
   import { ref } from 'vue'
   import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayzar.png';
-  import David_Romero from '@/assets/img/ponentes/David_Romero.png';
+  // import David_Romero from '@/assets/img/ponentes/David_Romero.png';
   import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
   import Alejandro_Toiber from '@/assets/img/ponentes/Alejandro_Toiber.png';
   import Oscar_Rosado from '@/assets/img/ponentes/Oscar_Rosado.png';
@@ -61,6 +61,9 @@
   import Galia_Borja_Gomez from '@/assets/img/ponentes/Galia_Borja_gomez.png';
   import Juan_Pablo_Zorrilla from '@/assets/img/ponentes/Juan_Pablo_Zorrilla.png';
   import Oscar_Salcedo from '@/assets/img/ponentes/Oscar_Salcedo.png';
+  import Jose_Antonio_Lozano from '@/assets/img/ponentes/Jose_Antonio_Lozano.png';
+
+  // enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
 
   const ponentes = ref([
     {
@@ -70,13 +73,13 @@
       descripcion: 'Presidenta de AMS',
       enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
     },
-    {
-      id: 2,
-      nombre: 'David Romero',
-      imagen: David_Romero,
-      descripcion: 'Vicepresidente de AMS',
-      enlace: '../semblanzas/AMS_semblanza_David_Romero.pdf'
-    },
+    // {
+    //   id: 2,
+    //   nombre: 'David Romero',
+    //   imagen: David_Romero,
+    //   descripcion: 'Vicepresidente de AMS',
+    //   enlace: '../semblanzas/AMS_semblanza_David_Romero.pdf'
+    // },
     {
       id: 3,
       nombre: 'Juan Francisco Fernández',
@@ -175,6 +178,15 @@
       descripcion: 'Co-Fundador y Co-CEO de Bravo',
       enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf'
     },
+    {
+      id: 17,
+      nombre: 'Jose Antonio Lozano',
+      imagen: Jose_Antonio_Lozano,
+      descripcion: 'Conferencista',
+      enlace: '../semblanzas/AMS_semblanza_Jose_Antonio_Lozano.pdf'
+    }
+
+
     // {
     //   id: 5,
     //   nombre: 'Otro Ponente',

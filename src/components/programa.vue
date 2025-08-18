@@ -514,7 +514,7 @@ const programaDia2 = ref([
       ponete5: {
         nombre: "Juan Pablo Zorrilla",
         enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
-        sofipo: "Bravo"
+        sofipo: "SAE"
       },
       ponete6: {
         nombre: "Marco Antonio Mares",
