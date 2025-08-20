@@ -50,6 +50,8 @@
   import y_g from '@/assets/img/patrocinadores/y&g.png';
   import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.png';
   import bonsaif from '@/assets/img/patrocinadores/bonsaif.png';
+  import japifon from '@/assets/img/patrocinadores/japifon.png';
+  
 
   const patrocinadores = ref([
     { id: 1, url: 'https://fimpe.org/', src: fimpe, alt: 'Fimpe' },
@@ -67,7 +69,8 @@
     { id: 12, url: 'https://ygconsultores.com.mx/', src: y_g, alt: 'Y&G' },
     // { id: 13, url: '#', src: y_g, alt: 'y_g' },
     { id: 14, url: 'https://www.hrratings.com/', src: hr_ratings, alt: 'HR Ratings' },
-    { id: 15, url: 'https://bonsaif.com/', src: bonsaif, alt: 'Bonsaif' }
+    { id: 15, url: 'https://bonsaif.com/', src: bonsaif, alt: 'Bonsaif' },
+    { id: 16, url: 'https://japifon.com/', src: japifon, alt: 'Japifon' }
   ])
 </script>
 

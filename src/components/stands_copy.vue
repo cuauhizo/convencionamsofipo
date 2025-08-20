@@ -6,9 +6,11 @@
   import Stand5 from '@/assets/img/stands/stand-05-unico.png';
   import Stand7 from '@/assets/img/stands/stand-07-buro-de-credito.png';
   import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
+  import Stand8 from '@/assets/img/stands/stand-08-japifon.png';
   import Stand10 from '@/assets/img/stands/stand-10-efisys.png';
   import Stand11 from '@/assets/img/stands/stand-11-y-&-g.png';
   import Stand14 from '@/assets/img/stands/stand-14-hr-ratings.png';
+  
   // import StandBonsaif from '@/assets/img/stands/stand-bonsaif.png';
   
 
@@ -59,12 +61,12 @@ const stands = ref([
     nombre: "Buro de Crédito",
     titulo: "Buro de Crédito"
   },
-  // {
-  //   id: 8,
-  //   imagen: Stand1,
-  //   nombre: "Mc Kroupenky",
-  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
-  // },
+  {
+    id: 8,
+    imagen: Stand8,
+    nombre: "Japifon",
+    titulo: "Japifon"
+  },
   {
     id: 9,
     imagen: Stand9,
