@@ -46,7 +46,7 @@
               </div>
               <!-- Mostrar reparto si existe -->
               <div v-if="programa1.reparto" class="mt-4">
-                  <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa1.reparto" :key="key">
+                  <div class="grid grid-cols-6 gap-3 mb-3 font-raleway items-center" v-for="(ponente, key) in programa1.reparto" :key="key">
                     <p class="col-span-4">{{ ponente.nombre }} <br>
                       <a
                         v-if="ponente.enlace"
@@ -85,9 +85,9 @@
               </div>
               <!-- Mostrar reparto si existe -->
               <div v-if="programa2.reparto" class="mt-4">
-                  <div class="grid grid-cols-6 gap-3 font-raleway items-center" v-for="(ponente, key) in programa2.reparto" :key="key">
-                    <p class="col-span-4">{{ ponente.nombre }}<br>
-                    <a
+                  <div class="grid grid-cols-6 gap-3 mb-3 font-raleway items-center" v-for="(ponente, key) in programa2.reparto" :key="key">
+                    <p class="col-span-4">{{ ponente.nombre }} <br>
+                      <a
                         v-if="ponente.enlace"
                         :href="ponente.enlace"
                         target="_blank"
@@ -95,9 +95,8 @@
                         class="text-xs underline"
                       >
                         Ver Semblanza
-                      </a>
-                    </p>
-                    <p class="col-span-2 text-xs">{{ ponente.sofipo }}</p>
+                      </a></p>
+                    <p class="col-span-2">{{ ponente.sofipo }}</p>
                   </div>
               </div>
             </div>
@@ -155,19 +154,23 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Dr. Edgar Amador Zamora",
+        nombre: "Dr. Alfredo Navarrete Martínez",
+        enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
         sofipo: "SHCP"
       },
       ponete2: {
         nombre: "Dr. Jesús De la Fuente Rodríguez",
+        enlace: '../semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf',
         sofipo: "CNBV"
       },
       ponete3: {
         nombre: "Dra. Galia Borja Gómez",
+        enlace: '../semblanzas/AMS_semblanza_Galia_Borja.pdf',
         sofipo: "BANXICO"
       },
       ponete4: {
         nombre: "Lic. Oscar Rosado Jiménez",
+        enlace: "../semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
         sofipo: "CONDUSEF"
       },
       ponete5: {
@@ -179,7 +182,7 @@ const programaDia1 = ref([
   },
   {
     id: 5,
-    horario: "15:00 - 16:00",
+    horario: "15:45 - 16:00",
     actividad: "Receso",
     name: "",
     title: "",
@@ -188,8 +191,15 @@ const programaDia1 = ref([
     id: 6,
     horario: "16:00 - 17:00",
     actividad: "El Valor de la Confianza en la era digital",
-    name: "Conferencista",
-    title: ""
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dr. José Antonio Lozano",
+        enlace: "",
+        sofipo: "IPADE"
+      }
+    }
   },
   {
     id: 7,
@@ -199,19 +209,25 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Altagracia Gómez",
+        // nombre: "Altagracia Gómez",
+        nombre: "",
+        enlace: "",
         sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
-        nombre: "Dr. Alfredo Navarrete",
+        nombre: "Mtra. Karina Villanueva",
+        enlace: '',
         sofipo: "UBVA"
       },
       ponete3: {
-        nombre: "Vidal Llerenas",
+        // nombre: "Vidal Llerenas",
+        nombre: "",
+        enlace: "",
         sofipo: "Sría. Economía"
       },
       ponete4: {
         nombre: "Alicia Salgado",
+        enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
         sofipo: "Moderador"
       }
     }
@@ -219,7 +235,6 @@ const programaDia1 = ref([
   {
     id: 8,
     horario: "17:40 - 18:10",
-    // actividad: "Panel: Mujeres en Confianza",
     actividad: "",
     name: "Presentación de Convenio de apoyo a PYMEs con Secretaría de Economía y anuncio del programa de garantías con NAFIN",
     title: "",
@@ -233,9 +248,9 @@ const programaDia1 = ref([
   },
   {
     id: 9,
-    horario: "19:00 - 24:00",
-    actividad: "Cóctel de bienvenida",
-    name: "Drink & Talk Mujeres en el sector financiero",
+    horario: "18:10 - 18:40",
+    actividad: "",
+    name: "Red de mujeres en el sector financiero",
     title: "",
     reparto: {
       ponete1: {
@@ -243,9 +258,25 @@ const programaDia1 = ref([
         enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMSOFIPO"
       },
+    }
+  },
+  {
+    id: 10,
+    horario: "19:30 - 24:00",
+    actividad: "Coctel de bienvenida",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        enlace: '',
+        sofipo: ""
+      },
       ponete2: {
-        nombre: "Regina García Cuellar",
-        sofipo: "ABM"
+        // nombre: "Regina García Cuellar",
+        nombre: "",
+        enlace: "",
+        sofipo: ""
       },
     }
   }
@@ -270,7 +301,8 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Graciela Márquez",
+        nombre: "Dr. Mauricio Rodríguez Abreu",
+        enlace: "../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
         sofipo: "INEGI"
       },
     }
@@ -284,11 +316,19 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Act. Alán Elizondo",
+        enlace: "",
         sofipo: "FIRA"
       },
       ponete2: {
-        nombre: "Mtro. Javier Vázquez",
+        // nombre: "Mtro. Javier Vázquez",
+        nombre: "",
+        enlace: "",
         sofipo: "Nafin"
+      },
+      ponete3: {
+        nombre: "Alicia Salgado",
+        enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        sofipo: "Moderador"
       },
     }
   },
@@ -314,28 +354,19 @@ const programaDia2 = ref([
   {
     id: 5,
     horario: "11:10 - 12:00",
-    actividad: "Panel: Las SOFIPOS fortaleciendo el ecosistema para las PYMME",
+    actividad: "Avances y retos en la Digitalización de servicios financieros",
     name: "",
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Carlos Marmolejo",
-        nombre: "",
-        enlace: "",
-        // sofipo: "Finsus"
-        sofipo: ""
+        nombre: "Dra. Lucia Buenrostro",
+        enlace: '../semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
+        sofipo: "CNBV"
       },
       ponete2: {
-        nombre: "Rafael Nieves",
-        sofipo: "Capital Activo"
-      },
-      ponete3: {
-        nombre: "Alejandro Toubeth",
-        sofipo: "Xepelin"
-      },
-      ponete4: {
-        nombre: "Sebastián Estrada",
-        sofipo: "Moderador"
+        nombre: "",
+        enlace: "",
+        sofipo: ""
       }
     }
   },
@@ -348,19 +379,24 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Dr. Othón Moreno",
+        enlace: '../semblanzas/AMS_semblanza_Othon_Moreno.pdf',
         sofipo: "Banxico"
       },
       ponete2: {
-        nombre: "José Merino",
+        // nombre: "José Merino",
+        nombre: "",
+        enlace: "",
         sofipo: "Agencia Digital"
       },
       ponete3: {
-        nombre: "Mary Pilly Loo",
+        // nombre: "Mary Pilly Loo",
+        nombre: "",
+        enlace: "",
         sofipo: "CNBV"
       },
       ponete4: {
-        nombre: "",
-        enlace: "",
+        nombre: "Jeanette Leyva",
+        enlace: '../semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
         sofipo: "Moderador"
       }
     }
@@ -388,13 +424,13 @@ const programaDia2 = ref([
     id: 8,
     horario: "13:20 - 14:00",
     actividad: "Uso de IA para el fortalecimiento de la Infraestructura tecnológica",
-    name: "Oracle",
+    name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "",
+        nombre: "Manuel Contreras Rico",
         enlace: "",
-        sofipo: ""
+        sofipo: "Oracle"
       },
       ponete2: {
         nombre: "",
@@ -425,19 +461,40 @@ const programaDia2 = ref([
   {
     id: 10,
     horario: "15:30 - 16:10",
-    actividad: "Avances y retos en la Digitalización de servicios financieros",
-    name: "Dra. Lucia Buenrostro",
+    actividad: "Panel: Las SOFIPOS fortaleciendo el ecosistema para las PYMME",
+    name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "",
-        enlace: "",
-        sofipo: ""
+        nombre: "Carlos Marmolejo",
+        enlace: "../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+        sofipo: "Finsus"
       },
       ponete2: {
+        // nombre: "Rafael Nieves",
         nombre: "",
         enlace: "",
-        sofipo: ""
+        sofipo: "Capital Activo"
+      },
+      ponete3: {
+        nombre: "Alejandro Toiber",
+        enlace: "../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
+        sofipo: "Xepelin"
+      },
+      ponete4: {
+        nombre: "Oscar Salcedo Yúdico",
+        enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
+        sofipo: "ASP Integra Opciones"
+      },
+      ponete5: {
+        nombre: "Edgar Guerrero",
+        enlace: '',
+        sofipo: "Bienestar"
+      },
+      ponete6: {
+        nombre: "Marcela Galicia",
+        enlace: "",
+        sofipo: "Moderador"
       }
     }
   },
@@ -450,24 +507,21 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Stefhan Muller",
+        enlace: "",
         sofipo: "Klar"
       },
       ponete2: {
         nombre: "Juan Francisco Fernández",
+        enlace: "../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
         sofipo: "Crediclub"
       },
       ponete3: {
-        // nombre: "Marlene Garayzar",
-        nombre: "",
-        enlace: "",
-        sofipo: "Stori"
-      },
-      ponete4: {
-        nombre: "Diego Paires",
+        nombre: "Juan Pablo Zorrilla",
+        enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
         sofipo: "SAE"
       },
-      ponete5: {
-        nombre: "",
+      ponete4: {
+        nombre: "Marco Antonio Mares",
         enlace: "",
         sofipo: "Moderador"
       }
@@ -495,24 +549,29 @@ const programaDia2 = ref([
   {
     id: 13,
     horario: "17:20 - 18:00",
-    actividad: "Panel: La Supervisión, diferenciador de las SOFIPOS",
+    actividad: "Panel: Los tres pilares de la regulación de las SOFIPOS",
     name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Aurora Cervantes",
+        nombre: "Aurora Cervantes Martínez",
+        enlace: '../semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
         sofipo: "CNBV"
       },
       ponete2: {
         nombre: "Elizabeth Noriega",
-        sofipo: "Condusef"
+        enlace: '../semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+        sofipo: "CONDUSEF"
       },
-      ponete2: {
-        nombre: "Viviana Garza",
+      ponete3: {
+        // nombre: "Viviana Garza",
+        nombre: "",
+        enlace: "",
         sofipo: "Banxico"
       },
-      ponete2: {
-        nombre: "Jeanette Leyva “El Financiero”",
+      ponete4: {
+        nombre: "Roberto Lazzeri",
+        enlace: "",
         sofipo: "Moderador"
       }
     }
@@ -527,15 +586,19 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "David Romero Morfin",
+        nombre: "Marlene Garayzar",
+        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMSOFIPO"
       },
       ponete2: {
         nombre: "Act. Alán Elizondo",
+        enlace: "",
         sofipo: "FIRA"
       },
       ponete3: {
-        nombre: "Mto. Javier Vázquez",
+        // nombre: "Mto. Javier Vázquez",
+        nombre: "",
+        enlace: "",
         sofipo: "Nafin"
       }
     }

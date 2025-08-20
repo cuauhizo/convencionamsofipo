@@ -8,10 +8,14 @@
       </div>
       <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <div
-          v-for="ponente in ponentes"
+          v-for="(ponente, index) in ponentes"
           :key="ponente.id"
           :id="`ponente-${ponente.id}`"
-          class="max-w-[276px] rounded-2xl bg-perfil p-6 text-center shadow-lg"
+          class="max-w-[230px] rounded-2xl bg-perfil p-6 text-center shadow-lg flex flex-col justify-between"
+          :class="{
+            'transform lg:-translate-y-5': index % 2 === 0,
+            'transform lg:translate-y-5': index % 2 !== 0
+          }"
         >
           <h3 class="text-sm">{{ ponente.nombre }}</h3>
           <img
@@ -42,13 +46,28 @@
 <script setup>
   import { ref } from 'vue'
   import Marlene_Garayza from '@/assets/img/ponentes/Marlene_Garayzar.png';
-  import David_Romero from '@/assets/img/ponentes/David_Romero.png';
+  // import David_Romero from '@/assets/img/ponentes/David_Romero.png';
   import Juan_Francisco_Fernandez from '@/assets/img/ponentes/Juan_Francisco_Fernandez.png';
   import Alejandro_Toiber from '@/assets/img/ponentes/Alejandro_Toiber.png';
   import Oscar_Rosado from '@/assets/img/ponentes/Oscar_Rosado.png';
   import Manuel_Contreras from '@/assets/img/ponentes/Manuel_Contreras.png';
   import Alan_Elizondo from '@/assets/img/ponentes/Alan_Elizondo.png';
-  
+  import Carlos_Marmolejo from '@/assets/img/ponentes/Carlos_Marmolejo.png';
+  import Marcela_Galicia from '@/assets/img/ponentes/Marcela_Galicia.png';
+  import Mauricio_Rodriguez from '@/assets/img/ponentes/Mauricio_Rodriguez.png';
+  import Jesus_de_la_Fuente from '@/assets/img/ponentes/Jesus_de_la_Fuente.png';
+  import Marco_Antonio_Mares from '@/assets/img/ponentes/Marco_Antonio_Mares.png';
+  import Alfredo_Navarrete from '@/assets/img/ponentes/Alfredo_Navarrete.png';
+  import Galia_Borja_Gomez from '@/assets/img/ponentes/Galia_Borja_gomez.png';
+  import Juan_Pablo_Zorrilla from '@/assets/img/ponentes/Juan_Pablo_Zorrilla.png';
+  import Oscar_Salcedo from '@/assets/img/ponentes/Oscar_Salcedo.png';
+  import Jose_Antonio_Lozano from '@/assets/img/ponentes/Jose_Antonio_Lozano.png';
+  import Alicia_Salgado from '@/assets/img/ponentes/Alicia_Salgado.png';
+  import Aurora_Cervantes from '@/assets/img/ponentes/Aurora_Cervantes.png';
+  import Jeanette_Leyva from '@/assets/img/ponentes/Jeanette_Leyva.png';
+  import Lucia_Buenrostro from '@/assets/img/ponentes/Lucia_Buenrostro.png';
+  import Othon_Moreno from '@/assets/img/ponentes/Othon_Moreno.png';
+  import Elizabeth_Noriega from '@/assets/img/ponentes/Elizabeth_Noriega.png';
 
   const ponentes = ref([
     {
@@ -58,13 +77,13 @@
       descripcion: 'Presidenta de AMS',
       enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
     },
-    {
-      id: 2,
-      nombre: 'David Romero',
-      imagen: David_Romero,
-      descripcion: 'Vicepresidente de AMS',
-      enlace: '../semblanzas/AMS_semblanza_David_Romero.pdf'
-    },
+    // {
+    //   id: 2,
+    //   nombre: 'David Romero',
+    //   imagen: David_Romero,
+    //   descripcion: 'Vicepresidente de AMS',
+    //   enlace: '../semblanzas/AMS_semblanza_David_Romero.pdf'
+    // },
     {
       id: 3,
       nombre: 'Juan Francisco Fernández',
@@ -99,7 +118,121 @@
       imagen: Alan_Elizondo,
       descripcion: 'Director General de FIRA',
       enlace: '../semblanzas/AMS_semblanza_Alan_Elizondo.pdf'
+    },
+    {
+      id: 8,
+      nombre: 'Carlos Marmolejo',
+      imagen: Carlos_Marmolejo,
+      descripcion: 'CEO de FINSUS',
+      enlace: '../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf'
+    },
+    {
+      id: 9,
+      nombre: 'Marcela Galicia',
+      imagen: Marcela_Galicia,
+      descripcion: 'Directora Senior De Instituciones Financieras No Bancarias En Fitch Ratings',
+      enlace: '../semblanzas/AMS_semblanza_Marcela_Galicia.pdf'
+    },
+    {
+      id: 10,
+      nombre: 'Mauricio Rodríguez',
+      imagen: Mauricio_Rodriguez,
+      descripcion: 'Titular De La Unidad De Estadísticas Sociodemográficas',
+      enlace: '../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf'
+    },
+    {
+      id: 11,
+      nombre: 'Jesús de la Fuente',
+      imagen: Jesus_de_la_Fuente,
+      descripcion: 'Presidente de la CNBV',
+      enlace: '../semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf'
+    },
+    {
+      id: 12,
+      nombre: 'Marco Antonio Mares',
+      imagen: Marco_Antonio_Mares,
+      descripcion: 'Periodista',
+      enlace: '../semblanzas/AMS_semblanza_Marco_Antonio_Mares.pdf'
+    },
+    {
+      id: 13,
+      nombre: 'Alfredo Navarrete',
+      imagen: Alfredo_Navarrete,
+      descripcion: 'Titular de la unidad de banca, valores y ahorro de la SHCP',
+      enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf'
+    },
+    {
+      id: 14,
+      nombre: 'Galia Borja Gómez',
+      imagen: Galia_Borja_Gomez,
+      descripcion: 'Subgobernadora Del Banco De México',
+      enlace: '../semblanzas/AMS_semblanza_Galia_Borja.pdf'
+    },
+    {
+      id: 15,
+      nombre: 'Oscar Salcedo',
+      imagen: Oscar_Salcedo,
+      descripcion: 'Director General Adjunto de ASP Integra Opciones',
+      enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf'
+    },
+    {
+      id: 16,
+      nombre: 'Juan Pablo Zorrilla',
+      imagen: Juan_Pablo_Zorrilla,
+      descripcion: 'Co-Fundador y Co-CEO de Bravo',
+      enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf'
+    },
+    {
+      id: 17,
+      nombre: 'José Antonio Lozano',
+      imagen: Jose_Antonio_Lozano,
+      descripcion: 'Conferencista',
+      enlace: '../semblanzas/AMS_semblanza_Jose_Antonio_Lozano.pdf'
+    },
+    {
+      id: 18,
+      nombre: 'Alicia Salgado',
+      imagen: Alicia_Salgado,
+      descripcion: 'Periodista',
+      enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf'
+    },
+    {
+      id: 19,
+      nombre: 'Aurora Cervantes Martínez',
+      imagen: Aurora_Cervantes,
+      descripcion: 'Vicepresidenta de Normatividad',
+      enlace: '../semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf'
+    },
+    {
+      id: 20,
+      nombre: 'Jeanette Leyva',
+      imagen: Jeanette_Leyva,
+      descripcion: 'Periodista',
+      enlace: '../semblanzas/AMS_semblanza_Jeanette_Leyva.pdf'
+    },
+    {
+      id: 21,
+      nombre: 'Lucía Buenrostro',
+      imagen: Lucia_Buenrostro,
+      descripcion: 'Vicepresidenta de Política Regulatoria en la Comisión Nacional Bancaria y de Valores',
+      enlace: '../semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf'
+    },
+    {
+      id: 22,
+      nombre: 'Othón Moreno',
+      imagen: Othon_Moreno,
+      descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
+      enlace: '../semblanzas/AMS_semblanza_Othon_Moreno.pdf'
+    },
+    {
+      id: 23,
+      nombre: 'Elizabeth Noriega',
+      imagen: Elizabeth_Noriega,
+      descripcion: 'Vicepresidenta Jurídica de CONDUSEF',
+      enlace: '../semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf'
     }
+
+
     // {
     //   id: 5,
     //   nombre: 'Otro Ponente',
@@ -108,6 +241,7 @@
     //   enlace: 'https://ejemplo.com/semblanza-otro'
     // }
   ])
+
 </script>
 
 

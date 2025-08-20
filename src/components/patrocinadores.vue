@@ -34,6 +34,7 @@
 
 <script setup>
   import { ref } from 'vue'
+  import fimpe from '@/assets/img/patrocinadores/fimpe.png';
   // import bajaware from '@/assets/img/patrocinadores/bajaware.png';
   import circulo_de_credito from '@/assets/img/patrocinadores/circulo_de_credito.png';
   import gmc360 from '@/assets/img/patrocinadores/gmc360.png';
@@ -48,8 +49,12 @@
   // import tecreo from '@/assets/img/patrocinadores/tecreo.png';
   import y_g from '@/assets/img/patrocinadores/y&g.png';
   import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.png';
+  import bonsaif from '@/assets/img/patrocinadores/bonsaif.png';
+  import japifon from '@/assets/img/patrocinadores/japifon.png';
+  
 
   const patrocinadores = ref([
+    { id: 1, url: 'https://fimpe.org/', src: fimpe, alt: 'Fimpe' },
     // { id: 1, url: '#', src: bajaware, alt: 'bajaware' },
     { id: 2, url: 'https://www.circulodecredito.com.mx/home', src: circulo_de_credito, alt: 'Circulo de Crédito' },
     { id: 3, url: 'https://www.gmc360.com.mx/', src: gmc360, alt: 'GMC360' },
@@ -64,6 +69,8 @@
     { id: 12, url: 'https://ygconsultores.com.mx/', src: y_g, alt: 'Y&G' },
     // { id: 13, url: '#', src: y_g, alt: 'y_g' },
     { id: 14, url: 'https://www.hrratings.com/', src: hr_ratings, alt: 'HR Ratings' },
+    { id: 15, url: 'https://bonsaif.com/', src: bonsaif, alt: 'Bonsaif' },
+    { id: 16, url: 'https://japifon.com/', src: japifon, alt: 'Japifon' }
   ])
 </script>
 

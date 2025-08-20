@@ -1,26 +1,30 @@
 <script setup>
   import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue';
-  import Stand1 from '@/assets/img/Stand1.png';
+  import Stand1 from '@/assets/img/Stands/stand-01-fimpe.png';
   import Stand2 from '@/assets/img/stands/stand-02-preven.png';
   import Stand3 from '@/assets/img/stands/stand-03-gmc360.png';
   import Stand5 from '@/assets/img/stands/stand-05-unico.png';
   import Stand7 from '@/assets/img/stands/stand-07-buro-de-credito.png';
   import Stand9 from '@/assets/img/stands/stand-09-circulo-de-credito.png';
+  import Stand8 from '@/assets/img/stands/stand-08-japifon.png';
   import Stand10 from '@/assets/img/stands/stand-10-efisys.png';
   import Stand11 from '@/assets/img/stands/stand-11-y-&-g.png';
   import Stand14 from '@/assets/img/stands/stand-14-hr-ratings.png';
+  
+  // import StandBonsaif from '@/assets/img/stands/stand-bonsaif.png';
+  
 
   // carrusel
 
 // Normalmente, estos datos se obtendrían de una API o se pasarían como un `prop`,
 // pero para este ejemplo, los codificaremos aquí.
 const stands = ref([
-  // {
-  //   id: 1,
-  //   imagen: Stand1,
-  //   nombre: "Circulo de credito",
-  //   titulo: "Circulo de credito",
-  // },
+  {
+    id: 1,
+    imagen: Stand1,
+    nombre: "Fimpe",
+    titulo: "Fimpe",
+  },
   {
     id: 2,
     imagen: Stand2,
@@ -57,12 +61,12 @@ const stands = ref([
     nombre: "Buro de Crédito",
     titulo: "Buro de Crédito"
   },
-  // {
-  //   id: 8,
-  //   imagen: Stand1,
-  //   nombre: "Mc Kroupenky",
-  //   titulo: "Estratega de Mercadotecnia y líder empresarial"
-  // },
+  {
+    id: 8,
+    imagen: Stand8,
+    nombre: "Japifon",
+    titulo: "Japifon"
+  },
   {
     id: 9,
     imagen: Stand9,
@@ -99,6 +103,12 @@ const stands = ref([
     nombre: "Y&g",
     titulo: "Y&g"
   },
+  // {
+  //   id: 15,
+  //   imagen: StandBonsaif,
+  //   nombre: "Bonsaif",
+  //   titulo: "Bonsaif"
+  // },
 ]);
 
 // --- Estado y Lógica del Carrusel ---
@@ -271,7 +281,7 @@ onUnmounted(() => {
               <div
                 v-for="stand in stands"
                 :key="stand.id"
-                class="stand-card flex-shrink-0 h-auto w-full md:w-auto xl:max-w-[388px] px-4"
+                class="stand-card flex-shrink-0 h-auto w-full md:w-auto xl:max-w-[278px] px-4"
                 :class="{ 'animate-fade': currentIndex === stands.indexOf(stand) || currentIndex + 1 === stands.indexOf(stand) || currentIndex + 2 === stands.indexOf(stand) }"
               >
                 <div class="">
