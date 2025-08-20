@@ -62,8 +62,12 @@
   import Juan_Pablo_Zorrilla from '@/assets/img/ponentes/Juan_Pablo_Zorrilla.png';
   import Oscar_Salcedo from '@/assets/img/ponentes/Oscar_Salcedo.png';
   import Jose_Antonio_Lozano from '@/assets/img/ponentes/Jose_Antonio_Lozano.png';
-
-  // enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
+  import Alicia_Salgado from '@/assets/img/ponentes/Alicia_Salgado.png';
+  import Aurora_Cervantes from '@/assets/img/ponentes/Aurora_Cervantes.png';
+  import Jeanette_Leyva from '@/assets/img/ponentes/Jeanette_Leyva.png';
+  import Lucia_Buenrostro from '@/assets/img/ponentes/Lucia_Buenrostro.png';
+  import Othon_Moreno from '@/assets/img/ponentes/Othon_Moreno.png';
+  import Elizabeth_Noriega from '@/assets/img/ponentes/Elizabeth_Noriega.png';
 
   const ponentes = ref([
     {
@@ -180,10 +184,52 @@
     },
     {
       id: 17,
-      nombre: 'Jose Antonio Lozano',
+      nombre: 'José Antonio Lozano',
       imagen: Jose_Antonio_Lozano,
       descripcion: 'Conferencista',
       enlace: '../semblanzas/AMS_semblanza_Jose_Antonio_Lozano.pdf'
+    },
+    {
+      id: 18,
+      nombre: 'Alicia Salgado',
+      imagen: Alicia_Salgado,
+      descripcion: 'Periodista',
+      enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf'
+    },
+    {
+      id: 19,
+      nombre: 'Aurora Cervantes Martínez',
+      imagen: Aurora_Cervantes,
+      descripcion: 'Vicepresidenta de Normatividad',
+      enlace: '../semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf'
+    },
+    {
+      id: 20,
+      nombre: 'Jeanette Leyva',
+      imagen: Jeanette_Leyva,
+      descripcion: 'Periodista',
+      enlace: '../semblanzas/AMS_semblanza_Jeanette_Leyva.pdf'
+    },
+    {
+      id: 21,
+      nombre: 'Lucía Buenrostro',
+      imagen: Lucia_Buenrostro,
+      descripcion: 'Vicepresidenta de Política Regulatoria en la Comisión Nacional Bancaria y de Valores',
+      enlace: '../semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf'
+    },
+    {
+      id: 22,
+      nombre: 'Othón Moreno',
+      imagen: Othon_Moreno,
+      descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
+      enlace: '../semblanzas/AMS_semblanza_Othon_Moreno.pdf'
+    },
+    {
+      id: 23,
+      nombre: 'Elizabeth Noriega',
+      imagen: Elizabeth_Noriega,
+      descripcion: 'Vicepresidenta Jurídica de CONDUSEF',
+      enlace: '../semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf'
     }
 
 

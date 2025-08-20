@@ -279,7 +279,7 @@ onUnmounted(() => {
               <div
                 v-for="stand in stands"
                 :key="stand.id"
-                class="stand-card flex-shrink-0 h-auto w-full md:w-auto xl:max-w-[388px] px-4"
+                class="stand-card flex-shrink-0 h-auto w-full md:w-auto xl:max-w-[278px] px-4"
                 :class="{ 'animate-fade': currentIndex === stands.indexOf(stand) || currentIndex + 1 === stands.indexOf(stand) || currentIndex + 2 === stands.indexOf(stand) }"
               >
                 <div class="">

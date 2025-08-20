@@ -123,6 +123,13 @@ const openTab = (tabName) => {
   activeTab.value = tabName;
 };
 
+  
+  
+  
+  
+  
+  
+
 // Miércoles 3 de Septiembre
 const programaDia1 = ref([
   {
@@ -191,8 +198,15 @@ const programaDia1 = ref([
     id: 6,
     horario: "16:00 - 17:00",
     actividad: "El Valor de la Confianza en la era digital",
-    name: "Conferencista",
-    title: ""
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dr. José Antonio Lozano",
+        enlace: "",
+        sofipo: "IPADE"
+      }
+    }
   },
   {
     id: 7,
@@ -208,8 +222,8 @@ const programaDia1 = ref([
         sofipo: "Consejo Asesor Empresarial "
       },
       ponete2: {
-        nombre: "Dr. Alfredo Navarrete Martínez",
-        enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
+        nombre: "Mtra. Karina Villanueva",
+        enlace: '',
         sofipo: "UBVA"
       },
       ponete3: {
@@ -219,9 +233,8 @@ const programaDia1 = ref([
         sofipo: "Sría. Economía"
       },
       ponete4: {
-        // nombre: "Alicia Salgado",
-        nombre: "",
-        enlace: "",
+        nombre: "Alicia Salgado",
+        enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
         sofipo: "Moderador"
       }
     }
@@ -229,7 +242,6 @@ const programaDia1 = ref([
   {
     id: 8,
     horario: "17:40 - 18:10",
-    // actividad: "Panel: Mujeres en Confianza",
     actividad: "",
     name: "Presentación de Convenio de apoyo a PYMEs con Secretaría de Economía y anuncio del programa de garantías con NAFIN",
     title: "",
@@ -244,9 +256,8 @@ const programaDia1 = ref([
   {
     id: 9,
     horario: "18:10 - 18:40",
-    // actividad: "Panel: Mujeres en Confianza",
     actividad: "",
-    name: "Mujeres en el sector financiero",
+    name: "Red de mujeres en el sector financiero",
     title: "",
     reparto: {
       ponete1: {
@@ -259,20 +270,20 @@ const programaDia1 = ref([
   {
     id: 10,
     horario: "19:30 - 24:00",
-    actividad: "Cóctel de bienvenida",
-    name: "Drink & Talk Mujeres en el sector financiero",
+    actividad: "Coctel de bienvenida",
+    name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Marlene Garayzar",
-        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
-        sofipo: "AMSOFIPO"
+        nombre: "",
+        enlace: '',
+        sofipo: ""
       },
       ponete2: {
         // nombre: "Regina García Cuellar",
         nombre: "",
         enlace: "",
-        sofipo: "ABM"
+        sofipo: ""
       },
     }
   }
@@ -297,7 +308,7 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Mauricio Rodríguez",
+        nombre: "Dr. Mauricio Rodríguez Abreu",
         enlace: "../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
         sofipo: "INEGI"
       },
@@ -320,6 +331,11 @@ const programaDia2 = ref([
         nombre: "",
         enlace: "",
         sofipo: "Nafin"
+      },
+      ponete3: {
+        nombre: "Alicia Salgado",
+        enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        sofipo: "Moderador"
       },
     }
   },
@@ -345,36 +361,19 @@ const programaDia2 = ref([
   {
     id: 5,
     horario: "11:10 - 12:00",
-    actividad: "Panel: Las SOFIPOS fortaleciendo el ecosistema para las PYMME",
+    actividad: "Avances y retos en la Digitalización de servicios financieros",
     name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Carlos Marmolejo",
-        enlace: "../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
-        sofipo: "Finsus"
+        nombre: "Dra. Lucia Buenrostro",
+        enlace: '../semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
+        sofipo: "CNBV"
       },
       ponete2: {
-        // nombre: "Rafael Nieves",
         nombre: "",
         enlace: "",
-        sofipo: "Capital Activo"
-      },
-      ponete3: {
-        nombre: "Alejandro Toiber",
-        enlace: "../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
-        sofipo: "Xepelin"
-      },
-      ponete4: {
-        nombre: "Oscar Salcedo Yúdico",
-        enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
-        sofipo: "ASP Integra Opciones"
-      },
-      ponete5: {
-        // nombre: "Sebastián Estrada",
-        nombre: "",
-        enlace: "",
-        sofipo: "Moderador"
+        sofipo: ""
       }
     }
   },
@@ -386,9 +385,8 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Dr. Othón Moreno",
-        nombre: "",
-        enlace: "",
+        nombre: "Dr. Othón Moreno",
+        enlace: '../semblanzas/AMS_semblanza_Othon_Moreno.pdf',
         sofipo: "Banxico"
       },
       ponete2: {
@@ -404,8 +402,8 @@ const programaDia2 = ref([
         sofipo: "CNBV"
       },
       ponete4: {
-        nombre: "",
-        enlace: "",
+        nombre: "Jeanette Leyva",
+        enlace: '../semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
         sofipo: "Moderador"
       }
     }
@@ -470,20 +468,40 @@ const programaDia2 = ref([
   {
     id: 10,
     horario: "15:30 - 16:10",
-    actividad: "Avances y retos en la Digitalización de servicios financieros",
-    // name: "Dra. Lucia Buenrostro",
+    actividad: "Panel: Las SOFIPOS fortaleciendo el ecosistema para las PYMME",
     name: "",
     title: "",
     reparto: {
       ponete1: {
-        nombre: "",
-        enlace: "",
-        sofipo: ""
+        nombre: "Carlos Marmolejo",
+        enlace: "../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+        sofipo: "Finsus"
       },
       ponete2: {
+        // nombre: "Rafael Nieves",
         nombre: "",
         enlace: "",
-        sofipo: ""
+        sofipo: "Capital Activo"
+      },
+      ponete3: {
+        nombre: "Alejandro Toiber",
+        enlace: "../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
+        sofipo: "Xepelin"
+      },
+      ponete4: {
+        nombre: "Oscar Salcedo Yúdico",
+        enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
+        sofipo: "ASP Integra Opciones"
+      },
+      ponete5: {
+        nombre: "Edgar Guerrero",
+        enlace: '',
+        sofipo: "Bienestar"
+      },
+      ponete6: {
+        nombre: "Marcela Galicia",
+        enlace: "",
+        sofipo: "Moderador"
       }
     }
   },
@@ -495,8 +513,7 @@ const programaDia2 = ref([
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Stefhan Muller",
-        nombre: "",
+        nombre: "Stefhan Muller",
         enlace: "",
         sofipo: "Klar"
       },
@@ -505,18 +522,12 @@ const programaDia2 = ref([
         enlace: "../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
         sofipo: "Crediclub"
       },
-      ponete4: {
-        // nombre: "Diego Paires",
-        nombre: "",
-        enlace: "",
-        sofipo: "SAE"
-      },
-      ponete5: {
+      ponete3: {
         nombre: "Juan Pablo Zorrilla",
         enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
         sofipo: "SAE"
       },
-      ponete6: {
+      ponete4: {
         nombre: "Marco Antonio Mares",
         enlace: "",
         sofipo: "Moderador"
@@ -545,31 +556,28 @@ const programaDia2 = ref([
   {
     id: 13,
     horario: "17:20 - 18:00",
-    actividad: "Panel: La Supervisión, diferenciador de las SOFIPOS",
+    actividad: "Panel: Los tres pilares de la regulación de las SOFIPOS",
     name: "",
     title: "",
     reparto: {
       ponete1: {
-        // nombre: "Aurora Cervantes",
-        nombre: "",
-        enlace: "",
+        nombre: "Aurora Cervantes Martínez",
+        enlace: '../semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
         sofipo: "CNBV"
       },
       ponete2: {
-        // nombre: "Elizabeth Noriega",
-        nombre: "",
-        enlace: "",
-        sofipo: "Condusef"
+        nombre: "Elizabeth Noriega",
+        enlace: '../semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+        sofipo: "CONDUSEF"
       },
-      ponete2: {
+      ponete3: {
         // nombre: "Viviana Garza",
         nombre: "",
         enlace: "",
         sofipo: "Banxico"
       },
-      ponete2: {
-        // nombre: "Jeanette Leyva “El Financiero”",
-        nombre: "",
+      ponete4: {
+        nombre: "Roberto Lazzeri",
         enlace: "",
         sofipo: "Moderador"
       }
