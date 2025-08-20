@@ -4,7 +4,7 @@ import Hero from '@/components/hero.vue'
 import Patrocinadores from '@/components/patrocinadores.vue'
 import Ponentes from '@/components/ponentes.vue'
 import Programa from '@/components/programa.vue'
-import StandsCopy from '@/components/stands_copy.vue'
+import Stands from '@/components/stands.vue'
 import Sede from '@/components/sede.vue'
 
 
@@ -34,6 +34,6 @@ useHead({
   <Patrocinadores/>
   <Ponentes/>
   <Programa/>
-  <StandsCopy/>
+  <Stands/>
   <Sede/>
 </template>

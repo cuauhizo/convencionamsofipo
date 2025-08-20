@@ -1,188 +1,153 @@
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue';
-import Stand1 from '@/assets/img/Stand1.png';
-import Stand2 from '@/assets/img/bg-programa.png';
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue';
+import { stands } from '@/data/stands.js';
 
-// Datos de los stands (duplicamos los elementos para el efecto infinito)
-const stands = ref([
-  {
-    id: 1,
-    imagen: Stand1,
-    nombre: "Circulo de credito",
-    titulo: "Circulo de credito",
-  },
-  {
-    id: 2,
-    imagen: Stand1,
-    nombre: "Bajaware",
-    titulo: "Bajaware"
-  },
-  {
-    id: 3,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 4,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 5,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 6,
-    imagen: Stand1,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  },
-  {
-    id: 7,
-    imagen: Stand2,
-    nombre: "Mc Kroupenky",
-    titulo: "Estratega de Mercadotecnia y líder empresarial"
-  }
-]);
+const getImageUrl = (imageName) => {
+  return new URL(`../assets/img/stands/${imageName}`, import.meta.url).href;
+};
 
-// Duplicamos los stands para el efecto infinito
-const duplicatedStands = ref([...stands.value, ...stands.value]);
+// --- El resto de tu lógica de carrusel permanece intacta ---
+const currentIndex = ref(0);
+const carouselTrack = ref(null);  
+const cardWidth = ref(0);
+const autoSlideInterval = ref(null);
 
-// Estado del carrusel
-const currentPosition = ref(0);
-const animationSpeed = ref(50); // Pixeles por segundo
-const isPaused = ref(false);
-const carouselRef = ref(null);
-const trackRef = ref(null);
-const animationFrame = ref(null);
-const lastTimestamp = ref(0);
+const visibleCards = computed(() => {
+  if (typeof window === 'undefined') return 3; // Valor por defecto para SSR
+  const width = window.innerWidth;
+  if (width >= 1024) return 3;
+  if (width >= 768) return 2;
+  return 1;
+});
 
-// Ancho de cada tarjeta (asumimos que todas tienen el mismo ancho)
-const cardWidth = ref(300); // Valor inicial, se actualiza en onMounted
+const maxIndex = computed(() => Math.max(0, stands.length - visibleCards.value));
 
-// Iniciar la animación
-const startAnimation = (timestamp) => {
-  if (!lastTimestamp.value) lastTimestamp.value = timestamp;
-  const deltaTime = timestamp - lastTimestamp.value;
-  lastTimestamp.value = timestamp;
+const transformStyle = computed(() => {
+  const offset = -currentIndex.value * cardWidth.value;
+  return `translateX(${offset}px)`;
+});
 
-  if (!isPaused.value) {
-    currentPosition.value -= (animationSpeed.value * deltaTime) / 1000;
-    
-    // Reiniciamos la posición cuando llegamos al final
-    if (Math.abs(currentPosition.value) >= trackRef.value.scrollWidth / 2) {
-      currentPosition.value = 0;
+const updateCarousel = () => {
+  nextTick(() => {
+    if (carouselTrack.value && carouselTrack.value.firstElementChild) {
+      cardWidth.value = carouselTrack.value.firstElementChild.offsetWidth;
     }
-    
-    trackRef.value.style.transform = `translateX(${currentPosition.value}px)`;
-  }
-  
-  animationFrame.value = requestAnimationFrame(startAnimation);
+  });
 };
 
-// Pausar/reanudar al interactuar
-const pauseAnimation = () => {
-  isPaused.value = true;
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % (maxIndex.value + 1);
+  resetAutoSlide();
 };
 
-const resumeAnimation = () => {
-  isPaused.value = false;
-  lastTimestamp.value = 0; // Resetear el timestamp para evitar saltos
+const prevSlide = () => {
+  currentIndex.value = (currentIndex.value - 1 + (maxIndex.value + 1)) % (maxIndex.value + 1);
+  resetAutoSlide();
 };
 
-// Actualizar el ancho de las tarjetas al montar
+const startAutoSlide = () => {
+  clearInterval(autoSlideInterval.value);
+  autoSlideInterval.value = setInterval(nextSlide, 3000); // 3 segundos
+};
+
+const resetAutoSlide = () => {
+  startAutoSlide();
+};
+
+const pauseAutoSlide = () => {
+  clearInterval(autoSlideInterval.value);
+};
+
 onMounted(() => {
-  if (trackRef.value && trackRef.value.firstElementChild) {
-    cardWidth.value = trackRef.value.firstElementChild.offsetWidth + 32; // +32 para el padding
-  }
-  animationFrame.value = requestAnimationFrame(startAnimation);
-  
-  // Actualizar en resize
+  setTimeout(() => {
+    updateCarousel();
+    startAutoSlide();
+  }, 300);
   window.addEventListener('resize', () => {
-    if (trackRef.value && trackRef.value.firstElementChild) {
-      cardWidth.value = trackRef.value.firstElementChild.offsetWidth + 32;
+    updateCarousel();
+    if (currentIndex.value > maxIndex.value) {
+      currentIndex.value = maxIndex.value;
     }
   });
 });
 
-// Limpiar al desmontar
 onUnmounted(() => {
-  cancelAnimationFrame(animationFrame.value);
-  window.removeEventListener('resize', () => {});
+  clearInterval(autoSlideInterval.value);
+  // Considera también remover el event listener de resize
 });
+
 </script>
 
 <template>
   <section id="section5" class="grid gap-5 items-center py-20 lg:grid-cols-2">
     <div class="px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
       <div class="grid grid-cols-1">
-        <div class="xl:max-w-[630px] xl:col-start-2">
-          <div class="">
+        <div class="xl:max-w-[636px] xl:col-start-2">
+          <div>
             <h2 class="titulo-seccion">Stands</h2>
-            <p class="titulo">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elitipsum.
-            </p>
-            <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button class="flex gap-2 rounded-full transition-all duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
-              Consulta aqui el mapa
-            </button>
+            <p class="titulo">¡Ubica los stands donde se encontrarán nuestros patrocinadores!</p>
+            <p class="mb-6">Conecta con proveedores que te ayudarán a llevar a tu empresa al siguiente nivel.</p>
+            <a
+              href="/mapa/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2"
+            >
+              Consulta aquí el mapa
+            </a>
           </div>
         </div>
       </div>
     </div>
-    
-    <div class="" data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
-      <div class="relative overflow-hidden">
+    <div data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
+      <div class="relative">
         <div
-          ref="carouselRef"
-          class="w-full"
-          @mouseenter="pauseAnimation"
-          @mouseleave="resumeAnimation"
+          id="carousel"
+          class="overflow-hidden relative"
+          @mouseenter="pauseAutoSlide"
+          @mouseleave="startAutoSlide"
         >
           <div
-            ref="trackRef"
-            class="flex w-max"
+            ref="carouselTrack"
+            id="stand-track"
+            class="flex transition-transform duration-500 ease-in-out"
+            :style="{ transform: transformStyle }"
           >
             <div
-              v-for="(stand, index) in duplicatedStands"
-              :key="`${stand.id}-${index}`"
-              class="stand-card flex-shrink-0 px-4"
-              :style="{ width: `${cardWidth}px` }"
+              v-for="stand in stands"
+              :key="stand.id"
+              class="stand-card flex-shrink-0 h-auto w-full md:w-1/2 lg:max-w-[278px] px-4"
             >
-              <div class="h-full">
+              <div>
                 <img
-                  :src="stand.imagen"
+                  :src="getImageUrl(stand.imagen)"
                   :alt="stand.nombre"
-                  class=" h-auto"
+                  class=""
                 />
               </div>
             </div>
           </div>
         </div>
+
+        <div class="flex mt-4 space-x-3">
+          <button
+            id="prev"
+            aria-label="Anterior"
+            class="nav-button z-10 w-12 h-12 flex items-center justify-center"
+            @click="prevSlide"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M15 12L11 16M11 16L15 20M11 16H21M28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76516 28 12.8174 28 16Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button
+            id="next"
+            aria-label="Siguiente"
+            class="nav-button z-10 w-12 h-12 flex items-center justify-center"
+            @click="nextSlide"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M17 20L21 16M21 16L17 12M21 16H11M28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 12.8174 5.26428 9.76516 7.51472 7.51472C9.76516 5.26428 12.8174 4 16 4C19.1826 4 22.2348 5.26428 24.4853 7.51472C26.7357 9.76516 28 12.8174 28 16Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-.titulo-seccion {
-  @apply text-[#4D008C] text-3xl md:text-4xl font-bold mb-4 font-lemon-bold;
-}
-
-.titulo {
-  @apply text-2xl md:text-3xl font-bold mb-4 font-lemon-bold;
-}
-
-.stand-card {
-  transition: transform 0.3s ease;
-}
-
-/* Animación suave para el track */
-.track {
-  transition: transform 0.1s linear;
-}
-</style>
