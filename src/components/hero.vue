@@ -39,12 +39,12 @@
       </div>
     </div>
     <div class="space-y-6 md:space-y-8 w-full md:w-1/3" data-aos="fade-left">
-      <h3 class="uppercase text-end leading-7">
+      <h2 class="uppercase text-end leading-7">
         <span class="text-[2.244rem] font-lemon-bold">3 y 4 </span><br>
         <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
         <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
         <span class="text-[1.246rem] font-lemon-light">Jiutepec Morelos</span>
-      </h3>
+      </h2>
     </div>
   </section>
 </template>
