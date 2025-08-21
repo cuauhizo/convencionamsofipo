@@ -1,6 +1,6 @@
 <script setup>
-  import { ref, onMounted, onUnmounted, reactive } from 'vue';
-  import Responsive from '@/components/responsive.vue'
+  import { ref, onMounted, onUnmounted } from 'vue';
+  // import Responsive from '@/components/responsive.vue'
 
   const anio = ref(new Date().getFullYear());
   const showScrollTopButton = ref(false);
