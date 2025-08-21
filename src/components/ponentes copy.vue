@@ -15,14 +15,15 @@ const getImageUrl = (imageName) => {
         <p>Explora las visiones y trayectorias de los líderes del sector financiero que nos compartirán su experiencia.</p>
       </div>
       <div class="flex flex-wrap justify-center gap-4 mt-5 w-full min-w-0 flex-1 md:mt-0 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+      <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 justify-items-center mt-5 w-full min-w-0 flex-1 md:mt-0 md:order-1" data-aos="fade-down" data-aos-anchor-placement="top-bottom"> -->
         <div
           v-for="(ponente, index) in ponentes"
           :key="ponente.id"
           :id="`ponente-${ponente.id}`"
-          class="max-w-[230px] rounded-2xl bg-perfil p-6 text-center shadow-lg flex flex-col justify-between"
+          class="max-w-[230px] rounded-2xl bg-perfil p-6 text-center shadow-lg flex flex-col justify-around"
           :class="{
-            'transform xl:-translate-y-5': index % 2 === 0,
-            'transform xl:translate-y-5': index % 2 !== 0
+            'transform lg:-translate-y-5': index % 2 === 0,
+            'transform lg:translate-y-5': index % 2 !== 0
           }"
         >
           <h3 class="text-sm">{{ ponente.nombre }}</h3>
@@ -46,7 +47,6 @@ const getImageUrl = (imageName) => {
             Ver Semblanza
           </a>
         </div>
-        <div class="max-w-[230px] flex-auto hidden xl:block"></div>
       </div>
     </div>
   </section>
