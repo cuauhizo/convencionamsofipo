@@ -123,6 +123,7 @@ onUnmounted(() => {
                   :src="getImageUrl(stand.imagen)"
                   :alt="stand.nombre"
                   class=""
+                  loading="lazy"
                 />
               </div>
             </div>

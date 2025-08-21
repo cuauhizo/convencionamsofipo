@@ -163,7 +163,7 @@ export const ponentes = [
       enlace: '../semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf'
     },
     {
-      id: 23,
+      id: 24,
       nombre: 'Karina Villanueva',
       imagen: 'Karina_Villanueva.png',
       descripcion: 'Vicepresidenta Jurídica de CONDUSEF',

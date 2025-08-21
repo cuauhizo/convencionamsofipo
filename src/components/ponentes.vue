@@ -30,6 +30,7 @@ const getImageUrl = (imageName) => {
             class="mx-auto mt-4 mb-4 h-32 w-32 rounded-full shadow-lg"
             :src="getImageUrl(ponente.imagen)"
             :alt="`Foto de ${ponente.nombre}`"
+            loading="lazy"
           />
           <p class="mt-8 text-xs font-normal">
             {{ ponente.descripcion }}
