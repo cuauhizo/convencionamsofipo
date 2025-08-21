@@ -16,8 +16,8 @@ const visibleCards = computed(() => {
   if (typeof window === 'undefined') return 3; // Valor por defecto para SSR
   const width = window.innerWidth;
   if (width >= 1024) return 3;
-  if (width >= 768) return 2;
-  return 1;
+  if (width >= 768) return 3;
+  return 3;
 });
 
 const maxIndex = computed(() => Math.max(0, stands.length - visibleCards.value));
@@ -116,7 +116,7 @@ onUnmounted(() => {
             <div
               v-for="stand in stands"
               :key="stand.id"
-              class="stand-card flex-shrink-0 h-auto w-full md:w-1/2 lg:max-w-[278px] px-4"
+              class="stand-card flex-shrink-0 h-auto max-w-[278px] px-4"
             >
               <div>
                 <img
