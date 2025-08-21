@@ -1,5 +1,5 @@
 <script setup>
-  import cerrarModal from '../assets/img/icon-close-modal.svg';
+  import cerrarModal from '/assets/img/icon-close-modal.svg';
   // import cerrarModal from '../../public/img/icon-close-modal.svg';
   const emit = defineEmits(['ocultar-modal']);
   const props = defineProps({

@@ -2,7 +2,7 @@
 import { patrocinadores } from '@/data/patrocinadores.js';
 
 const getImageUrl = (imageName) => {
-  return new URL(`../assets/img/patrocinadores/${imageName}`, import.meta.url).href;
+  return new URL(`/src/assets/img/patrocinadores/${imageName}`, import.meta.url).href;
 };
 </script>
 

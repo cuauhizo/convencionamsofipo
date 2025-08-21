@@ -3,7 +3,7 @@ import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue';
 import { stands } from '@/data/stands.js';
 
 const getImageUrl = (imageName) => {
-  return new URL(`../assets/img/stands/${imageName}`, import.meta.url).href;
+  return new URL(`/src/assets/img/stands/${imageName}`, import.meta.url).href;
 };
 
 // --- El resto de tu lógica de carrusel permanece intacta ---

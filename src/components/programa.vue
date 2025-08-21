@@ -155,27 +155,27 @@ const programaDia1 = ref([
     reparto: {
       ponete1: {
         nombre: "Dr. Alfredo Navarrete Martínez",
-        enlace: '../semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
         sofipo: "SHCP"
       },
       ponete2: {
         nombre: "Dr. Jesús De la Fuente Rodríguez",
-        enlace: '../semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf',
         sofipo: "CNBV"
       },
       ponete3: {
         nombre: "Dra. Galia Borja Gómez",
-        enlace: '../semblanzas/AMS_semblanza_Galia_Borja.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
         sofipo: "BANXICO"
       },
       ponete4: {
         nombre: "Lic. Oscar Rosado Jiménez",
-        enlace: "../semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
+        enlace: "/semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
         sofipo: "CONDUSEF"
       },
       ponete5: {
         nombre: "Marlene Garayzar",
-        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMS"
       },
     }
@@ -227,7 +227,7 @@ const programaDia1 = ref([
       },
       ponete4: {
         nombre: "Alicia Salgado",
-        enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
         sofipo: "Moderador"
       }
     }
@@ -255,7 +255,7 @@ const programaDia1 = ref([
     reparto: {
       ponete1: {
         nombre: "Marlene Garayzar",
-        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMSOFIPO"
       },
     }
@@ -302,7 +302,7 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Dr. Mauricio Rodríguez Abreu",
-        enlace: "../semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
+        enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
         sofipo: "INEGI"
       },
     }
@@ -327,7 +327,7 @@ const programaDia2 = ref([
       },
       ponete3: {
         nombre: "Alicia Salgado",
-        enlace: '../semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
         sofipo: "Moderador"
       },
     }
@@ -360,7 +360,7 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Dra. Lucia Buenrostro",
-        enlace: '../semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
         sofipo: "CNBV"
       },
       ponete2: {
@@ -379,7 +379,7 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Dr. Othón Moreno",
-        enlace: '../semblanzas/AMS_semblanza_Othon_Moreno.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf',
         sofipo: "Banxico"
       },
       ponete2: {
@@ -396,7 +396,7 @@ const programaDia2 = ref([
       },
       ponete4: {
         nombre: "Jeanette Leyva",
-        enlace: '../semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
         sofipo: "Moderador"
       }
     }
@@ -467,7 +467,7 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Carlos Marmolejo",
-        enlace: "../semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+        enlace: "/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
         sofipo: "Finsus"
       },
       ponete2: {
@@ -478,12 +478,12 @@ const programaDia2 = ref([
       },
       ponete3: {
         nombre: "Alejandro Toiber",
-        enlace: "../semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
+        enlace: "/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
         sofipo: "Xepelin"
       },
       ponete4: {
         nombre: "Oscar Salcedo Yúdico",
-        enlace: '../semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
         sofipo: "ASP Integra Opciones"
       },
       ponete5: {
@@ -512,12 +512,12 @@ const programaDia2 = ref([
       },
       ponete2: {
         nombre: "Juan Francisco Fernández",
-        enlace: "../semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
+        enlace: "/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
         sofipo: "Crediclub"
       },
       ponete3: {
         nombre: "Juan Pablo Zorrilla",
-        enlace: '../semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
         sofipo: "SAE"
       },
       ponete4: {
@@ -555,12 +555,12 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Aurora Cervantes Martínez",
-        enlace: '../semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
         sofipo: "CNBV"
       },
       ponete2: {
         nombre: "Elizabeth Noriega",
-        enlace: '../semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
         sofipo: "CONDUSEF"
       },
       ponete3: {
@@ -587,7 +587,7 @@ const programaDia2 = ref([
     reparto: {
       ponete1: {
         nombre: "Marlene Garayzar",
-        enlace: '../semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
         sofipo: "AMSOFIPO"
       },
       ponete2: {

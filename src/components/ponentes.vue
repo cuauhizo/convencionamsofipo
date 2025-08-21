@@ -2,7 +2,7 @@
 import { ponentes } from '@/data/ponentes.js';
 
 const getImageUrl = (imageName) => {
-  return new URL(`../assets/img/ponentes/${imageName}`, import.meta.url).href;
+  return new URL(`/src/assets/img/ponentes/${imageName}`, import.meta.url).href;
 };
 </script>
 
