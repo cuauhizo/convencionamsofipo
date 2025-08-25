@@ -1,9 +1,15 @@
 <script setup>
+import { computed } from 'vue'; // <-- 1. Importa computed
 import { ponentes } from '@/data/ponentes.js';
 
 const getImageUrl = (imageName) => {
   return new URL(`/src/assets/img/ponentes/${imageName}`, import.meta.url).href;
 };
+
+// 2. Crea una propiedad computada para verificar si el número es impar
+const isPonentesCountOdd = computed(() => {
+  return ponentes.length % 2 !== 0;
+});
 </script>
 
 <template>
@@ -47,7 +53,7 @@ const getImageUrl = (imageName) => {
             Ver Semblanza
           </a>
         </div>
-        <div class="max-w-[230px] flex-auto hidden xl:block"></div>
+         <div v-if="isPonentesCountOdd" class="max-w-[230px] flex-auto hidden xl:block"></div>
       </div>
     </div>
   </section>

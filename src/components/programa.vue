@@ -159,8 +159,9 @@ const programaDia1 = ref([
         sofipo: "SHCP"
       },
       ponete2: {
-        nombre: "Dr. Jesús De la Fuente Rodríguez",
-        enlace: '/semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf',
+        // nombre: "Dr. Jesús De la Fuente Rodríguez",
+        nombre: "",
+        enlace: '',
         sofipo: "CNBV"
       },
       ponete3: {
@@ -195,7 +196,7 @@ const programaDia1 = ref([
     title: "",
     reparto: {
       ponete1: {
-        nombre: "Dr. José Antonio Lozano",
+        nombre: "Dr. Alejandro Moreno",
         enlace: "",
         sofipo: "IPADE"
       }

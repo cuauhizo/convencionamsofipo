@@ -71,13 +71,13 @@ export const ponentes = [
       descripcion: 'Titular De La Unidad De Estadísticas Sociodemográficas',
       enlace: '/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf'
     },
-    {
-      id: 11,
-      nombre: 'Jesús de la Fuente',
-      imagen: 'Jesus_de_la_Fuente.png',
-      descripcion: 'Presidente de la CNBV',
-      enlace: '/semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf'
-    },
+    // {
+    //   id: 11,
+    //   nombre: 'Jesús de la Fuente',
+    //   imagen: 'Jesus_de_la_Fuente.png',
+    //   descripcion: 'Presidente de la CNBV',
+    //   enlace: '/semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf'
+    // },
     {
       id: 12,
       nombre: 'Marco Antonio Mares',
@@ -113,13 +113,13 @@ export const ponentes = [
       descripcion: 'Co-Fundador y Co-CEO de Bravo',
       enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf'
     },
-    {
-      id: 17,
-      nombre: 'José Antonio Lozano',
-      imagen: 'Jose_Antonio_Lozano.png',
-      descripcion: 'Conferencista',
-      enlace: '/semblanzas/AMS_semblanza_Jose_Antonio_Lozano.pdf'
-    },
+    // {
+    //   id: 17,
+    //   nombre: 'José Antonio Lozano',
+    //   imagen: 'Jose_Antonio_Lozano.png',
+    //   descripcion: 'Conferencista',
+    //   enlace: '/semblanzas/AMS_semblanza_Jose_Antonio_Lozano.pdf'
+    // },
     {
       id: 18,
       nombre: 'Alicia Salgado',
@@ -131,7 +131,7 @@ export const ponentes = [
       id: 19,
       nombre: 'Aurora Cervantes Martínez',
       imagen: 'Aurora_Cervantes.png',
-      descripcion: 'Vicepresidenta de Normatividad',
+      descripcion: 'Vicepresidenta de Normatividad CNBV',
       enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf'
     },
     {
@@ -166,7 +166,7 @@ export const ponentes = [
       id: 24,
       nombre: 'Karina Villanueva',
       imagen: 'Karina_Villanueva.png',
-      descripcion: 'Vicepresidenta Jurídica de CONDUSEF',
+      descripcion: 'Directora Comisionada para Género, Inclusión y Educación Financiera de la SHCP',
       enlace: '/semblanzas/AMS_semblanza_Karina_Villanueva.pdf'
     }
   ];
