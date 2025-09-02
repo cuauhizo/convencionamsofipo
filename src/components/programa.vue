@@ -124,7 +124,7 @@ const openTab = (tabName) => {
 };
 
 // Miércoles 3 de Septiembre
-const programaDia1 = ref([
+const old_programaDia1 = ref([
   {
     id: 1,
     horario: "9:00 - 14:00",
@@ -284,7 +284,7 @@ const programaDia1 = ref([
 ]);
 
 // Jueves 4 de Septiembre
-const programaDia2 = ref([
+const old_programaDia2 = ref([
   {
     id: 1,
     horario: "7:30 - 8:30",
@@ -619,6 +619,465 @@ const programaDia2 = ref([
       ponete2: {
         nombre: "",
         enlace: "",
+        sofipo: ""
+      }
+    }
+  }
+]);
+
+// Miércoles 3 de Septiembre
+const programaDia1 = ref([
+  {
+    id: 3,
+    horario: "13:30 - 15:00",
+    actividad: "Comida",
+    name: "",
+    title: ""
+  },
+  {
+    id: 4,
+    horario: "15:00 - 15:45",
+    actividad: "Ceremonia Inaugural",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dr. Alfredo Navarrete Martínez",
+        // enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
+        sofipo: "SHCP"
+      },
+      ponete2: {
+        nombre: "Dra. Galia Borja Gómez",
+        // enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
+        sofipo: "BANXICO"
+      },
+      ponete3: {
+        nombre: "Lic. Oscar Rosado Jiménez",
+        // enlace: "/semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
+        sofipo: "CONDUSEF"
+      },
+      ponete4: {
+        nombre: "Marlene Garayzar",
+        // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        sofipo: "AMS"
+      },
+    }
+  },
+  {
+    id: 5,
+    horario: "15:45 - 16:00",
+    actividad: "Receso",
+    name: "",
+    title: "",
+  },
+  {
+    id: 6,
+    horario: "16:00 - 17:00",
+    actividad: "El Valor de la confianza en la era digital",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dr. Alejandro Moreno",
+        // enlace: "",
+        sofipo: ""
+      }
+    }
+  },
+  {
+    id: 7,
+    horario: "17:00 - 17:40",
+    actividad: "Panel: Factores de desarrollo en beneficio de la inclusión financiera",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Mtra. Karina Villanueva",
+        // enlace: '',
+        sofipo: "UBVA"
+      },
+      ponete2: {
+        nombre: "Vidal Llerenas",
+        // enlace: "",
+        sofipo: "Sría. Economía"
+      },
+      ponete3: {
+        nombre: "Alicia Salgado",
+        // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        sofipo: "Moderador"
+      }
+    }
+  },
+  {
+    id: 8,
+    horario: "17:40 - 18:10",
+    actividad: "",
+    name: "Receso",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      },
+    }
+  },
+  {
+    id: 9,
+    horario: "18:10 - 18:40",
+    actividad: "",
+    name: "Red de mujeres en el sector financiero",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Marlene Garayzar",
+        // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        sofipo: "AMS"
+      },
+      ponete2: {
+        nombre: "Regina García Cuellar",
+        // enlace: "",
+        sofipo: "ABM"
+      },
+      ponete3: {
+        nombre: "Dr. Alfredo Navarrete Martínez",
+        // enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
+        sofipo: "SHCP"
+      },
+    }
+  },
+  {
+    id: 10,
+    horario: "19:30 - 24:00",
+    actividad: "Coctel de Bienvenida",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        // enlace: '',
+        sofipo: ""
+      },
+      ponete2: {
+        // nombre: "Regina García Cuellar",
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      },
+    }
+  }
+]);
+
+// Jueves 4 de Septiembre
+const programaDia2 = ref([
+  {
+    id: 1,
+    horario: "7:30 - 8:30",
+    actividad: "Actividad de Integración",
+    name: "",
+    title: "",
+    reparto: {
+    }
+  },
+  {
+    id: 2,
+    horario: "9:30 - 10:10",
+    actividad: "Conferencia: El Uso de la tecnología y su impacto en la inclusión financiera",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dr. Mauricio Rodríguez Abreu",
+        // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
+        sofipo: "INEGI"
+      },
+    }
+  },
+  {
+    id: 3,
+    horario: "10:10 - 10:50",
+    actividad: "La Banca de Desarrollo, trabajo cercano con las SOFIPOS",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Act. Alán Elizondo",
+        // enlace: "",
+        sofipo: "FIRA"
+      },
+      ponete2: {
+        nombre: "Mtro. Javier Vázquez",
+        // enlace: "",
+        sofipo: "Nafin"
+      },
+      ponete3: {
+        nombre: "Alicia Salgado",
+        // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        sofipo: "Moderador"
+      },
+    }
+  },
+  {
+    id: 4,
+    horario: "10:50 - 11:10",
+    actividad: "Receso",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      },
+      ponete2: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      }
+    }
+  },
+  {
+    id: 5,
+    horario: "11:10 - 12:00",
+    actividad: "Conferencia: Avances y retos en la Digitalización de servicios financieros",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dra. Lucia Buenrostro",
+        // enlace: '/semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
+        sofipo: "CNBV"
+      },
+      ponete2: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      }
+    }
+  },
+  {
+    id: 6,
+    horario: "12:00 - 12:50",
+    actividad: "Panel: Retos para el futuro de los Servicios Digitales",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Dr. Othón Moreno",
+        // enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf',
+        sofipo: "Banxico"
+      },
+      ponete2: {
+        nombre: "Mary Pilly Loo",
+        // enlace: "",
+        sofipo: "CNBV"
+      },
+      ponete3: {
+        nombre: "Jeanette Leyva",
+        // enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
+        sofipo: "Moderador"
+      }
+    }
+  },
+  {
+    id: 7,
+    horario: "12:50 - 13:20",
+    actividad: "Receso",
+    name: "",
+    title: "",
+    reparto: {
+    }
+  },
+  {
+    id: 8,
+    horario: "13:20 - 14:00",
+    actividad: "Uso de IA para el fortalecimiento de la Infraestructura tecnológica",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Manuel Contreras",
+        // enlace: "",
+        sofipo: "Oracle"
+      },
+      ponete2: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      }
+    }
+  },
+  {
+    id: 9,
+    horario: "14:00 - 15:30",
+    actividad: "Comida",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      },
+      ponete2: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      }
+    }
+  },
+  {
+    id: 10,
+    horario: "15:30 - 16:10",
+    actividad: "Panel: Las SOFIPOS fortaleciendo el ecosistema para las PYME",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Carlos Marmolejo",
+        // enlace: "/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+        sofipo: "Finsus"
+      },
+      ponete2: {
+        nombre: "Oscar Salcedo Yúdico",
+        // enlace: '/semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
+        sofipo: "ASP"
+      },
+      ponete3: {
+        nombre: "Alejandro Toiber",
+        // enlace: "/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
+        sofipo: "Xepelin"
+      },
+      ponete4: {
+        nombre: "Edgar Guerrero",
+        // enlace: '',
+        sofipo: "Bienestar"
+      },
+      ponete5: {
+        nombre: "Marcela Galicia Fitch México",
+        // enlace: "",
+        sofipo: "Moderador"
+      }
+    }
+  },
+  {
+    id: 11,
+    horario: "16:10 - 17:00",
+    actividad: "Panel: Transformando cómo te conectas con tu dinero",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Juan Francisco Fernández",
+        // enlace: "/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
+        sofipo: "Crediclub"
+      },
+      ponete2: {
+        nombre: "Juan Pablo Zorrilla",
+        // enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
+        sofipo: "SAE"
+      },
+      ponete3: {
+        nombre: "Stefhan Möller",
+        // enlace: "",
+        sofipo: "Klar"
+      }
+    }
+  },
+  {
+    id: 12,
+    horario: "17:00 - 17:20",
+    actividad: "Receso",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      },
+      ponete2: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      }
+    }
+  },
+  {
+    id: 13,
+    horario: "17:20 - 18:00",
+    actividad: "Panel: Los 3 pilares de la regulación de las SOFIPOS",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Aurora Cervantes Martínez",
+        // enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
+        sofipo: "CNBV"
+      },
+      ponete2: {
+        nombre: "Elizabeth Noriega",
+        // enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+        sofipo: "CONDUSEF"
+      },
+      ponete3: {
+        nombre: "Viviana Garza",
+        // enlace: "",
+        sofipo: "Banxico"
+      },
+      ponete4: {
+        nombre: "Salomón Woldenberg",
+        // enlace: "",
+        sofipo: "Moderador"
+      }
+    }
+  },
+  {
+    id: 14,
+    horario: "18:00 - 18:30",
+    actividad: "Clausura",
+    // name: "Margarita Gonzalez Saravia",
+    // title: "Gobernadora del Estado de Morelos",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "Marlene Garayzar",
+        // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+        sofipo: "AMS"
+      },
+      ponete2: {
+        nombre: "Lic. Ángel Cabrera Mendoza",
+        // enlace: "",
+        sofipo: "CNBV"
+      },
+      ponete3: {
+        nombre: "Act. Alán Elizondo",
+        // enlace: "",
+        sofipo: "FIRA"
+      },
+      ponete4: {
+        nombre: "Mto. Javier Vázquez",
+        // enlace: "",
+        sofipo: "Nafin"
+      }
+    }
+  },
+  {
+    id: 15,
+    horario: "19:00 - 21:00",
+    actividad: "Coctel de Clausura",
+    name: "",
+    title: "",
+    reparto: {
+      ponete1: {
+        nombre: "",
+        // enlace: "",
+        sofipo: ""
+      },
+      ponete2: {
+        nombre: "",
+        // enlace: "",
         sofipo: ""
       }
     }

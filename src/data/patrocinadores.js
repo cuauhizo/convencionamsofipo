@@ -11,5 +11,6 @@ export const patrocinadores = [
   { id: 12, url: 'https://ygconsultores.com.mx/', imagen: 'y&g.png', alt: 'Y&G' },
   { id: 14, url: 'https://www.hrratings.com/', imagen: 'hr_ratings.png', alt: 'HR Ratings' },
   { id: 15, url: 'https://bonsaif.com/', imagen: 'bonsaif.png', alt: 'Bonsaif' },
-  { id: 16, url: 'https://japifon.com/', imagen: 'japifon.png', alt: 'Japifon' }
+  { id: 16, url: 'https://japifon.com/', imagen: 'japifon.png', alt: 'Japifon' },
+  { id: 17, url: 'https://deloitte.com', imagen: 'deloitte.png', alt: 'Deloitte' }
 ];
