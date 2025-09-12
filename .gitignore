@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 
-programa.html
+programa
+public/galeria
 
 # Editor directories and files
 .vscode/*

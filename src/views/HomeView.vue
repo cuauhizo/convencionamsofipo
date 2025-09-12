@@ -43,7 +43,7 @@
   <Hero />
   <Patrocinadores />
   <!-- <Ponentes/> -->
-  <Programa/>
+  <!-- <Programa/> -->
   <Stands />
   <Sede />
 </template>
