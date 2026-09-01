@@ -103,8 +103,26 @@
 </script>
 
 <template>
+  <div class="md:hidden px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
+    <div class="grid grid-cols-1">
+      <div class="xl:max-w-[636px] xl:col-start-2">
+        <div>
+          <h2 class="titulo-seccion">Stands</h2>
+          <p class="titulo">¡Ubica los stands donde se encontrarán nuestros patrocinadores!</p>
+          <p class="mb-6">Conecta con proveedores que te ayudarán a llevar a tu empresa al siguiente nivel.</p>
+          <a
+            href="/mapa/index.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
+            Consulta aquí el mapa
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <section id="section5" class="grid gap-5 items-center py-20 lg:grid-cols-2">
-    <div class="px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
+    <div class="hidden md:block px-4" data-aos="zoom-in-right" data-aos-anchor-placement="center-bottom">
       <div class="grid grid-cols-1">
         <div class="xl:max-w-[636px] xl:col-start-2">
           <div>
@@ -122,8 +140,8 @@
         </div>
       </div>
     </div>
-    <div data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
-      <div class="relative">
+    <div class="overflow-hidden relative" data-aos="zoom-in-left" data-aos-anchor-placement="center-bottom">
+      <div>
         <div id="carousel" class="overflow-hidden relative" @mouseenter="pauseAutoSlide" @mouseleave="startAutoSlide">
           <!-- AQUÍ: Se quita la clase fija de transición y se usa dinámicamente -->
           <div ref="carouselTrack" id="stand-track" class="flex" :class="{ 'transition-transform duration-500 ease-in-out': isTransitioning }" :style="{ transform: transformStyle }">

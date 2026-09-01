@@ -1,64 +1,14 @@
-<!-- <script setup>
+<script setup>
   import { ref, onMounted, onUnmounted } from 'vue'
   // import Responsive from '@/components/responsive.vue'
 
   const anio = ref(new Date().getFullYear())
   const showScrollTopButton = ref(false)
   const activeSection = ref(null)
-  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY
-    showScrollTopButton.value = scrollTop > 0
-
-    // Detectar sección activa
-    for (const id of sectionIds) {
-      const el = document.getElementById(id)
-      if (el) {
-        const rect = el.getBoundingClientRect()
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-          activeSection.value = id
-          break
-        }
-      }
-    }
-  }
-
-  const cerrarMenu = () => {
-    const checkbox = document.getElementById('menu')
-    if (checkbox) checkbox.checked = false
-  }
-
-  onMounted(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
-
-  onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
-
-  const scrollToSection = index => {
-    const element = document.getElementById(`section${index}`)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-</script> -->
-
-<script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
-
-  const anio = ref(new Date().getFullYear())
-  const showScrollTopButton = ref(false)
-  const activeSection = ref(null)
-  
   // 1. NUEVA VARIABLE: Controla si ya pasamos la sección del video
-  const isScrolled = ref(false) 
-  
+  const isScrolled = ref(false)
+
   const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
 
   const scrollToTop = () => {
@@ -70,9 +20,9 @@
     showScrollTopButton.value = scrollTop > 0
 
     // 2. NUEVA LÓGICA: Si bajamos más de la altura de la pantalla (menos 80px del menú), se activa.
-    // Si prefieres que el efecto aparezca en cuanto el usuario empiece a bajar, cambia 
+    // Si prefieres que el efecto aparezca en cuanto el usuario empiece a bajar, cambia
     // (window.innerHeight - 80) por un número fijo como 50.
-    isScrolled.value = scrollTop > (window.innerHeight - 80)
+    isScrolled.value = scrollTop > window.innerHeight - 80
 
     // Detectar sección activa
     for (const id of sectionIds) {
@@ -110,10 +60,7 @@
 <template>
   <!-- Header -->
   <header class="">
-    <div 
-      class="fixed z-30 w-full mt-2 transition-all duration-500"
-      :class="isScrolled ? 'nav-menu bg-white bg-opacity-15' : 'bg-transparent'"
-    >
+    <div class="fixed z-30 w-full mt-2 transition-all duration-500" :class="isScrolled ? 'nav-menu bg-white bg-opacity-15' : 'bg-transparent'">
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
         <a href="./" class="w-1/3 max-w-[126px]">
           <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" loading="lazy" />
@@ -128,70 +75,22 @@
                 'py-2 px-2 rounded-full hover:bg-white hover:text-black',
                 activeSection === 'section1' ? 'bg-white text-[#3a3a82]' : ''
                 ]" -->
-                <a
-                  href="#inicio"
-                  class="py-2 px-2 rounded-full hover:bg-white hover:text-black hover:py-1 hover:px-2"
-                  @click="
-                    scrollToSection(1);
-                    cerrarMenu()
-                  ">
-                  AMS
-                </a>
+                <a href="#inicio" class="py-2 px-2 rounded-full hover:bg-white hover:text-black hover:py-1 hover:px-2" @click="(scrollToSection(1), cerrarMenu())">AMS</a>
               </li>
               <li>
-                <a
-                  href="#patrocinadores"
-                  :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']"
-                  @click="
-                    scrollToSection(2);
-                    cerrarMenu()
-                  ">
-                  Patrocinadores
-                </a>
+                <a href="#patrocinadores" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']" @click="(scrollToSection(2), cerrarMenu())">Patrocinadores</a>
               </li>
               <li>
-                <a
-                  href="#ponentes"
-                  :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section3' ? 'bg-white text-[#3a3a82]' : '']"
-                  @click="
-                    scrollToSection(3);
-                    cerrarMenu()
-                  ">
-                  Ponentes
-                </a>
+                <a href="#ponentes" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section3' ? 'bg-white text-[#3a3a82]' : '']" @click="(scrollToSection(3), cerrarMenu())">Ponentes</a>
               </li>
               <li>
-                <a
-                  href="#programa"
-                  :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']"
-                  @click="
-                    scrollToSection(4);
-                    cerrarMenu()
-                  ">
-                  Programa
-                </a>
+                <a href="#programa" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']" @click="(scrollToSection(4), cerrarMenu())">Programa</a>
               </li>
               <li>
-                <a
-                  href="#stands"
-                  @click="
-                    scrollToSection(5);
-                    cerrarMenu()
-                  "
-                  :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']">
-                  Stands
-                </a>
+                <a href="#stands" @click="(scrollToSection(5), cerrarMenu())" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']">Stands</a>
               </li>
               <li>
-                <a
-                  href="#sede"
-                  :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']"
-                  @click="
-                    scrollToSection(6);
-                    cerrarMenu()
-                  ">
-                  Sede
-                </a>
+                <a href="#sede" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click="(scrollToSection(6), cerrarMenu())">Sede</a>
               </li>
               <!-- <li>
                 <router-link to="/demo" :class="[
@@ -294,7 +193,7 @@
       </div>
     </div>
   </footer>
-  <!-- <Responsive/> -->
+  <!-- <Responsive /> -->
 </template>
 
 <style scoped>
