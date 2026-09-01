@@ -1,172 +1,235 @@
 // src/data/ponentes.js
 
 export const ponentes = [
-    {
-      id: 1,
-      nombre: 'Marlene Garayzar',
-      imagen: 'Marlene_Garayzar.png',
-      descripcion: 'Presidenta de AMS',
-      enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf'
-    },
-    // {
-    //   id: 2,
-    //   nombre: 'David Romero',
-    //   imagen: 'David_Romero.png',
-    //   descripcion: 'Vicepresidente de AMS',
-    //   enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf'
-    // },
-    {
-      id: 3,
-      nombre: 'Juan Francisco Fernández',
-      imagen: 'Juan_Francisco_Fernandez.png',
-      descripcion: 'CEO de Crediclub',
-      enlace: '/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf'
-    },
-    {
-      id: 4,
-      nombre: 'Alejandro Toiber',
-      imagen: 'Alejandro_Toiber.png',
-      descripcion: 'Country Manager MX',
-      enlace: '/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf'
-    },
-    {
-      id: 5,
-      nombre: 'Oscar Rosado',
-      imagen: 'Oscar_Rosado.png',
-      descripcion: 'Presidente de CONDUSEF',
-      enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf'
-    },
-    {
-      id: 6,
-      nombre: 'Manuel Contreras',
-      imagen: 'Manuel_Contreras.png',
-      descripcion: 'Product Manager de Oracle',
-      enlace: '/semblanzas/AMS_semblanza_Manuel_Contreras_Rico.pdf'
-    },
-    {
-      id: 7,
-      nombre: 'Alan Elizondo',
-      imagen: 'Alan_Elizondo.png',
-      descripcion: 'Director General de FIRA',
-      enlace: '/semblanzas/AMS_semblanza_Alan_Elizondo.pdf'
-    },
-    {
-      id: 8,
-      nombre: 'Carlos Marmolejo',
-      imagen: 'Carlos_Marmolejo.png',
-      descripcion: 'CEO de FINSUS',
-      enlace: '/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf'
-    },
-    {
-      id: 9,
-      nombre: 'Marcela Galicia',
-      imagen: 'Marcela_Galicia.png',
-      descripcion: 'Directora Senior De Instituciones Financieras No Bancarias En Fitch Ratings',
-      enlace: '/semblanzas/AMS_semblanza_Marcela_Galicia.pdf'
-    },
-    {
-      id: 10,
-      nombre: 'Mauricio Rodríguez',
-      imagen: 'Mauricio_Rodriguez.png',
-      descripcion: 'Titular De La Unidad De Estadísticas Sociodemográficas',
-      enlace: '/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf'
-    },
-    // {
-    //   id: 11,
-    //   nombre: 'Jesús de la Fuente',
-    //   imagen: 'Jesus_de_la_Fuente.png',
-    //   descripcion: 'Presidente de la CNBV',
-    //   enlace: '/semblanzas/AMS_semblanza_Jesus_de_la_Fuente.pdf'
-    // },
-    {
-      id: 12,
-      nombre: 'Marco Antonio Mares',
-      imagen: 'Marco_Antonio_Mares.png',
-      descripcion: 'Periodista',
-      enlace: '/semblanzas/AMS_semblanza_Marco_Antonio_Mares.pdf'
-    },
-    {
-      id: 13,
-      nombre: 'Alfredo Navarrete',
-      imagen: 'Alfredo_Navarrete.png',
-      descripcion: 'Titular de la unidad de banca, valores y ahorro de la SHCP',
-      enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf'
-    },
-    {
-      id: 14,
-      nombre: 'Galia Borja Gómez',
-      imagen: 'Galia_Borja_Gomez.png',
-      descripcion: 'Subgobernadora Del Banco De México',
-      enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf'
-    },
-    {
-      id: 15,
-      nombre: 'Oscar Salcedo',
-      imagen: 'Oscar_Salcedo.png',
-      descripcion: 'Director General Adjunto de ASP Integra Opciones',
-      enlace: '/semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf'
-    },
-    {
-      id: 16,
-      nombre: 'Juan Pablo Zorrilla',
-      imagen: 'Juan_Pablo_Zorrilla.png',
-      descripcion: 'Co-Fundador y Co-CEO de Bravo',
-      enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf'
-    },
-    // {
-    //   id: 17,
-    //   nombre: 'José Antonio Lozano',
-    //   imagen: 'Jose_Antonio_Lozano.png',
-    //   descripcion: 'Conferencista',
-    //   enlace: '/semblanzas/AMS_semblanza_Jose_Antonio_Lozano.pdf'
-    // },
-    {
-      id: 18,
-      nombre: 'Alicia Salgado',
-      imagen: 'Alicia_Salgado.png',
-      descripcion: 'Periodista',
-      enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf'
-    },
-    {
-      id: 19,
-      nombre: 'Aurora Cervantes Martínez',
-      imagen: 'Aurora_Cervantes.png',
-      descripcion: 'Vicepresidenta de Normatividad CNBV',
-      enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf'
-    },
-    {
-      id: 20,
-      nombre: 'Jeanette Leyva',
-      imagen: 'Jeanette_Leyva.png',
-      descripcion: 'Periodista',
-      enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf'
-    },
-    {
-      id: 21,
-      nombre: 'Lucía Buenrostro',
-      imagen: 'Lucia_Buenrostro.png',
-      descripcion: 'Vicepresidenta de Política Regulatoria en la Comisión Nacional Bancaria y de Valores',
-      enlace: '/semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf'
-    },
-    {
-      id: 22,
-      nombre: 'Othón Moreno',
-      imagen: 'Othon_Moreno.png',
-      descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
-      enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf'
-    },
-    {
-      id: 23,
-      nombre: 'Elizabeth Noriega',
-      imagen: 'Elizabeth_Noriega.png',
-      descripcion: 'Vicepresidenta Jurídica de CONDUSEF',
-      enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf'
-    },
-    {
-      id: 24,
-      nombre: 'Karina Villanueva',
-      imagen: 'Karina_Villanueva.png',
-      descripcion: 'Directora Comisionada para Género, Inclusión y Educación Financiera de la SHCP',
-      enlace: '/semblanzas/AMS_semblanza_Karina_Villanueva.pdf'
-    }
-  ];
+  {
+    id: 32,
+    nombre: 'Alejandra Mendoza',
+    imagen: 'Alejandra_Mendoza.png',
+    descripcion: 'Socia de IA y Datos en Deloitte Spanish Latin America',
+    enlace: '/semblanzas/AMS_semblanza_Alejandra_Mendoza.pdf',
+  },
+  // {
+  //   id: 1,
+  //   nombre: 'Alejandro Escobedo',
+  //   imagen: 'Alejandro_Escobedo.png',
+  //   descripcion: 'Director Jurídico y de Cumplimiento de Servicios Financieros DiDi México',
+  //   enlace: '/semblanzas/AMS_semblanza_Alejandro_Escobedo.pdf',
+  // },
+  // {
+  //   id: 2,
+  //   nombre: 'Ángel Cabrera Mendoza',
+  //   imagen: 'Angel_Cabrera_Mendoza.png',
+  //   descripcion: 'Presidente de la CNBV',
+  //   enlace: '/semblanzas/AMS_semblanza_Angel_Cabrera_Mendoza.pdf',
+  // },
+  {
+    id: 3,
+    nombre: 'Armando Sánchez Porras',
+    imagen: 'Armando_Sanchez_Porras.png',
+    descripcion: 'Pdte. Consejo de Administración de ASP Integra Opciones',
+    enlace: '/semblanzas/AMS_semblanza_Armando_Sanchez_Porras.pdf',
+  },
+  // {
+  //   id: 4,
+  //   nombre: 'Carlos Marmolejo',
+  //   imagen: 'Carlos_Marmolejo.png',
+  //   descripcion: 'Director General y Cofundador de Finsus',
+  //   enlace: '/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf',
+  // },
+  // {
+  //   id: 5,
+  //   nombre: 'Celia Bujaidar',
+  //   imagen: 'Celia_Bujaidar.png',
+  //   descripcion: 'CEO de PREMO',
+  //   enlace: '/semblanzas/AMS_semblanza_Celia_Bujaidar.pdf',
+  // },
+  // {
+  //   id: 6,
+  //   nombre: 'Daniel Miranda',
+  //   imagen: 'Daniel_Miranda.png',
+  //   descripcion: 'DG de Desarrollo Regulatorio de la CNBV',
+  //   enlace: '/semblanzas/AMS_semblanza_Daniel_Miranda.pdf',
+  // },
+  // {
+  //   id: 7,
+  //   nombre: 'Daniel Servitje',
+  //   imagen: 'Daniel_Servitje.png',
+  //   descripcion: 'Presidente Ejecutivo de Grupo Bimbo',
+  //   enlace: '/semblanzas/AMS_semblanza_Daniel_Servitje.pdf',
+  // },
+  {
+    id: 8,
+    nombre: 'David Romero',
+    imagen: 'David_Romero.png',
+    descripcion: 'Vicepresidente de AMS',
+    enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
+  },
+  // {
+  //   id: 9,
+  //   nombre: 'Edgar Amador Zamora',
+  //   imagen: 'Edgar_Amador_Zamora.png',
+  //   descripcion: 'Secretario de Hacienda y Crédito Público',
+  //   enlace: '/semblanzas/AMS_semblanza_Edgar_Amador_Zamora.pdf',
+  // },
+  // {
+  //   id: 10,
+  //   nombre: 'Elizabeth Noriega',
+  //   imagen: 'Elizabeth_Noriega.png',
+  //   descripcion: 'Vicepresidenta Jurídica en CONDUSEF',
+  //   enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+  // },
+  // {
+  //   id: 11,
+  //   nombre: 'Felipe Vallejo',
+  //   imagen: 'Felipe_Vallejo.png',
+  //   descripcion: 'Presidente de FinTech México',
+  //   enlace: '/semblanzas/AMS_semblanza_Felipe_Vallejo.pdf',
+  // },
+  // {
+  //   id: 12,
+  //   nombre: 'Galia Borja Gómez',
+  //   imagen: 'Galia_Borja_Gomez.png',
+  //   descripcion: 'Subgobernadora del Banco de México',
+  //   enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
+  // },
+  // {
+  //   id: 13,
+  //   nombre: 'Javier Garza Hoeffer',
+  //   imagen: 'Javier_Garza_Hoeffer.png',
+  //   descripcion: 'Presidente Nacional de ASOFOM',
+  //   enlace: '/semblanzas/AMS_semblanza_Javier_Garza_Hoeffer.pdf',
+  // },
+  // {
+  //   id: 14,
+  //   nombre: 'Javier Vázquez Durán',
+  //   imagen: 'Javier_Vazquez_Duran.png',
+  //   descripcion: 'Titular de la Unidad de Banca e Inversión en Nafin',
+  //   enlace: '/semblanzas/AMS_semblanza_Javier_Vazquez.pdf',
+  // },
+  // {
+  //   id: 15,
+  //   nombre: 'Jeanette Leyva Reus',
+  //   imagen: 'Jeanette_Leyva_Reus.png',
+  //   descripcion: 'Periodista',
+  //   enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
+  // },
+  // {
+  //   id: 16,
+  //   nombre: 'Jesús Alan Elizondo',
+  //   imagen: 'Jesus_Alan_Elizondo.png',
+  //   descripcion: 'Director General de FIRA',
+  //   enlace: '/semblanzas/AMS_semblanza_Jesus_Alan_Elizondo.pdf',
+  // },
+  // {
+  //   id: 17,
+  //   nombre: 'José Antonio Peña Merino',
+  //   imagen: 'Jose_Antonio_Pena_Merino.png',
+  //   descripcion: 'Secretario de la Agencia de Transformación Digital y Telecomunicaciones',
+  //   enlace: '/semblanzas/AMS_semblanza_Jose_Antonio_Pena.pdf',
+  // },
+  // {
+  //   id: 18,
+  //   nombre: 'Juan Ayax Fuentes',
+  //   imagen: 'Juan_Ayax_Fuentes.png',
+  //   descripcion: 'Vicepresidente de Supervisión de Procesos Preventivos en la CNBV',
+  //   enlace: '/semblanzas/AMS_semblanza_Juan_Ayax_Fuentes.pdf',
+  // },
+  // {
+  //   id: 19,
+  //   nombre: 'Lucía Buenrostro',
+  //   imagen: 'Lucia_Buenrostro.png',
+  //   descripcion: 'Vicepresidenta de Política Regulatoria en CNBV',
+  //   enlace: '/semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
+  // },
+  {
+    id: 33,
+    nombre: 'Marcela Galicia',
+    imagen: 'Marcela_Galicia.png',
+    descripcion: 'CREO en Finsus',
+    enlace: '/semblanzas/AMS_semblanza_Marcela_Galicia.pdf',
+  },
+  // {
+  //   id: 20,
+  //   nombre: 'Marcelino Herrera',
+  //   imagen: 'Marcelino_Herrera.png',
+  //   descripcion: 'CEO y Director General de Crediclub',
+  //   enlace: '/semblanzas/AMS_semblanza_Marcelino_Herrera.pdf',
+  // },
+  // {
+  //   id: 21,
+  //   nombre: 'María del Carmen Bonilla',
+  //   imagen: 'Maria_del_Carmen_Bonilla.png',
+  //   descripcion: 'Subsecretaria de Hacienda y Crédito Público',
+  //   enlace: '/semblanzas/AMS_semblanza_Maria_Del_Carmen_Bonilla.pdf',
+  // },
+  {
+    id: 22,
+    nombre: 'Marlene Garayzar',
+    imagen: 'Marlene_Garayzar.png',
+    descripcion: 'Presidenta de AMS',
+    enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+  },
+  // {
+  //   id: 23,
+  //   nombre: 'Mauricio Kuri González',
+  //   imagen: 'Mauricio_Kuri_Gonzalez.png',
+  //   descripcion: 'Gobernador de Querétaro',
+  //   enlace: '/semblanzas/AMS_semblanza_Mauricio_Kuri.pdf',
+  // },
+  // {
+  //   id: 24,
+  //   nombre: 'Nieves Lanzagorta',
+  //   imagen: 'Nieves_Lanzagorta.png',
+  //   descripcion: 'Vicepresidenta de Vinculación en Amafore',
+  //   enlace: '/semblanzas/AMS_semblanza_Nieves_Lanzagorta.pdf',
+  // },
+  // {
+  //   id: 25,
+  //   nombre: 'Óscar Rosado',
+  //   imagen: 'Oscar_Rosado.png',
+  //   descripcion: 'Presidente de la CONDUSEF',
+  //   enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf',
+  // },
+  // {
+  //   id: 26,
+  //   nombre: 'Othón Moreno González',
+  //   imagen: 'Othon_Moreno_Gonzalez.png',
+  //   descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
+  //   enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf',
+  // },
+  // {
+  //   id: 27,
+  //   nombre: 'Ramiro Álvarez',
+  //   imagen: 'Ramiro_Alvarez.png',
+  //   descripcion: 'Vicepresidente Técnico en la CNBV',
+  //   enlace: '/semblanzas/AMS_semblanza_Ramiro_Alvarez.pdf',
+  // },
+  // {
+  //   id: 28,
+  //   nombre: 'Regina García Cuéllar',
+  //   imagen: 'Regina_Garcia_Cuellar.png',
+  //   descripcion: 'Directora General de la Asociación de Bancos de México',
+  //   enlace: '/semblanzas/AMS_semblanza_Regina_Garcia_Cuellar.pdf',
+  // },
+  // {
+  //   id: 29,
+  //   nombre: 'Regina Martha González',
+  //   imagen: 'Regina_Martha_Gonzalez.png',
+  //   descripcion: 'Asesora de la Oficina del Titular de la UIF',
+  //   enlace: '/semblanzas/AMS_semblanza_Regina_Martha_Gonzalez.pdf',
+  // },
+  // {
+  //   id: 30,
+  //   nombre: 'Sebastián Estrada',
+  //   imagen: 'Sebastian_Estrada.png',
+  //   descripcion: 'Periodista',
+  //   enlace: '/semblanzas/AMS_semblanza_Sebastian_Estrada.pdf',
+  // },
+  {
+    id: 31,
+    nombre: 'Sebastián de Lara',
+    imagen: 'Sebastian_De_Lara.png',
+    descripcion: 'CREO en Finsus',
+    enlace: '/semblanzas/AMS_semblanza_Sebastian_De_Lara.pdf',
+  },
+]

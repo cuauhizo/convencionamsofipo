@@ -1,8 +1,13 @@
-<template>
-  <section id="section1" class="container flex flex-wrap justify-items-end items-end min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center xl:min-h-[695px]">
-    <div class="w-full md:w-2/3" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
-      <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
+<!-- <template>
+  <div class="bg-hero">
+    <section id="section1" class="container flex flex-wrap justify-items-end items-end min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center">
+      <div class="w-full md:w-2/3" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+        <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
+          11
+          <sup>a</sup>
+          Convención
+        </h1>
+        <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
         Seguridad y confianza:<br>
         <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
       </h2> 
@@ -11,71 +16,105 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" stroke="#1DC270" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-      </button> -->
+      </button> -/->
 
-      <div class="mt-6 md:max-w-[497.23px]">
-        <div class="grid grid-cols-9 gap-2">
-            <a v-for="(sofipo, index) in sofipos"
-              :key="sofipo.id"
-              :href="sofipo.url"
-              :aria-label="sofipo.alt"
-              :data-aos-delay="index * 100"
-              data-aos="flip-right"
-              data-aos-duration="3000"
-              data-aos-anchor-placement="top-bottom"
-              target="_blank"
-            >
-              <img
-                class="transition-all duration-300 hover:scale-110 object-contain"
-                :src="sofipo.src"
-                :alt="sofipo.alt"
-                width="180"
-                height="96"
-                loading="lazy"
-              />
+        <div class="mt-6 md:max-w-[497.23px]">
+          <div class="grid grid-cols-9 gap-2">
+            <a v-for="(sofipo, index) in sofipos" :key="sofipo.id" :href="sofipo.url" :aria-label="sofipo.alt" :data-aos-delay="index * 100" data-aos="flip-right" data-aos-duration="3000" data-aos-anchor-placement="top-bottom" target="_blank">
+              <img class="transition-all duration-300 hover:scale-110 object-contain" :src="sofipo.src" :alt="sofipo.alt" width="180" height="96" loading="lazy" />
             </a>
+          </div>
         </div>
-
       </div>
-    </div>
-    <div class="space-y-6 md:space-y-8 w-full md:w-1/3" data-aos="fade-left">
-      <h2 class="uppercase text-end leading-7">
-        <span class="text-[2.244rem] font-lemon-bold">3 y 4 </span><br>
-        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
-        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
-        <span class="text-[1.246rem] font-lemon-light">Jiutepec Morelos</span>
-      </h2>
-    </div>
-  </section>
-</template>
+      <div class="space-y-6 md:space-y-8 w-full md:w-1/8" data-aos="fade-left">
+        <h2 class="uppercase text-end leading-7">
+          <span class="text-[2.244rem] font-lemon-bold">Del 30 de Septiembre</span>
+          <br />
+          <span class="text-[#764796] text-[1.773rem] font-lemon-bold">al 1 de Octubre</span>
+          <br />
+          <span class="text-[1.246rem] font-lemon-normal">Hacienda San Gil</span>
+          <br />
+          <span class="text-[1.246rem] font-lemon-light">Querétaro</span>
+        </h2>
+      </div>
+    </section>
+  </div>
+</template> -->
 
+<template>
+  <div class="relative overflow-hidden min-h-lvh bg-hero">
+    
+    <!-- Video de fondo -->
+    <video 
+      autoplay 
+      loop 
+      muted 
+      playsinline 
+      class="absolute inset-0 w-full h-full object-cover z-0"
+    >
+      <source src="/public/bg-hero.mp4" type="video/mp4" />
+      Tu navegador no soporta el formato de video.
+    </video>
+
+    <!-- Degradado inferior -->
+    <div class="absolute bottom-0 left-0 w-full h-40 md:h-48 bg-gradient-to-t from-[#1A1B1A] to-transparent z-10 pointer-events-none"></div>
+
+    <!-- CONTENEDOR PRINCIPAL: Solo flex-col para mantener todo apilado siempre -->
+    <section id="section1" class="relative z-20 container mx-auto flex flex-col items-center justify-center min-h-lvh gap-8 py-[5rem] px-4">
+      
+      <!-- ARRIBA: LA IMAGEN -->
+      <!-- Le damos un ancho máximo en pantallas grandes para que no se vea gigantesca -->
+      <div class="w-full md:w-3/4 lg:w-1/2 flex justify-center" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+        <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold text-white sr-only">
+          11<sup>a</sup> Convención
+        </h1>
+        
+        <img class="w-full max-w-md mx-auto object-contain" src="@/assets/img/Recurso1.png" alt="Innovar para trascender" >
+      </div>
+      
+      <!-- ABAJO: LOS TEXTOS -->
+      <div class="w-full flex justify-center" data-aos="fade-up">
+        <h2 class="uppercase text-center leading-7 text-white">
+          <span class="text-[2.244rem] font-lemon-bold">Del 30 de Septiembre</span>
+          <br />
+          <span class="text-[#c78ae8] text-[1.773rem] font-lemon-bold">al 1 de Octubre</span>
+          <br />
+          <span class="text-[1.246rem] font-lemon-normal">Hacienda San Gil</span>
+          <br />
+          <span class="text-[1.246rem] font-lemon-light">Querétaro</span>
+        </h2>
+      </div>
+
+    </section>
+  </div>
+</template>
 <script setup>
   import { ref } from 'vue'
-  import amextra from '@/assets/img/sofipos/amextra.png';
-  import asp from '@/assets/img/sofipos/asp.png';
-  import bbcd from '@/assets/img/sofipos/bbcd.png';
-  import bienestar from '@/assets/img/sofipos/bienestar.png';
-  import broxel from '@/assets/img/sofipos/broxel.png';
-  import capital_activo from '@/assets/img/sofipos/capital_activo.png';
-  import credicapital from '@/assets/img/sofipos/credicapital.png';
-  import crediclub from '@/assets/img/sofipos/crediclub.png';
-  import fincomun from '@/assets/img/sofipos/fincomun.png';
-  import fin_amigo from '@/assets/img/sofipos/fin_amigo.png';
-  import fondedora from '@/assets/img/sofipos/fondedora.png';
-  import grensa from '@/assets/img/sofipos/grensa.png';
-  import klar from '@/assets/img/sofipos/klar.png';
-  import kubo from '@/assets/img/sofipos/kubo.png';
-  import monte_de_piedad from '@/assets/img/sofipos/monte_de_piedad.png';
-  import paso_seguro from '@/assets/img/sofipos/paso_seguro.png';
-  import porvenir from '@/assets/img/sofipos/porvenir.png';
-  import premu from '@/assets/img/sofipos/premu.png';
-  import progressa from '@/assets/img/sofipos/progressa.png';
-  import resuelve from '@/assets/img/sofipos/resuelve.png';
-  import sofiexpress from '@/assets/img/sofipos/sofiexpress.png';
-  import stori from '@/assets/img/sofipos/stori.png';
-  import sumate from '@/assets/img/sofipos/sumate.png';
-  import unagra from '@/assets/img/sofipos/unagra.png';
-  import xepelin from '@/assets/img/sofipos/xepelin.png';
+  import amextra from '@/assets/img/sofipos/amextra.png'
+  import asp from '@/assets/img/sofipos/asp.png'
+  import bbcd from '@/assets/img/sofipos/bbcd.png'
+  import bienestar from '@/assets/img/sofipos/bienestar.png'
+  import broxel from '@/assets/img/sofipos/broxel.png'
+  import capital_activo from '@/assets/img/sofipos/capital_activo.png'
+  import credicapital from '@/assets/img/sofipos/credicapital.png'
+  import crediclub from '@/assets/img/sofipos/crediclub.png'
+  import fincomun from '@/assets/img/sofipos/fincomun.png'
+  import fin_amigo from '@/assets/img/sofipos/fin_amigo.png'
+  import fondedora from '@/assets/img/sofipos/fondedora.png'
+  import grensa from '@/assets/img/sofipos/grensa.png'
+  import klar from '@/assets/img/sofipos/klar.png'
+  import kubo from '@/assets/img/sofipos/kubo.png'
+  import monte_de_piedad from '@/assets/img/sofipos/monte_de_piedad.png'
+  import paso_seguro from '@/assets/img/sofipos/paso_seguro.png'
+  import porvenir from '@/assets/img/sofipos/porvenir.png'
+  import premu from '@/assets/img/sofipos/premu.png'
+  import progressa from '@/assets/img/sofipos/progressa.png'
+  import resuelve from '@/assets/img/sofipos/resuelve.png'
+  import sofiexpress from '@/assets/img/sofipos/sofiexpress.png'
+  import stori from '@/assets/img/sofipos/stori.png'
+  import sumate from '@/assets/img/sofipos/sumate.png'
+  import unagra from '@/assets/img/sofipos/unagra.png'
+  import xepelin from '@/assets/img/sofipos/xepelin.png'
 
   const sofipos = ref([
     { id: 1, url: 'https://amextrafinanzas.com/', src: amextra, alt: 'Amextra Finanzas' },
@@ -106,5 +145,4 @@
   ])
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

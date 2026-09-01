@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
   import { ref, onMounted, onUnmounted } from 'vue'
   // import Responsive from '@/components/responsive.vue'
 
@@ -47,12 +47,73 @@
       element.scrollIntoView({ behavior: 'smooth' })
     }
   }
-</script>
+</script> -->
 
+<script setup>
+  import { ref, onMounted, onUnmounted } from 'vue'
+
+  const anio = ref(new Date().getFullYear())
+  const showScrollTopButton = ref(false)
+  const activeSection = ref(null)
+  
+  // 1. NUEVA VARIABLE: Controla si ya pasamos la sección del video
+  const isScrolled = ref(false) 
+  
+  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY
+    showScrollTopButton.value = scrollTop > 0
+
+    // 2. NUEVA LÓGICA: Si bajamos más de la altura de la pantalla (menos 80px del menú), se activa.
+    // Si prefieres que el efecto aparezca en cuanto el usuario empiece a bajar, cambia 
+    // (window.innerHeight - 80) por un número fijo como 50.
+    isScrolled.value = scrollTop > (window.innerHeight - 80)
+
+    // Detectar sección activa
+    for (const id of sectionIds) {
+      const el = document.getElementById(id)
+      if (el) {
+        const rect = el.getBoundingClientRect()
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          activeSection.value = id
+          break
+        }
+      }
+    }
+  }
+
+  const cerrarMenu = () => {
+    const checkbox = document.getElementById('menu')
+    if (checkbox) checkbox.checked = false
+  }
+
+  onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+  })
+
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+  })
+
+  const scrollToSection = index => {
+    const element = document.getElementById(`section${index}`)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+</script>
 <template>
   <!-- Header -->
-  <header class="mt-2">
-    <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15">
+  <header class="">
+    <div 
+      class="fixed z-30 w-full mt-2 transition-all duration-500"
+      :class="isScrolled ? 'nav-menu bg-white bg-opacity-15' : 'bg-transparent'"
+    >
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
         <a href="./" class="w-1/3 max-w-[126px]">
           <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" loading="lazy" />
