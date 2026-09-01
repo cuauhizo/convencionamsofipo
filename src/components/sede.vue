@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="order-1 w-full lg:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div class="order-1 w-full min-w-0 lg:order-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
       <h2 class="titulo-seccion">Sede</h2>
       <p class="titulo">Hotel Misión San Gil</p>
       <p class="mb-6">Carretera México-Querétaro km 172 La estancia, 76821 San Juan del Río, Qro.</p>
@@ -30,7 +30,7 @@
       </div>
 
       <!-- Contenedor responsivo con overflow-x-auto -->
-      <div class="w-full overflow-x-auto">
+      <div class="w-full overflow-x-auto pb-2">
         <!-- Tabla optimizada para SEO y Móviles manteniendo tu diseño original -->
         <table class="w-full min-w-[584px] border-collapse border border-gray-600 text-[15px]">
           <thead class="bg-transparent">
