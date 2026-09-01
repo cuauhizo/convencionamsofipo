@@ -177,7 +177,7 @@ export const ponentes = [
     id: 33,
     nombre: 'Marcela Galicia',
     imagen: Marcela_Galicia,
-    descripcion: 'CREO en Finsus',
+    descripcion: 'Directora Senior en Fitch Ratings',
     enlace: '/semblanzas/AMS_semblanza_Marcela_Galicia.pdf',
   },
   // {
