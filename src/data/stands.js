@@ -9,6 +9,7 @@ import ceroUno from '@/assets/img/stands/stand-08-cero-uno.png'
 import fimpe from '@/assets/img/stands/stand-06-fimpe.png'
 import lynx from '@/assets/img/stands/stand-02-lynx.png'
 import unico from '@/assets/img/stands/stand-01-unico.png'
+import seproban from '@/assets/img/stands/stand-09-seproban.png'
 
 export const stands = [
   {
@@ -59,12 +60,12 @@ export const stands = [
     nombre: 'Cero Uno',
     titulo: 'Cero Uno',
   },
-  // {
-  //   id: 9,
-  //   imagen: 'stand-10-efisys.png',
-  //   nombre: 'Efisys',
-  //   titulo: 'Efisys',
-  // },
+  {
+    id: 9,
+    imagen: seproban,
+    nombre: 'Seproban',
+    titulo: 'Seproban',
+  },
   // {
   //   id: 10,
   //   imagen: 'stand-14-hr-ratings.png',

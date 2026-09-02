@@ -10,6 +10,7 @@ import fimpe from '@/assets/img/patrocinadores/fimpe.png'
 import lynx from '@/assets/img/patrocinadores/lynx.png'
 import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.png'
 import unico from '@/assets/img/patrocinadores/unico.png'
+import seproban from '@/assets/img/patrocinadores/seproban.png'
 
 export const patrocinadores = [
   { id: 1, url: 'https://www.circulodecredito.com.mx/home', imagen: circuloDeCredito, alt: 'Circulo de Crédito' },
@@ -17,7 +18,7 @@ export const patrocinadores = [
   { id: 3, url: 'https://www.gmc360.com.mx/', imagen: gmc360, alt: 'GMC360' },
   { id: 5, url: 'https://empresas-mx.unico.io/hc/es-mx', imagen: unico, alt: 'Unico' },
   { id: 6, url: 'https://fimpe.org/', imagen: fimpe, alt: 'Fimpe' },
-  // { id: 7, url: 'https://preven.mx/', imagen: 'preven.png', alt: 'Preven' },
+  { id: 7, url: 'https://www.seproban.com/', imagen: seproban, alt: 'Seproban' },
   { id: 8, url: 'https://cerounosoftware.com.mx/', imagen: ceroUno, alt: 'Cero Uno' },
   { id: 9, url: 'https://www.burodecredito.com.mx/', imagen: buroDeCredito, alt: 'Buro de Crédito' },
   { id: 12, url: 'https://ygconsultores.com.mx/', imagen: YAndG, alt: 'Y&G' },
