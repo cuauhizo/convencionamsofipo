@@ -1,7 +1,11 @@
 <template>
   <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem]">
     <div class="w-full" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
+      <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">
+        10
+        <sup>a</sup>
+        Convención
+      </h1>
       <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
         Seguridad y confianza:<br>
         <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
@@ -40,9 +44,12 @@
     </div>
     <div class="space-y-6 md:space-y-8 w-full" data-aos="fade-left">
       <h3 class="uppercase text-center leading-7">
-        <span class="text-[2.244rem] font-lemon-bold">3 y 4 </span><br>
-        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
-        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
+        <span class="text-[2.244rem] font-lemon-bold">3 y 4</span>
+        <br />
+        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre</span>
+        <br />
+        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya</span>
+        <br />
         <span class="text-[1.246rem] font-lemon-light">Jiutepec Morelos</span>
       </h3>
     </div>
@@ -53,31 +60,31 @@
   import { ref } from 'vue'
   import { useHead } from '@vueuse/head'
 
-  import amextra from '@/assets/img/sofipos/amextra.png';
-  import asp from '@/assets/img/sofipos/asp.png';
-  import bbcd from '@/assets/img/sofipos/bbcd.png';
-  import bienestar from '@/assets/img/sofipos/bienestar.png';
-  import broxel from '@/assets/img/sofipos/broxel.png';
-  import capital_activo from '@/assets/img/sofipos/capital_activo.png';
-  import credicapital from '@/assets/img/sofipos/credicapital.png';
-  import crediclub from '@/assets/img/sofipos/crediclub.png';
-  import fincomun from '@/assets/img/sofipos/fincomun.png';
-  import fin_amigo from '@/assets/img/sofipos/fin_amigo.png';
-  import fondedora from '@/assets/img/sofipos/fondedora.png';
-  import grensa from '@/assets/img/sofipos/grensa.png';
-  import klar from '@/assets/img/sofipos/klar.png';
-  import kubo from '@/assets/img/sofipos/kubo.png';
-  import monte_de_piedad from '@/assets/img/sofipos/monte_de_piedad.png';
-  import paso_seguro from '@/assets/img/sofipos/paso_seguro.png';
-  import porvenir from '@/assets/img/sofipos/porvenir.png';
-  import premu from '@/assets/img/sofipos/premu.png';
-  import progressa from '@/assets/img/sofipos/progressa.png';
-  import resuelve from '@/assets/img/sofipos/resuelve.png';
-  import sofiexpress from '@/assets/img/sofipos/sofiexpress.png';
-  import stori from '@/assets/img/sofipos/stori.png';
-  import sumate from '@/assets/img/sofipos/sumate.png';
-  import unagra from '@/assets/img/sofipos/unagra.png';
-  import xepelin from '@/assets/img/sofipos/xepelin.png';
+  import amextra from '@/assets/img/sofipos/amextra.png'
+  import asp from '@/assets/img/sofipos/asp.png'
+  import bbcd from '@/assets/img/sofipos/bbcd.png'
+  import bienestar from '@/assets/img/sofipos/bienestar.png'
+  import broxel from '@/assets/img/sofipos/broxel.png'
+  import capital_activo from '@/assets/img/sofipos/capital_activo.png'
+  import credicapital from '@/assets/img/sofipos/credicapital.png'
+  import crediclub from '@/assets/img/sofipos/crediclub.png'
+  import fincomun from '@/assets/img/sofipos/fincomun.png'
+  import fin_amigo from '@/assets/img/sofipos/fin_amigo.png'
+  import fondedora from '@/assets/img/sofipos/fondedora.png'
+  import grensa from '@/assets/img/sofipos/grensa.png'
+  import klar from '@/assets/img/sofipos/klar.png'
+  import kubo from '@/assets/img/sofipos/kubo.png'
+  import monte_de_piedad from '@/assets/img/sofipos/monte_de_piedad.png'
+  import paso_seguro from '@/assets/img/sofipos/paso_seguro.png'
+  import porvenir from '@/assets/img/sofipos/porvenir.png'
+  import premu from '@/assets/img/sofipos/premu.png'
+  import progressa from '@/assets/img/sofipos/progressa.png'
+  import resuelve from '@/assets/img/sofipos/resuelve.png'
+  import sofiexpress from '@/assets/img/sofipos/sofiexpress.png'
+  import stori from '@/assets/img/sofipos/stori.png'
+  import sumate from '@/assets/img/sofipos/sumate.png'
+  import unagra from '@/assets/img/sofipos/unagra.png'
+  import xepelin from '@/assets/img/sofipos/xepelin.png'
 
   const sofipos = ref([
     { id: 1, url: 'https://amextrafinanzas.com/', src: amextra, alt: 'Amextra Finanzas' },
@@ -108,24 +115,23 @@
   ])
 
   useHead({
-  title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
-  meta: [
-    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' },
-    { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
-    { property: 'og:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.' },
-    { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
-    { property: 'og:url', content: 'https://convencionamsofipo.com/' },
-    { property: 'og:type', content: 'website' },
+    title: 'Innovar para Trascender: solidez y confianza | 11 Convención AMS',
+    meta: [
+      { name: 'description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
+      { property: 'og:title', content: '11ª Convención AMS | Innovar para trascender' },
+      { property: 'og:description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
+      { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+      { property: 'og:url', content: 'https://convencionamsofipo.com/' },
+      { property: 'og:type', content: 'website' },
 
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
-    { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
-    { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
-    { name: 'twitter:url', content: 'https://convencionamsofipo.com/' }
-  ],
-})
+      // Twitter Card
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: '11ª Convención AMS | Innovar para trascender' },
+      { name: 'twitter:description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
+      { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+      { name: 'twitter:url', content: 'https://convencionamsofipo.com/' },
+    ],
+  })
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

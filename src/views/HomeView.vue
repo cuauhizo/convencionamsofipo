@@ -8,29 +8,20 @@
   import Sede from '@/components/sede.vue'
 
   useHead({
-    title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
+    title: 'Innovar para Trascender: solidez y confianza | 11 Convención AMS',
     meta: [
-      {
-        name: 'description',
-        content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.',
-      },
-      {
-        name: 'keywords',
-        content: 'SOFIPOs, finanzas populares, seguridad, confianza, convención AMS, líderes del sector financiero',
-      },
-      { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
-      {
-        property: 'og:description',
-        content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.',
-      },
+      { name: 'description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
+      { name: 'keywords', content: 'SOFIPOS, SOFIPO, finanzas populares, seguridad, confianza, convención AMS, líderes del sector financiero, Solidez, inclusión, crecimiento' },
+      { property: 'og:title', content: '11ª Convención AMS | Innovar para trascender' },
+      { property: 'og:description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
       { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
       { property: 'og:url', content: 'https://convencionamsofipo.com/' },
       { property: 'og:type', content: 'website' },
 
       // Twitter Card
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
-      { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
+      { name: 'twitter:title', content: '11ª Convención AMS | Innovar para trascender' },
+      { name: 'twitter:description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
       { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
       { name: 'twitter:url', content: 'https://convencionamsofipo.com/' },
     ],
