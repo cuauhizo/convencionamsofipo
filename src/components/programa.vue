@@ -275,26 +275,31 @@
     {
       id: 3,
       horario: '10:10 - 10:50',
-      actividad: 'Innovación con sentido de inclusión para las SOFIPOS',
+      actividad: 'Conferencia: Aplicaciones prácticas de usos de IA en servicios financieros',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: 'Act. Alán Elizondo',
-      //     // enlace: "",
-      //     sofipo: 'FIRA',
-      //   },
-      //   ponete2: {
-      //     nombre: 'Mtro. Javier Vázquez',
-      //     // enlace: "",
-      //     sofipo: 'Nafin',
-      //   },
-      //   ponete3: {
-      //     nombre: 'Alicia Salgado',
-      //     // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-      //     sofipo: 'Moderador',
-      //   },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Alejandra Mendoza',
+          // enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
+          sofipo: 'Deloitte Spanish Latam',
+        },
+        // ponete2: {
+        //   nombre: 'Elizabeth Noriega',
+        //   // enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+        //   sofipo: 'CONDUSEF',
+        // },
+        // ponete3: {
+        //   nombre: 'Viviana Garza',
+        //   // enlace: "",
+        //   sofipo: 'Banxico',
+        // },
+        // ponete4: {
+        //   nombre: 'Salomón Woldenberg',
+        //   // enlace: "",
+        //   sofipo: 'Moderador',
+        // },
+      },
     },
     {
       id: 4,
@@ -492,31 +497,26 @@
     {
       id: 14,
       horario: '17:15 - 17:40',
-      actividad: 'Conferencia: Aplicaciones prácticas de usos de IA en servicios financieros',
+      actividad: 'Innovación con sentido de inclusión para las SOFIPOS',
       name: '',
       title: '',
-      reparto: {
-        ponete1: {
-          nombre: 'Alejandra Mendoza',
-          // enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
-          sofipo: 'Deloitte Spanish Latam',
-        },
-        // ponete2: {
-        //   nombre: 'Elizabeth Noriega',
-        //   // enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
-        //   sofipo: 'CONDUSEF',
-        // },
-        // ponete3: {
-        //   nombre: 'Viviana Garza',
-        //   // enlace: "",
-        //   sofipo: 'Banxico',
-        // },
-        // ponete4: {
-        //   nombre: 'Salomón Woldenberg',
-        //   // enlace: "",
-        //   sofipo: 'Moderador',
-        // },
-      },
+      // reparto: {
+      //   ponete1: {
+      //     nombre: 'Act. Alán Elizondo',
+      //     // enlace: "",
+      //     sofipo: 'FIRA',
+      //   },
+      //   ponete2: {
+      //     nombre: 'Mtro. Javier Vázquez',
+      //     // enlace: "",
+      //     sofipo: 'Nafin',
+      //   },
+      //   ponete3: {
+      //     nombre: 'Alicia Salgado',
+      //     // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+      //     sofipo: 'Moderador',
+      //   },
+      // },
     },
     {
       id: 15,
