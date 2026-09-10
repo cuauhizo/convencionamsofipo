@@ -14,7 +14,7 @@
       { name: 'keywords', content: 'SOFIPOS, SOFIPO, finanzas populares, seguridad, confianza, convención AMS, líderes del sector financiero, Solidez, inclusión, crecimiento' },
       { property: 'og:title', content: '11ª Convención AMS | Innovar para trascender' },
       { property: 'og:description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
-      { property: 'og:image', content: 'https://convencionamsofipo.com/assets/logo-convension.webp' },
+      { property: 'og:image', content: 'https://convencionamsofipo.com/logo-convension.webp' },
       { property: 'og:url', content: 'https://convencionamsofipo.com/' },
       { property: 'og:type', content: 'website' },
 
@@ -22,7 +22,7 @@
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: '11ª Convención AMS | Innovar para trascender' },
       { name: 'twitter:description', content: 'Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar. Descubre los avances del sector en la 11ª Convención AMS' },
-      { name: 'twitter:image', content: 'https://convencionamsofipo.com/assets/logo-convension.webp' },
+      { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo-convension.webp' },
       { name: 'twitter:url', content: 'https://convencionamsofipo.com/' },
     ],
   })
