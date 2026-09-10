@@ -1,15 +1,15 @@
-import buroDeCredito from '@/assets/img/stands/stand-03-buro-de-credito.png'
-import circuloDeCredito from '@/assets/img/stands/stand-04-circulo-de-credito.png'
-import YAndG from '@/assets/img/stands/stand-05-y-&-g.png'
-import efisys from '@/assets/img/stands/stand-11-efisys.png'
-import gmc360 from '@/assets/img/stands/stand-12-gmc-360.png'
-import bonsaif from '@/assets/img/stands/stand-07-bonsaif.png'
-import japifon from '@/assets/img/stands/stand-13-Japifon.png'
-import ceroUno from '@/assets/img/stands/stand-08-cero-uno.png'
-import fimpe from '@/assets/img/stands/stand-06-fimpe.png'
-import lynx from '@/assets/img/stands/stand-02-lynx.png'
-import unico from '@/assets/img/stands/stand-01-unico.png'
-import seproban from '@/assets/img/stands/stand-09-seproban.png'
+import buroDeCredito from '@/assets/img/stands/stand-03-buro-de-credito.webp'
+import circuloDeCredito from '@/assets/img/stands/stand-04-circulo-de-credito.webp'
+import YAndG from '@/assets/img/stands/stand-05-y-&-g.webp'
+import efisys from '@/assets/img/stands/stand-11-efisys.webp'
+import gmc360 from '@/assets/img/stands/stand-12-gmc-360.webp'
+import bonsaif from '@/assets/img/stands/stand-07-bonsaif.webp'
+import japifon from '@/assets/img/stands/stand-13-Japifon.webp'
+import ceroUno from '@/assets/img/stands/stand-08-cero-uno.webp'
+import fimpe from '@/assets/img/stands/stand-06-fimpe.webp'
+import lynx from '@/assets/img/stands/stand-02-lynx.webp'
+import unico from '@/assets/img/stands/stand-01-unico.webp'
+import seproban from '@/assets/img/stands/stand-09-seproban.webp'
 
 export const stands = [
   {
@@ -68,7 +68,7 @@ export const stands = [
   },
   // {
   //   id: 10,
-  //   imagen: 'stand-14-hr-ratings.png',
+  //   imagen: 'stand-14-hr-ratings.webp',
   //   nombre: 'HR Ratings',
   //   titulo: 'HR Ratings',
   // },

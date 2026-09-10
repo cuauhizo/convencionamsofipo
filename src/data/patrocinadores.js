@@ -1,17 +1,17 @@
-import buroDeCredito from '@/assets/img/patrocinadores/buro_de_credito.png'
-import circuloDeCredito from '@/assets/img/patrocinadores/circulo_de_credito.png'
-import YAndG from '@/assets/img/patrocinadores/y&g.png'
-import efisys from '@/assets/img/patrocinadores/efisys.png'
-import gmc360 from '@/assets/img/patrocinadores/gmc360.png'
-import bonsaif from '@/assets/img/patrocinadores/bonsaif.png'
-import japifon from '@/assets/img/patrocinadores/japifon.png'
-import ceroUno from '@/assets/img/patrocinadores/cero_uno.png'
-import fimpe from '@/assets/img/patrocinadores/fimpe.png'
-import lynx from '@/assets/img/patrocinadores/lynx.png'
-import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.png'
-import unico from '@/assets/img/patrocinadores/unico.png'
-import seproban from '@/assets/img/patrocinadores/seproban.png'
-import fitch_ratings from '@/assets/img/patrocinadores/fitch_ratings.png'
+import buroDeCredito from '@/assets/img/patrocinadores/buro_de_credito.webp'
+import circuloDeCredito from '@/assets/img/patrocinadores/circulo_de_credito.webp'
+import YAndG from '@/assets/img/patrocinadores/y&g.webp'
+import efisys from '@/assets/img/patrocinadores/efisys.webp'
+import gmc360 from '@/assets/img/patrocinadores/gmc360.webp'
+import bonsaif from '@/assets/img/patrocinadores/bonsaif.webp'
+import japifon from '@/assets/img/patrocinadores/japifon.webp'
+import ceroUno from '@/assets/img/patrocinadores/cero_uno.webp'
+import fimpe from '@/assets/img/patrocinadores/fimpe.webp'
+import lynx from '@/assets/img/patrocinadores/lynx.webp'
+import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.webp'
+import unico from '@/assets/img/patrocinadores/unico.webp'
+import seproban from '@/assets/img/patrocinadores/seproban.webp'
+import fitch_ratings from '@/assets/img/patrocinadores/fitch_ratings.webp'
 
 export const patrocinadores = [
   { id: 1, url: 'https://www.circulodecredito.com.mx/home', imagen: circuloDeCredito, alt: 'Circulo de Crédito' },
@@ -28,5 +28,5 @@ export const patrocinadores = [
   { id: 15, url: 'https://bonsaif.com/', imagen: bonsaif, alt: 'Bonsaif' },
   { id: 16, url: 'https://japifon.com/', imagen: japifon, alt: 'Japifon' },
   { id: 17, url: 'https://www.fitchratings.com/', imagen: fitch_ratings, alt: 'Fitch Ratings' },
-  // { id: 18, url: 'https://deloitte.com', imagen: 'deloitte.png', alt: 'Deloitte' }
+  // { id: 18, url: 'https://deloitte.com', imagen: 'deloitte.webp', alt: 'Deloitte' }
 ]
