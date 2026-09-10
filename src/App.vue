@@ -1,7 +1,20 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
+  import { ref, onMounted, onUnmounted, computed } from 'vue'
+  import { useRoute } from 'vue-router'
+  import { useHead } from '@vueuse/head'
   // import Responsive from '@/components/responsive.vue'
 
+  const route = useRoute()
+  const baseDomain = 'https://convencionamsofipo.com'
+
+  useHead({
+    link: [
+      {
+        rel: 'canonical',
+        href: computed(() => `${baseDomain}${route.path === '/' ? '' : route.path}`),
+      },
+    ],
+  })
   const anio = ref(new Date().getFullYear())
   const showScrollTopButton = ref(false)
   const activeSection = ref(null)
