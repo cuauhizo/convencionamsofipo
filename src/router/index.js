@@ -12,11 +12,11 @@ const routes = [
     name: 'galeria',
     component: () => import('../views/GaleriaView.vue'),
   },
-  {
-    path: '/demo',
-    name: 'Demo',
-    component: () => import('@/views/DemoView.vue'),
-  },
+  // {
+  //   path: '/demo',
+  //   name: 'Demo',
+  //   component: () => import('@/views/DemoView.vue'),
+  // },
   // Ruta comodín para 404
   {
     path: '/:pathMatch(.*)*',
