@@ -148,9 +148,9 @@
           <!-- Social Icons -->
           <div class="mt-4">
             <span class="inline-flex gap-2.5 mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://www.linkedin.com/company/amsofipo/?originalSubdomain=mx" alt="Linkedin" target="_blank">Linkedin</a>
-              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://www.facebook.com/Amsofipo/?locale=es_LA" alt="Facebook" target="_blank">Facebook</a>
-              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://x.com/amsofipo" alt="X" target="_blank">X</a>
+              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://www.linkedin.com/company/amsofipo/?originalSubdomain=mx" aria-label="LinkedIn de AMS" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://www.facebook.com/Amsofipo/?locale=es_LA" aria-label="Facebook de AMS" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a class="text-sm rounded cursor-pointer py-2 px-4 text-white bg-[#3a3a82]" href="https://x.com/amsofipo" aria-label="X (Twitter) de AMS" target="_blank" rel="noopener noreferrer">X</a>
             </span>
           </div>
         </div>
@@ -173,21 +173,22 @@
               </ul>
             </nav>
           </div>
+          <!-- Ligas de interés (más abajo en tu código) -->
           <div class="sm:col-span-1 md:col-span-1 xl:-ml-3">
             <h3 class="mb-3 font-bold">Ligas de interés</h3>
             <nav class="mb-10 list-none">
               <ul>
                 <li class="">
-                  <a href="https://www.gob.mx/shcp" target="_blank" alt="enlace a SHCP" class="cursor-pointer hover:text-gray-500">SHCP</a>
+                  <a href="https://www.gob.mx/shcp" target="_blank" rel="noopener noreferrer" aria-label="Enlace a SHCP" class="cursor-pointer hover:text-gray-500">SHCP</a>
                 </li>
                 <li class="">
-                  <a href="https://www.gob.mx/cnbv" target="_blank" alt="enlace a CNBV" class="cursor-pointer hover:text-gray-500">CNBV</a>
+                  <a href="https://www.gob.mx/cnbv" target="_blank" rel="noopener noreferrer" aria-label="Enlace a CNBV" class="cursor-pointer hover:text-gray-500">CNBV</a>
                 </li>
                 <li class="">
-                  <a href="https://www.condusef.gob.mx/" target="_blank" alt="enlace a CONDUSEF" class="cursor-pointer hover:text-gray-500">CONDUSEF</a>
+                  <a href="https://www.condusef.gob.mx/" target="_blank" rel="noopener noreferrer" aria-label="Enlace a CONDUSEF" class="cursor-pointer hover:text-gray-500">CONDUSEF</a>
                 </li>
                 <li class="">
-                  <a href="https://www.fira.gob.mx/Nd/index.jsp" target="_blank" alt="enlace a FIRA" class="cursor-pointer hover:text-gray-500">FIRA</a>
+                  <a href="https://www.fira.gob.mx/Nd/index.jsp" target="_blank" rel="noopener noreferrer" aria-label="Enlace a FIRA" class="cursor-pointer hover:text-gray-500">FIRA</a>
                 </li>
               </ul>
             </nav>
@@ -197,7 +198,7 @@
       <div class="mt-16 pt-6 border-t border-[#3A3482]">
         <div class="flex flex-col text-sm justify-center items-center text-center md:flex-row md:justify-between">
           <div class="flex space-x-6 mb-4 md:mb-0">
-            <a href="#" class="cursor-pointer hover:text-gray-500">Aviso de privacidad</a>
+            <!-- <a href="#" class="cursor-pointer hover:text-gray-500">Aviso de privacidad</a> -->
           </div>
           <div class="">
             <p class="">Todos los derechos reservados. AMS® {{ anio }}</p>
