@@ -20,7 +20,7 @@
     <div class="container grid grid-cols-2 gap-4 justify-items-center items-center lg:py-12 md:grid-cols-3" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div class="max-w-sm rounded-2xl h-full flex flex-col" v-for="(patrocinador, index) in patrocinadores" :key="patrocinador.id">
         <div class="flex-1">
-          <a :href="patrocinador.url" :aria-label="patrocinador.alt" target="_blank">
+          <a :href="patrocinador.url" :aria-label="patrocinador.alt" target="_blank" rel="noopener noreferrer">
             <img class="" :src="patrocinador.imagen" :alt="patrocinador.alt" :data-aos-delay="index * 200" data-aos="flip-right" data-aos-duration="3000" loading="lazy" />
           </a>
         </div>
