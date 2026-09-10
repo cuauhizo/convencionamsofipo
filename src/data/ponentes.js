@@ -222,13 +222,13 @@ export const ponentes = [
   //   descripcion: 'Presidente de la CONDUSEF',
   //   enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf',
   // },
-  // {
-  //   id: 26,
-  //   nombre: 'Othón Moreno González',
-  //   imagen: Othon_Moreno_Gonzalez,
-  //   descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
-  //   enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf',
-  // },
+  {
+    id: 26,
+    nombre: 'Othón Moreno González',
+    imagen: Othon_Moreno_Gonzalez,
+    descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
+    enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf',
+  },
   // {
   //   id: 27,
   //   nombre: 'Ramiro Álvarez',

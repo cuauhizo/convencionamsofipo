@@ -423,33 +423,33 @@
       actividad: 'Participación de las SOFIPOS en el ecosistema de Pagos en México',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: 'Carlos Marmolejo',
-      //     // enlace: "/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
-      //     sofipo: 'Finsus',
-      //   },
-      //   ponete2: {
-      //     nombre: 'Oscar Salcedo Yúdico',
-      //     // enlace: '/semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
-      //     sofipo: 'ASP',
-      //   },
-      //   ponete3: {
-      //     nombre: 'Alejandro Toiber',
-      //     // enlace: "/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
-      //     sofipo: 'Xepelin',
-      //   },
-      //   ponete4: {
-      //     nombre: 'Edgar Guerrero',
-      //     // enlace: '',
-      //     sofipo: 'Bienestar',
-      //   },
-      //   ponete5: {
-      //     nombre: 'Marcela Galicia Fitch México',
-      //     // enlace: "",
-      //     sofipo: 'Moderador',
-      //   },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Othón Moreno',
+          // enlace: "/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+          sofipo: 'Banxico',
+        },
+        // ponete2: {
+        //   nombre: 'Oscar Salcedo Yúdico',
+        //   // enlace: '/semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
+        //   sofipo: 'ASP',
+        // },
+        // ponete3: {
+        //   nombre: 'Alejandro Toiber',
+        //   // enlace: "/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
+        //   sofipo: 'Xepelin',
+        // },
+        // ponete4: {
+        //   nombre: 'Edgar Guerrero',
+        //   // enlace: '',
+        //   sofipo: 'Bienestar',
+        // },
+        // ponete5: {
+        //   nombre: 'Marcela Galicia Fitch México',
+        //   // enlace: "",
+        //   sofipo: 'Moderador',
+        // },
+      },
     },
     {
       id: 12,

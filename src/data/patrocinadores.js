@@ -11,6 +11,7 @@ import lynx from '@/assets/img/patrocinadores/lynx.png'
 import hr_ratings from '@/assets/img/patrocinadores/hr_ratings.png'
 import unico from '@/assets/img/patrocinadores/unico.png'
 import seproban from '@/assets/img/patrocinadores/seproban.png'
+import fitch_ratings from '@/assets/img/patrocinadores/fitch_ratings.png'
 
 export const patrocinadores = [
   { id: 1, url: 'https://www.circulodecredito.com.mx/home', imagen: circuloDeCredito, alt: 'Circulo de Crédito' },
@@ -26,5 +27,6 @@ export const patrocinadores = [
   { id: 14, url: 'https://www.hrratings.com/', imagen: hr_ratings, alt: 'HR Ratings' },
   { id: 15, url: 'https://bonsaif.com/', imagen: bonsaif, alt: 'Bonsaif' },
   { id: 16, url: 'https://japifon.com/', imagen: japifon, alt: 'Japifon' },
-  // { id: 17, url: 'https://deloitte.com', imagen: 'deloitte.png', alt: 'Deloitte' }
+  { id: 17, url: 'https://www.fitchratings.com/', imagen: fitch_ratings, alt: 'Fitch Ratings' },
+  // { id: 18, url: 'https://deloitte.com', imagen: 'deloitte.png', alt: 'Deloitte' }
 ]
