@@ -75,13 +75,13 @@ export const ponentes = [
   //   descripcion: 'CEO de PREMO',
   //   enlace: '/semblanzas/AMS_semblanza_Celia_Bujaidar.pdf',
   // },
-  // {
-  //   id: 6,
-  //   nombre: 'Daniel Miranda',
-  //   imagen: Daniel_Miranda,
-  //   descripcion: 'DG de Desarrollo Regulatorio de la CNBV',
-  //   enlace: '/semblanzas/AMS_semblanza_Daniel_Miranda.pdf',
-  // },
+  {
+    id: 6,
+    nombre: 'Daniel Miranda',
+    imagen: Daniel_Miranda,
+    descripcion: 'DG de Desarrollo Regulatorio de la CNBV',
+    enlace: '/semblanzas/AMS_semblanza_Daniel_Miranda.pdf',
+  },
   // {
   //   id: 7,
   //   nombre: 'Daniel Servitje',
@@ -103,13 +103,13 @@ export const ponentes = [
   //   descripcion: 'Secretario de Hacienda y Crédito Público',
   //   enlace: '/semblanzas/AMS_semblanza_Edgar_Amador_Zamora.pdf',
   // },
-  // {
-  //   id: 10,
-  //   nombre: 'Elizabeth Noriega',
-  //   imagen: Elizabeth_Noriega,
-  //   descripcion: 'Vicepresidenta Jurídica en CONDUSEF',
-  //   enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
-  // },
+  {
+    id: 10,
+    nombre: 'Elizabeth Noriega',
+    imagen: Elizabeth_Noriega,
+    descripcion: 'Vicepresidenta Jurídica en CONDUSEF',
+    enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
+  },
   // {
   //   id: 11,
   //   nombre: 'Felipe Vallejo',
@@ -166,13 +166,13 @@ export const ponentes = [
   //   descripcion: 'Vicepresidente de Supervisión de Procesos Preventivos en la CNBV',
   //   enlace: '/semblanzas/AMS_semblanza_Juan_Ayax_Fuentes.pdf',
   // },
-  // {
-  //   id: 19,
-  //   nombre: 'Lucía Buenrostro',
-  //   imagen: Lucia_Buenrostro,
-  //   descripcion: 'Vicepresidenta de Política Regulatoria en CNBV',
-  //   enlace: '/semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
-  // },
+  {
+    id: 19,
+    nombre: 'Lucía Buenrostro',
+    imagen: Lucia_Buenrostro,
+    descripcion: 'Vicepresidenta de Política Regulatoria en CNBV',
+    enlace: '/semblanzas/AMS_semblanza_Lucia_Buenrostro.pdf',
+  },
   {
     id: 33,
     nombre: 'Marcela Galicia',
