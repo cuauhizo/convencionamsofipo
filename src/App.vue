@@ -178,17 +178,17 @@
             <h3 class="mb-3 font-bold">Ligas de interés</h3>
             <nav class="mb-10 list-none">
               <ul>
-                <li class="">
-                  <a href="https://www.gob.mx/shcp" target="_blank" rel="noopener noreferrer" aria-label="Enlace a SHCP" class="cursor-pointer hover:text-gray-500">SHCP</a>
+                <li class="py-1">
+                  <a href="https://www.gob.mx/shcp" target="_blank" rel="noopener noreferrer" aria-label="Enlace a SHCP" class="py-2 cursor-pointer hover:text-gray-500">SHCP</a>
                 </li>
-                <li class="">
-                  <a href="https://www.gob.mx/cnbv" target="_blank" rel="noopener noreferrer" aria-label="Enlace a CNBV" class="cursor-pointer hover:text-gray-500">CNBV</a>
+                <li class="py-1">
+                  <a href="https://www.gob.mx/cnbv" target="_blank" rel="noopener noreferrer" aria-label="Enlace a CNBV" class="py-2 cursor-pointer hover:text-gray-500">CNBV</a>
                 </li>
-                <li class="">
-                  <a href="https://www.condusef.gob.mx/" target="_blank" rel="noopener noreferrer" aria-label="Enlace a CONDUSEF" class="cursor-pointer hover:text-gray-500">CONDUSEF</a>
+                <li class="py-1">
+                  <a href="https://www.condusef.gob.mx/" target="_blank" rel="noopener noreferrer" aria-label="Enlace a CONDUSEF" class="py-2 cursor-pointer hover:text-gray-500">CONDUSEF</a>
                 </li>
-                <li class="">
-                  <a href="https://www.fira.gob.mx/Nd/index.jsp" target="_blank" rel="noopener noreferrer" aria-label="Enlace a FIRA" class="cursor-pointer hover:text-gray-500">FIRA</a>
+                <li class="py-1">
+                  <a href="https://www.fira.gob.mx/Nd/index.jsp" target="_blank" rel="noopener noreferrer" aria-label="Enlace a FIRA" class="py-2 cursor-pointer hover:text-gray-500">FIRA</a>
                 </li>
               </ul>
             </nav>
