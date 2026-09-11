@@ -2,8 +2,8 @@
   <div class="relative overflow-hidden min-h-lvh md:bg-hero">
     <!-- Video de fondo responsivo -->
     <video autoplay loop muted playsinline class="absolute bottom-0 top-0 md:inset-0 w-full md:h-full object-cover z-0">
-      <source src="/public/bg-hero-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
-      <source src="/public/bg-hero.mp4" type="video/mp4" />
+      <source src="/bg-hero-mobile.mp4" type="video/mp4" media="(max-width: 768px)" />
+      <source src="/bg-hero.mp4" type="video/mp4" />
       Tu navegador no soporta el formato de video.
     </video>
 
@@ -21,7 +21,7 @@
           Convención AMS
         </h1>
 
-        <img class="w-full max-w-md mx-auto object-contain" src="@/assets/img/Recurso1.png" alt="Innovar para trascender" fetchpriority="high" />
+        <img class="w-full max-w-md mx-auto object-contain" src="/img/Recurso1.png" alt="Innovar para trascender" fetchpriority="high" />
       </div>
 
       <!-- ABAJO: LOS TEXTOS -->
