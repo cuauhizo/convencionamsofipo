@@ -1,66 +1,45 @@
-// import { ViteSSG } from 'vite-ssg/single-page'
-// import '@/assets/main.css';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// import App from './App.vue';
-
-// export const createApp = ViteSSG(
-//   App,
-//   ({ app, router, routes, isClient, initialState }) => {
-//     // install plugins etc.
-//     // AOS.init()
-//     if (isClient) {
-//       AOS.init()
-//     }
-//   },
-// )
-
-// ========================
-
-// src/main.js (después)
-import { ViteSSG } from 'vite-ssg'; // Importar de 'vite-ssg'
-import App from './App.vue';
-import router from './router'; // Importa tu archivo de router
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './assets/main.css';
-
-// Tu código para scroll y sección activa probablemente se moverá a App.vue o a un plugin
-// Sin embargo, para mantenerlo por ahora, lo adaptaremos un poco.
+import { ViteSSG } from 'vite-ssg'
+import App from './App.vue'
+import router from './router'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import './assets/main.css'
+import { createGtm } from '@gtm-support/vue-gtm'
 
 export const createApp = ViteSSG(
   App,
   {
-    routes: router.options.routes, // Pasamos las rutas del router
-    // Puedes configurar la base de la URL si es necesario
-    // base: import.meta.env.BASE_URL,
+    routes: router.options.routes,
   },
-  ({ app, router, routes, isClient, initialState }) => {
-    // Instalar plugins de Vue como Vue Router
-    app.use(router);
-
-    // Puedes mover la inicialización de AOS aquí, o en un componente de nivel superior como App.vue
+  ({ app, router, isClient }) => {
     if (isClient) {
-      AOS.init();
-    }
+      // Inicializar animaciones AOS
+      AOS.init()
 
-    // Si tenías lógica para scroll o sección activa, considérala moverla.
-    // La lógica actual en tu main.js de desplazamiento y sección activa podría requerir refactorización.
-    // Idealmente, la gestión de secciones activas y desplazamiento debería estar en un componente o un hook de Vue.
-    // Aquí un ejemplo muy básico de cómo integrar la lógica de AOS:
-    if (isClient) {
-        AOS.init({
-            // tus opciones de AOS
-        });
-    }
+      // INICIALIZAR GTM CON RETRASO (TRUCO PARA PAGESPEED)
+      const initGTM = () => {
+        app.use(
+          createGtm({
+            id: 'GTM-TSDFJZRJ', // Tu ID de GTM
+            vueRouter: router, // Rastrea cambios de ruta sin recargar la página
+            defer: true,
+            compatibility: false,
+          }),
+        )
 
-    // Para la lógica de scroll y sección activa, es mejor que uses los hooks de Vue Router
-    // o lo manejes dentro de un layout o componente principal.
-    // Por ejemplo, para el scroll, puedes usar router.afterEach:
-    // router.afterEach((to, from) => {
-    //   if (isClient) {
-    //     window.scrollTo({ top: 0, behavior: 'smooth' });
-    //   }
-    // });
-  }
-);
+        // Limpiamos los "escuchadores" para liberar memoria
+        window.removeEventListener('scroll', initGTM)
+        window.removeEventListener('mousemove', initGTM)
+        window.removeEventListener('touchstart', initGTM)
+      }
+
+      // Disparadores: GTM se carga en el primer movimiento del usuario
+      window.addEventListener('scroll', initGTM, { once: true })
+      window.addEventListener('mousemove', initGTM, { once: true })
+      window.addEventListener('touchstart', initGTM, { once: true })
+
+      // Fallback: Si el usuario no hace nada en 5 segundos, cárgalo de todos modos
+      setTimeout(initGTM, 5000)
+    }
+  },
+)
