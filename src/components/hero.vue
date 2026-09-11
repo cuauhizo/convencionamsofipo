@@ -21,7 +21,7 @@
           Convención AMS
         </h1>
 
-        <img class="w-full max-w-md mx-auto object-contain" src="/img/Recurso1.png" alt="Innovar para trascender" fetchpriority="high" />
+        <img src="/img/Recurso1.png" fetchpriority="high" alt="Innovar para trascender" class="w-full max-w-md mx-auto object-contain" />
       </div>
 
       <!-- ABAJO: LOS TEXTOS -->
