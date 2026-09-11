@@ -16,12 +16,12 @@
       <!-- Le damos un ancho máximo en pantallas grandes para que no se vea gigantesca -->
       <div class="w-full md:w-3/4 lg:w-1/2 flex justify-center" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
         <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold text-white sr-only">
-          11
+          Innovar para Trascender: solidez y confianza | 11
           <sup>a</sup>
-          Convención
+          Convención AMS
         </h1>
 
-        <img class="w-full max-w-md mx-auto object-contain" src="@/assets/img/Recurso1.png" alt="Innovar para trascender" />
+        <img class="w-full max-w-md mx-auto object-contain" src="@/assets/img/Recurso1.png" alt="Innovar para trascender" fetchpriority="high" />
       </div>
 
       <!-- ABAJO: LOS TEXTOS -->
