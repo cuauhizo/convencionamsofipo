@@ -54,7 +54,7 @@
   src: url('@/assets/font/Lemon/lemon-milk-pro-regular.eot'); /* IE9+ Compat Modes */
   src:
     url('@/assets/font/Lemon/lemon-milk-pro-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('/fonts/lemon-milk-pro-regular.woff2') format('woff2'),
+    /* IE6-IE8 */ url('@/assets/font/Lemon/lemon-milk-pro-regular.woff2') format('woff2'),
     /* Super modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-regular.woff') format('woff'),
     /* Modern browsers */ url('@/assets/font/Lemon/lemon-milk-pro-regular.ttf') format('truetype'); /* Safari, Android, iOS */
   font-display: swap;
