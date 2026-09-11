@@ -76,7 +76,7 @@
     <div class="fixed z-30 w-full mt-2 transition-all duration-500" :class="isScrolled ? 'nav-menu bg-white bg-opacity-15' : 'bg-transparent'">
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
         <a href="./" class="w-1/3 max-w-[126px]">
-          <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" fetchpriority="high" />
+          <img src="/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" fetchpriority="high" />
         </a>
         <div class="flex items-center justify-end gap-2 text-[14px]">
           <input type="checkbox" id="menu" class="peer hidden" />
