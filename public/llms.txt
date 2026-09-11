@@ -1,5 +1,33 @@
 # 11ª Convención AMS - Innovar para trascender
 
-Este sitio contiene toda la información sobre la convención de la Asociación Mexicana de Sociedades Financieras Populares (AMSOFIPO).
+Este es el sitio web oficial de la 11ª Convención de la Asociación Mexicana de Sociedades Financieras Populares (AMSOFIPO)[cite: 5, 6].
 
-Para ver el mapa del evento, visita nuestro [Mapa Interactivo](https://convencionamsofipo.com/mapa/index.html).
+## Acerca del Evento
+Las SOFIPOS ofrecen solidez para avanzar, confianza para crecer y fomentan la inclusión para transformar[cite: 6]. La 11ª Convención AMS es el espacio ideal para descubrir los avances del sector financiero y conectar con líderes de la industria[cite: 6].
+
+* **Fecha:** Del 30 de Septiembre al 1 de Octubre[cite: 5].
+* **Sede:** Hacienda San Gil, Querétaro[cite: 5].
+* **Lema:** Innovar para Trascender: solidez y confianza[cite: 6].
+
+## Secciones del Sitio
+El sitio web está estructurado en las siguientes áreas de interés[cite: 5]:
+1. **AMS (Inicio):** Información general sobre la convención[cite: 5].
+2. **Patrocinadores:** Empresas que respaldan nuestro evento[cite: 5].
+3. **Ponentes:** Líderes y expertos del sector financiero que impartirán conferencias[cite: 5].
+4. **Programa:** Agenda detallada de las actividades de los días 30 de Septiembre y 1 de Octubre[cite: 5].
+5. **Stands:** Espacio para conectar con proveedores que ayudarán a llevar a las empresas al siguiente nivel[cite: 1]. Puedes consultar el mapa de ubicación en el siguiente enlace: [Mapa de Stands](https://convencionamsofipo.com/mapa/index.html)[cite: 1].
+6. **Sede:** Detalles sobre la Hacienda San Gil en Querétaro[cite: 5].
+
+## Enlaces de Instituciones de Interés
+Durante la convención y en nuestro sitio, promovemos la conexión con las principales instituciones reguladoras y de fomento en México:
+* [SHCP - Secretaría de Hacienda y Crédito Público](https://www.gob.mx/shcp)[cite: 5]
+* [CNBV - Comisión Nacional Bancaria y de Valores](https://www.gob.mx/cnbv)[cite: 5]
+* [CONDUSEF](https://www.condusef.gob.mx/)[cite: 5]
+* [FIRA](https://www.fira.gob.mx/Nd/index.jsp)[cite: 5]
+
+## Contacto AMSOFIPO
+Para dudas, soporte o mayor información sobre la convención:
+* **Email:** [contacto@amsofipo.mx](mailto:contacto@amsofipo.mx)[cite: 5]
+* **Teléfono:** [+55 5001 4851](tel:+5550014851)[cite: 5]
+* **Dirección:** Ave. Insurgentes Sur #2047 Esq. Cracovia Edificio "B", Colonia San Ángel, Del. Álvaro Obregón C.P. 01000, CDMX[cite: 5].
+* **Redes Sociales:** Visita nuestro [LinkedIn](https://www.linkedin.com/company/amsofipo/?originalSubdomain=mx), [Facebook](https://www.facebook.com/Amsofipo/?locale=es_LA) o [X (Twitter)](https://x.com/amsofipo)[cite: 5].

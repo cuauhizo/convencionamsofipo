@@ -181,11 +181,16 @@
           // enlace: "",
           sofipo: 'FINSUS',
         },
-        // ponete3: {
-        //   nombre: 'Alicia Salgado',
-        //   // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-        //   sofipo: 'Moderador',
-        // },
+        ponete3: {
+          nombre: 'Sebastián Estrada',
+          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+          sofipo: 'Moderador',
+        },
+        ponete3: {
+          nombre: 'Periodista de El Economista',
+          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+          sofipo: '',
+        },
       },
     },
     {
@@ -332,11 +337,11 @@
           // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
           sofipo: 'Fincomún',
         },
-        // ponete2: {
-        //   nombre: '',
-        //   // enlace: "",
-        //   sofipo: '',
-        // },
+        ponete2: {
+          nombre: 'Dr. Lucía Buenrostro',
+          // enlace: "",
+          sofipo: 'CNBV',
+        },
       },
     },
     {
@@ -385,18 +390,18 @@
       actividad: 'Identidad Digital para impulsar la inclusión financiera',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: 'Manuel Contreras',
-      //     // enlace: "",
-      //     sofipo: 'Oracle',
-      //   },
-      //   ponete2: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Mtro. Daniel Miranda',
+          // enlace: "",
+          sofipo: 'CNBV',
+        },
+        ponete2: {
+          nombre: 'Mtra. Elizabeth Noriega',
+          // enlace: "",
+          sofipo: 'Condusef',
+        },
+      },
     },
     {
       id: 10,
