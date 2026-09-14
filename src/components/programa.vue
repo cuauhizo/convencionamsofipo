@@ -184,13 +184,13 @@
         ponete3: {
           nombre: 'Sebastián Estrada',
           // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-          sofipo: 'Moderador',
+          sofipo: 'Moderador: Periodista de El Economista',
         },
-        ponete3: {
-          nombre: 'Periodista de El Economista',
-          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-          sofipo: '',
-        },
+        // ponete3: {
+        //   nombre: '',
+        //   // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        //   sofipo: '',
+        // },
       },
     },
     {

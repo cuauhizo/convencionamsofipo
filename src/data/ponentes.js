@@ -31,6 +31,7 @@ import Regina_Garcia_Cuellar from '@/assets/img/ponentes/Regina_Garcia_Cuellar.w
 import Regina_Martha_Gonzalez from '@/assets/img/ponentes/Regina_Martha_Gonzalez.webp'
 import Sebastian_Estrada from '@/assets/img/ponentes/Sebastian_Estrada.webp'
 import Sebastian_De_Lara from '@/assets/img/ponentes/Sebastian_De_Lara.webp'
+import Marian_Aguirre_Nienau from '@/assets/img/ponentes/Marian_Aguirre_Nienau.webp'
 
 export const ponentes = [
   {
@@ -194,6 +195,13 @@ export const ponentes = [
   //   descripcion: 'Subsecretaria de Hacienda y Crédito Público',
   //   enlace: '/semblanzas/AMS_semblanza_Maria_Del_Carmen_Bonilla.pdf',
   // },
+  {
+    id: 33,
+    nombre: 'Marian Aguirre Nienau',
+    imagen: Marian_Aguirre_Nienau,
+    descripcion: 'Titular de la Unidad de Instituciones Financieras en NAFIN',
+    enlace: '/semblanzas/AMS_semblanza_Marian_Aguirre_Nienau.pdf',
+  },
   {
     id: 22,
     nombre: 'Marlene Garayzar',
