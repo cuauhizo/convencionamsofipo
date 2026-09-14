@@ -505,23 +505,23 @@
       actividad: 'Innovación con sentido de inclusión para las SOFIPOS',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: 'Act. Alán Elizondo',
-      //     // enlace: "",
-      //     sofipo: 'FIRA',
-      //   },
-      //   ponete2: {
-      //     nombre: 'Mtro. Javier Vázquez',
-      //     // enlace: "",
-      //     sofipo: 'Nafin',
-      //   },
-      //   ponete3: {
-      //     nombre: 'Alicia Salgado',
-      //     // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-      //     sofipo: 'Moderador',
-      //   },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Mtra. Marian Aguirre Nienau',
+          // enlace: "",
+          sofipo: 'NAFIN',
+        },
+        // ponete2: {
+        //   nombre: 'Mtro. Javier Vázquez',
+        //   // enlace: "",
+        //   sofipo: 'Nafin',
+        // },
+        // ponete3: {
+        //   nombre: 'Alicia Salgado',
+        //   // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+        //   sofipo: 'Moderador',
+        // },
+      },
     },
     {
       id: 15,
