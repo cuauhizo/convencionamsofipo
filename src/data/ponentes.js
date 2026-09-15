@@ -33,6 +33,8 @@ import Sebastian_Estrada from '@/assets/img/ponentes/Sebastian_Estrada.webp'
 import Sebastian_De_Lara from '@/assets/img/ponentes/Sebastian_De_Lara.webp'
 import Marian_Aguirre_Nienau from '@/assets/img/ponentes/Marian_Aguirre_Nienau.webp'
 import Yolanda_Luna from '@/assets/img/ponentes/Yolanda_Luna.webp'
+import Martin_Ayarzagoitia from '@/assets/img/ponentes/Martin_Ayarzagoitia.webp'
+import Juan_Manuel_Ruiz from '@/assets/img/ponentes/Juan_Manuel_Ruiz.webp'
 
 export const ponentes = [
   {
@@ -42,13 +44,13 @@ export const ponentes = [
     descripcion: 'Socia de IA y Datos en Deloitte Spanish Latin America',
     enlace: '/semblanzas/AMS_semblanza_Alejandra_Mendoza.pdf',
   },
-  // {
-  //   id: 1,
-  //   nombre: 'Alejandro Escobedo',
-  //   imagen: Alejandro_Escobedo,
-  //   descripcion: 'Director Jurídico y de Cumplimiento de Servicios Financieros DiDi México',
-  //   enlace: '/semblanzas/AMS_semblanza_Alejandro_Escobedo.pdf',
-  // },
+  {
+    id: 1,
+    nombre: 'Alejandro Escobedo',
+    imagen: Alejandro_Escobedo,
+    descripcion: 'Director Jurídico y de Cumplimiento de Servicios Financieros DiDi México',
+    enlace: '/semblanzas/AMS_semblanza_Alejandro_Escobedo.pdf',
+  },
   // {
   //   id: 2,
   //   nombre: 'Ángel Cabrera Mendoza',
@@ -169,6 +171,13 @@ export const ponentes = [
   //   enlace: '/semblanzas/AMS_semblanza_Juan_Ayax_Fuentes.pdf',
   // },
   {
+    id: 37,
+    nombre: 'Juan_Manuel_Ruiz',
+    imagen: Juan_Manuel_Ruiz,
+    descripcion: 'CEO de Círculo de Crédito',
+    enlace: '/semblanzas/AMS_semblanza_Juan_Manuel_Ruiz.pdf',
+  },
+  {
     id: 19,
     nombre: 'Lucía Buenrostro',
     imagen: Lucia_Buenrostro,
@@ -209,6 +218,13 @@ export const ponentes = [
     imagen: Marlene_Garayzar,
     descripcion: 'Presidenta de AMS',
     enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+  },
+  {
+    id: 36,
+    nombre: 'Martin Ayarzagoitia',
+    imagen: Martin_Ayarzagoitia,
+    descripcion: 'Chief API & Alternative Data Officer en Círculo de Crédito',
+    enlace: '/semblanzas/AMS_semblanza_Martin_Ayarzagoitia.pdf',
   },
   // {
   //   id: 23,

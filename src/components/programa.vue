@@ -276,16 +276,21 @@
     {
       id: 2,
       horario: '9:30 - 10:10',
-      actividad: 'Conferencia:',
+      actividad: 'Conferencia: Liderando la Inclusión Financiera Rentable: El valor estratégico de la Data Alternativa',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: 'Dr. Mauricio Rodríguez Abreu',
-      //     // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
-      //     sofipo: 'INEGI',
-      //   },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Juan Manuel Ruiz Palmieri',
+          // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
+          sofipo: 'Círculo de Crédito',
+        },
+        ponete2: {
+          nombre: 'Martin Ayarzagoitia',
+          // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
+          sofipo: 'Círculo de Crédito',
+        },
+      },
     },
     {
       id: 3,
