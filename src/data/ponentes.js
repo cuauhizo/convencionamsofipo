@@ -172,7 +172,7 @@ export const ponentes = [
   // },
   {
     id: 37,
-    nombre: 'Juan_Manuel_Ruiz',
+    nombre: 'Juan Manuel Ruiz',
     imagen: Juan_Manuel_Ruiz,
     descripcion: 'CEO de Círculo de Crédito',
     enlace: '/semblanzas/AMS_semblanza_Juan_Manuel_Ruiz.pdf',
