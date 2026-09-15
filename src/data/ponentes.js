@@ -32,6 +32,7 @@ import Regina_Martha_Gonzalez from '@/assets/img/ponentes/Regina_Martha_Gonzalez
 import Sebastian_Estrada from '@/assets/img/ponentes/Sebastian_Estrada.webp'
 import Sebastian_De_Lara from '@/assets/img/ponentes/Sebastian_De_Lara.webp'
 import Marian_Aguirre_Nienau from '@/assets/img/ponentes/Marian_Aguirre_Nienau.webp'
+import Yolanda_Luna from '@/assets/img/ponentes/Yolanda_Luna.webp'
 
 export const ponentes = [
   {
@@ -44,7 +45,7 @@ export const ponentes = [
   // {
   //   id: 1,
   //   nombre: 'Alejandro Escobedo',
-  //   imagen: Alejandro_Escobedo ,
+  //   imagen: Alejandro_Escobedo,
   //   descripcion: 'Director Jurídico y de Cumplimiento de Servicios Financieros DiDi México',
   //   enlace: '/semblanzas/AMS_semblanza_Alejandro_Escobedo.pdf',
   // },
@@ -196,7 +197,7 @@ export const ponentes = [
   //   enlace: '/semblanzas/AMS_semblanza_Maria_Del_Carmen_Bonilla.pdf',
   // },
   {
-    id: 33,
+    id: 34,
     nombre: 'Marian Aguirre Nienau',
     imagen: Marian_Aguirre_Nienau,
     descripcion: 'Titular de la Unidad de Instituciones Financieras en NAFIN',
@@ -223,13 +224,13 @@ export const ponentes = [
   //   descripcion: 'Vicepresidenta de Vinculación en Amafore',
   //   enlace: '/semblanzas/AMS_semblanza_Nieves_Lanzagorta.pdf',
   // },
-  // {
-  //   id: 25,
-  //   nombre: 'Óscar Rosado',
-  //   imagen: Oscar_Rosado,
-  //   descripcion: 'Presidente de la CONDUSEF',
-  //   enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf',
-  // },
+  {
+    id: 25,
+    nombre: 'Óscar Rosado',
+    imagen: Oscar_Rosado,
+    descripcion: 'Presidente de la CONDUSEF',
+    enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf',
+  },
   {
     id: 26,
     nombre: 'Othón Moreno González',
@@ -271,5 +272,12 @@ export const ponentes = [
     imagen: Sebastian_De_Lara,
     descripcion: 'CREO en Finsus',
     enlace: '/semblanzas/AMS_semblanza_Sebastian_De_Lara.pdf',
+  },
+  {
+    id: 35,
+    nombre: 'Yolanda Luna',
+    imagen: Yolanda_Luna,
+    descripcion: 'Consultora en Análisis y Comunicación Digital en AMAFORE',
+    enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
   },
 ]

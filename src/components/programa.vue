@@ -131,11 +131,11 @@
         //   // enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
         //   sofipo: 'BANXICO',
         // },
-        // ponete3: {
-        //   nombre: 'Lic. Oscar Rosado Jiménez',
-        //   // enlace: "/semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
-        //   sofipo: 'CONDUSEF',
-        // },
+        ponete3: {
+          nombre: 'Lic. Óscar Rosado Jiménez',
+          // enlace: "/semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
+          sofipo: 'CONDUSEF',
+        },
         ponete4: {
           nombre: 'Marlene Garayzar',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
@@ -182,6 +182,11 @@
           sofipo: 'FINSUS',
         },
         ponete3: {
+          nombre: 'Alejandro Escobedo',
+          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+          sofipo: 'DiDi',
+        },
+        ponete4: {
           nombre: 'Sebastián Estrada',
           // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
           sofipo: 'Moderador: Periodista de El Economista',
@@ -204,6 +209,11 @@
           nombre: 'Marlene Garayzar',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMSOFIPO',
+        },
+        ponete2: {
+          nombre: 'Mtra. Yolanda Luna Martínez',
+          // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+          sofipo: 'AMAFORE',
         },
       },
     },
@@ -337,17 +347,12 @@
           // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
           sofipo: 'Fincomún',
         },
-        ponete2: {
-          nombre: 'Dr. Lucía Buenrostro',
-          // enlace: "",
-          sofipo: 'CNBV',
-        },
       },
     },
     {
       id: 6,
       horario: '12:00 - 12:30',
-      actividad: 'Panel: SOFIPOS y Fintechs en alianza para la gestón del fraude',
+      actividad: 'Panel: SOFIPOS y Fintechs en alianza para la gestión del fraude',
       name: '',
       title: '',
       reparto: {
@@ -371,10 +376,16 @@
     {
       id: 7,
       horario: '12:30 - 13:00',
-      actividad: 'Conferencia',
+      actividad: 'Conferencia: Innovación y Cercanía: El Potencial del Comisionista Digital en las SOFIPOS',
       name: '',
       title: '',
-      // reparto: {},
+      reparto: {
+        ponete1: {
+          nombre: 'Dr. Lucía Buenrostro',
+          // enlace: "",
+          sofipo: 'CNBV',
+        },
+      },
     },
     {
       id: 8,
