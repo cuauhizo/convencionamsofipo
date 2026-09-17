@@ -10,6 +10,7 @@ import fimpe from '@/assets/img/stands/stand-06-fimpe.webp'
 import lynx from '@/assets/img/stands/stand-02-lynx.webp'
 import unico from '@/assets/img/stands/stand-01-unico.webp'
 import seproban from '@/assets/img/stands/stand-09-seproban.webp'
+import mujeres from '@/assets/img/stands/stand-10-mujeres.webp'
 
 export const stands = [
   {
@@ -66,12 +67,12 @@ export const stands = [
     nombre: 'Seproban',
     titulo: 'Seproban',
   },
-  // {
-  //   id: 10,
-  //   imagen: 'stand-14-hr-ratings.webp',
-  //   nombre: 'HR Ratings',
-  //   titulo: 'HR Ratings',
-  // },
+  {
+    id: 10,
+    imagen: mujeres,
+    nombre: 'Red de Mujeres del Sector Financiero',
+    titulo: 'Red de Mujeres del Sector Financiero',
+  },
   {
     id: 11,
     imagen: efisys,

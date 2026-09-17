@@ -170,13 +170,13 @@ export const ponentes = [
   //   descripcion: 'Vicepresidente de Supervisión de Procesos Preventivos en la CNBV',
   //   enlace: '/semblanzas/AMS_semblanza_Juan_Ayax_Fuentes.pdf',
   // },
-  {
-    id: 37,
-    nombre: 'Juan Manuel Ruiz',
-    imagen: Juan_Manuel_Ruiz,
-    descripcion: 'CEO de Círculo de Crédito',
-    enlace: '/semblanzas/AMS_semblanza_Juan_Manuel_Ruiz.pdf',
-  },
+  // {
+  //   id: 37,
+  //   nombre: 'Juan Manuel Ruiz',
+  //   imagen: Juan_Manuel_Ruiz,
+  //   descripcion: 'CEO de Círculo de Crédito',
+  //   enlace: '/semblanzas/AMS_semblanza_Juan_Manuel_Ruiz.pdf',
+  // },
   {
     id: 19,
     nombre: 'Lucía Buenrostro',

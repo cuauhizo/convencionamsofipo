@@ -280,11 +280,11 @@
       name: '',
       title: '',
       reparto: {
-        ponete1: {
-          nombre: 'Juan Manuel Ruiz Palmieri',
-          // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
-          sofipo: 'Círculo de Crédito',
-        },
+        // ponete1: {
+        //   nombre: 'Juan Manuel Ruiz Palmieri',
+        //   // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
+        //   sofipo: 'Círculo de Crédito',
+        // },
         ponete2: {
           nombre: 'Martin Ayarzagoitia',
           // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
