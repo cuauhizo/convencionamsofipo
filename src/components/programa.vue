@@ -403,7 +403,7 @@
     {
       id: 9,
       horario: '13:20 - 14:00',
-      actividad: 'Identidad Digital para impulsar la inclusión financiera',
+      actividad: 'Panel: Mecanismos para la protección del cliente en la era digital',
       name: '',
       title: '',
       reparto: {

@@ -13,6 +13,7 @@ import unico from '@/assets/img/patrocinadores/unico.webp'
 import seproban from '@/assets/img/patrocinadores/seproban.webp'
 import fitch_ratings from '@/assets/img/patrocinadores/fitch_ratings.webp'
 import deloitte from '@/assets/img/patrocinadores/deloitte.webp'
+import dynamicore from '@/assets/img/patrocinadores/dynamicore.webp'
 
 export const patrocinadores = [
   { id: 1, url: 'https://www.circulodecredito.com.mx/home', imagen: circuloDeCredito, alt: 'Circulo de Crédito' },
@@ -30,4 +31,5 @@ export const patrocinadores = [
   { id: 16, url: 'https://japifon.com/', imagen: japifon, alt: 'Japifon' },
   { id: 17, url: 'https://www.fitchratings.com/', imagen: fitch_ratings, alt: 'Fitch Ratings' },
   { id: 18, url: 'https://deloitte.com', imagen: deloitte, alt: 'Deloitte' },
+  { id: 19, url: 'https://www.dynamicore.com/', imagen: dynamicore, alt: 'Dynamicore' },
 ]
