@@ -255,6 +255,13 @@ export const ponentes = [
     descripcion: 'DG de Sistemas de Pagos e Infraestructuras de Mercados en Banxico',
     enlace: '/semblanzas/AMS_semblanza_Othon_Moreno.pdf',
   },
+  {
+    id: 36,
+    nombre: 'Patricia Ortega',
+    imagen: Patricia_Ortega,
+    descripcion: 'Periodista',
+    enlace: '/semblanzas/AMS_semblanza_Patricia_Ortega.pdf',
+  },
   // {
   //   id: 27,
   //   nombre: 'Ramiro Álvarez',
@@ -297,11 +304,5 @@ export const ponentes = [
     descripcion: 'Consultora en Análisis y Comunicación Digital en AMAFORE',
     enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
   },
-  {
-    id: 36,
-    nombre: 'Patricia Ortega',
-    imagen: Patricia_Ortega,
-    descripcion: 'Periodista',
-    enlace: '/semblanzas/AMS_semblanza_Patricia_Ortega.pdf',
-  },
+  //36
 ]
