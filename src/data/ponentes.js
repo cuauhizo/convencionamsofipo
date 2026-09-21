@@ -35,6 +35,7 @@ import Marian_Aguirre_Nienau from '@/assets/img/ponentes/Marian_Aguirre_Nienau.w
 import Yolanda_Luna from '@/assets/img/ponentes/Yolanda_Luna.webp'
 import Martin_Ayarzagoitia from '@/assets/img/ponentes/Martin_Ayarzagoitia.webp'
 import Juan_Manuel_Ruiz from '@/assets/img/ponentes/Juan_Manuel_Ruiz.webp'
+import Patricia_Ortega from '@/assets/img/ponentes/Patricia_Ortega.webp'
 
 export const ponentes = [
   {
@@ -142,13 +143,13 @@ export const ponentes = [
   //   descripcion: 'Titular de la Unidad de Banca e Inversión en Nafin',
   //   enlace: '/semblanzas/AMS_semblanza_Javier_Vazquez.pdf',
   // },
-  // {
-  //   id: 15,
-  //   nombre: 'Jeanette Leyva Reus',
-  //   imagen: Jeanette_Leyva_Reus,
-  //   descripcion: 'Periodista',
-  //   enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
-  // },
+  {
+    id: 15,
+    nombre: 'Jeanette Leyva Reus',
+    imagen: Jeanette_Leyva_Reus,
+    descripcion: 'Periodista',
+    enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
+  },
   // {
   //   id: 16,
   //   nombre: 'Jesús Alan Elizondo',
@@ -275,13 +276,13 @@ export const ponentes = [
   //   descripcion: 'Asesora de la Oficina del Titular de la UIF',
   //   enlace: '/semblanzas/AMS_semblanza_Regina_Martha_Gonzalez.pdf',
   // },
-  // {
-  //   id: 30,
-  //   nombre: 'Sebastián Estrada',
-  //   imagen: Sebastian_Estrada,
-  //   descripcion: 'Periodista',
-  //   enlace: '/semblanzas/AMS_semblanza_Sebastian_Estrada.pdf',
-  // },
+  {
+    id: 30,
+    nombre: 'Sebastián Estrada',
+    imagen: Sebastian_Estrada,
+    descripcion: 'Periodista',
+    enlace: '/semblanzas/AMS_semblanza_Sebastian_Estrada.pdf',
+  },
   {
     id: 31,
     nombre: 'Sebastián de Lara',
@@ -295,5 +296,12 @@ export const ponentes = [
     imagen: Yolanda_Luna,
     descripcion: 'Consultora en Análisis y Comunicación Digital en AMAFORE',
     enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
+  },
+  {
+    id: 36,
+    nombre: 'Patricia Ortega',
+    imagen: Patricia_Ortega,
+    descripcion: 'Periodista',
+    enlace: '/semblanzas/AMS_semblanza_Patricia_Ortega.pdf',
   },
 ]
