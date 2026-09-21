@@ -156,13 +156,13 @@
       actividad: 'El buen líder de la era digital',
       name: '',
       title: '',
-      // reparto: {
-      // ponete1: {
-      //   nombre: 'Dr. Alejandro Moreno',
-      //   // enlace: "",
-      //   sofipo: '',
-      // },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Hector Ocadiz',
+          // enlace: "",
+          sofipo: 'Conferecista',
+        },
+      },
     },
     {
       id: 7,
@@ -352,6 +352,16 @@
           // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
           sofipo: 'Fincomún',
         },
+        ponete2: {
+          nombre: 'Marcelino Herrera',
+          // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
+          sofipo: 'Crediclub',
+        },
+        ponete3: {
+          nombre: 'Jeanette Leyva',
+          // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
+          sofipo: 'Moderadora: Periodista de El financiero',
+        },
       },
     },
     {
@@ -527,11 +537,11 @@
           // enlace: "",
           sofipo: 'NAFIN',
         },
-        // ponete2: {
-        //   nombre: 'Mtro. Javier Vázquez',
-        //   // enlace: "",
-        //   sofipo: 'Nafin',
-        // },
+        ponete2: {
+          nombre: 'Patricia Ortega',
+          // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
+          sofipo: 'Moderadora: Periodista de El Economista',
+        },
         // ponete3: {
         //   nombre: 'Alicia Salgado',
         //   // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',

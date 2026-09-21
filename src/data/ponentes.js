@@ -191,13 +191,13 @@ export const ponentes = [
     descripcion: 'Directora Senior en Fitch Ratings',
     enlace: '/semblanzas/AMS_semblanza_Marcela_Galicia.pdf',
   },
-  // {
-  //   id: 20,
-  //   nombre: 'Marcelino Herrera',
-  //   imagen: Marcelino_Herrera,
-  //   descripcion: 'CEO y Director General de Crediclub',
-  //   enlace: '/semblanzas/AMS_semblanza_Marcelino_Herrera.pdf',
-  // },
+  {
+    id: 20,
+    nombre: 'Marcelino Herrera',
+    imagen: Marcelino_Herrera,
+    descripcion: 'CEO y Director General de Crediclub',
+    enlace: '/semblanzas/AMS_semblanza_Marcelino_Herrera.pdf',
+  },
   // {
   //   id: 21,
   //   nombre: 'María del Carmen Bonilla',
