@@ -36,6 +36,7 @@ import Yolanda_Luna from '@/assets/img/ponentes/Yolanda_Luna.webp'
 import Martin_Ayarzagoitia from '@/assets/img/ponentes/Martin_Ayarzagoitia.webp'
 import Juan_Manuel_Ruiz from '@/assets/img/ponentes/Juan_Manuel_Ruiz.webp'
 import Patricia_Ortega from '@/assets/img/ponentes/Patricia_Ortega.webp'
+import Hector_Ocadiz from '@/assets/img/ponentes/Hector_Ocadiz.webp'
 
 export const ponentes = [
   {
@@ -129,6 +130,13 @@ export const ponentes = [
   //   descripcion: 'Subgobernadora del Banco de México',
   //   enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
   // },
+  {
+    id: 36,
+    nombre: 'Héctor Ocádiz',
+    imagen: Hector_Ocadiz,
+    descripcion: 'CEO y fundador de Suri Services',
+    enlace: '/semblanzas/AMS_semblanza_Hector_Ocadiz.pdf',
+  },
   // {
   //   id: 13,
   //   nombre: 'Javier Garza Hoeffer',
@@ -304,5 +312,6 @@ export const ponentes = [
     descripcion: 'Consultora en Análisis y Comunicación Digital en AMAFORE',
     enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
   },
-  //36
+
+  //37
 ]
