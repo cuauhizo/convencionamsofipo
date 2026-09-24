@@ -256,7 +256,7 @@ export const ponentes = [
     id: 39,
     nombre: 'Martin Zubieta',
     imagen: Martin_Zubieta,
-    descripcion: 'Director de Innovación en Círculo de Crédito',
+    descripcion: 'CLO en Círculo de Crédito',
     enlace: '/semblanzas/AMS_semblanza_Martin_Zubieta.pdf',
   },
   // {
