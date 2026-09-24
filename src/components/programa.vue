@@ -121,23 +121,28 @@
       name: '',
       title: '',
       reparto: {
-        // ponete1: {
-        //   nombre: 'Dr. Alfredo Navarrete Martínez',
-        //   // enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
-        //   sofipo: 'SHCP',
-        // },
-        // ponete2: {
-        //   nombre: 'Dra. Galia Borja Gómez',
-        //   // enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
-        //   sofipo: 'BANXICO',
-        // },
+        ponete1: {
+          nombre: 'Lic. Ángel Cabrera',
+          // enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
+          sofipo: 'CNBV',
+        },
+        ponete2: {
+          nombre: 'Dr. Othón Moreno',
+          // enlace: '/semblanzas/AMS_semblanza_Galia_Borja.pdf',
+          sofipo: 'BANXICO',
+        },
         ponete3: {
-          nombre: 'Lic. Óscar Rosado Jiménez',
+          nombre: 'Mtro. Miguel Ángel Galindo',
+          // enlace: "/semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
+          sofipo: 'SHCP',
+        },
+        ponete4: {
+          nombre: 'Lic. Ana Clara Fragoso',
           // enlace: "/semblanzas/AMS_semblanza_Oscar_Rosado.pdf",
           sofipo: 'CONDUSEF',
         },
-        ponete4: {
-          nombre: 'Marlene Garayzar',
+        ponete5: {
+          nombre: 'Mtra. Marlene Garayzar',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMSOFIPO',
         },
@@ -153,12 +158,12 @@
     {
       id: 6,
       horario: '16:00 - 17:00',
-      actividad: 'El buen líder de la era digital',
+      actividad: 'Conferencia: El buen líder de la era digital',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Héctor Ocádiz',
+          nombre: 'Mtro. Héctor Ocádiz',
           // enlace: "",
           sofipo: 'Suri Services',
         },
@@ -167,35 +172,25 @@
     {
       id: 7,
       horario: '17:00 - 17:40',
-      actividad: 'Panel: Las SOFIPOS de ayer, hoy y mañana',
+      actividad: 'Panel: Participación de las SOFIPOS en el ecosistema de Pagos en México',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Armando Sánchez Porras',
-          // enlace: '',
-          sofipo: 'ASP',
+          nombre: 'Lic. Ángel Cabrera',
+          // enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
+          sofipo: 'CNBV',
         },
         ponete2: {
-          nombre: 'Sebastián de Lara',
-          // enlace: "",
-          sofipo: 'FINSUS',
+          nombre: 'Dr. Othón Moreno',
+          // enlace: "/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
+          sofipo: 'Banxico',
         },
         ponete3: {
-          nombre: 'Alejandro Escobedo',
-          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-          sofipo: 'DiDi',
+          nombre: 'Mtra. Marlene Garayzar',
+          // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+          sofipo: 'Moderadora',
         },
-        ponete4: {
-          nombre: 'Sebastián Estrada',
-          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-          sofipo: 'Moderador: Periodista de El Economista',
-        },
-        // ponete3: {
-        //   nombre: '',
-        //   // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-        //   sofipo: '',
-        // },
       },
     },
     {
@@ -206,78 +201,38 @@
       title: '',
       reparto: {
         ponete1: {
+          nombre: 'Ana Karen Espinosa',
+          // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+          sofipo: 'SHCP',
+        },
+        ponete2: {
           nombre: 'Marlene Garayzar',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMSOFIPO',
         },
-        ponete2: {
-          nombre: 'Mtra. Yolanda Luna Martínez',
+        ponete3: {
+          nombre: 'Yolanda Luna Martínez',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMAFORE',
         },
-        ponete3: {
-          nombre: 'Juan Manuel Ruíz Palmieri',
+        ponete4: {
+          nombre: 'Martín Zubieta',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'Círculo de Crédito',
         },
       },
     },
-    // {
-    //   id: 9,
-    //   horario: '18:10 - 18:40',
-    //   actividad: 'Red de mujeres en el sector financiero',
-    //   name: '',
-    //   title: '',
-    //   reparto: {
-    //     ponete1: {
-    //       nombre: 'Marlene Garayzar',
-    //       // enlace: '/semblanzas/AMS_semblanza_M  arlene_Garayzar.pdf',
-    //       sofipo: 'AMS',
-    //     },
-    //     ponete2: {
-    //       nombre: 'Regina García Cuellar',
-    //       // enlace: "",
-    //       sofipo: 'ABM',
-    //     },
-    //     ponete3: {
-    //       nombre: 'Dr. Alfredo Navarrete Martínez',
-    //       // enlace: '/semblanzas/AMS_semblanza_Alfredo_Navarrete.pdf',
-    //       sofipo: 'SHCP',
-    //     },
-    //   },
-    // },
     {
       id: 10,
-      horario: '19:30 - 24:00',
+      horario: '19:00 - 24:00',
       actividad: 'Noche Mexicana',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: '',
-      //     // enlace: '',
-      //     sofipo: '',
-      //   },
-      //   ponete2: {
-      //     // nombre: "Regina García Cuellar",
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      // },
     },
   ])
 
   // Jueves 1 de Octubre
   const programaDia2 = ref([
-    {
-      id: 1,
-      horario: '7:30 - 8:30',
-      actividad: 'Actividad de Integración',
-      name: '',
-      title: '',
-      // reparto: {},
-    },
     {
       id: 2,
       horario: '9:30 - 10:10',
@@ -285,11 +240,6 @@
       name: '',
       title: '',
       reparto: {
-        // ponete1: {
-        //   nombre: 'Juan Manuel Ruiz Palmieri',
-        //   // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
-        //   sofipo: 'Círculo de Crédito',
-        // },
         ponete2: {
           nombre: 'Martin Ayarzagoitia',
           // enlace: "/semblanzas/AMS_semblanza_Mauricio_Rodriguez.pdf",
@@ -309,21 +259,6 @@
           // enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
           sofipo: 'Deloitte Spanish Latam',
         },
-        // ponete2: {
-        //   nombre: 'Elizabeth Noriega',
-        //   // enlace: '/semblanzas/AMS_semblanza_Elizabeth_Noriega.pdf',
-        //   sofipo: 'CONDUSEF',
-        // },
-        // ponete3: {
-        //   nombre: 'Viviana Garza',
-        //   // enlace: "",
-        //   sofipo: 'Banxico',
-        // },
-        // ponete4: {
-        //   nombre: 'Salomón Woldenberg',
-        //   // enlace: "",
-        //   sofipo: 'Moderador',
-        // },
       },
     },
     {
@@ -332,18 +267,6 @@
       actividad: 'Receso',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      //   ponete2: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      // },
     },
     {
       id: 5,
@@ -365,7 +288,7 @@
         ponete3: {
           nombre: 'Jeanette Leyva',
           // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
-          sofipo: 'Moderadora: Periodista de El financiero',
+          sofipo: 'Moderadora: Periodista de El Financiero',
         },
       },
     },
@@ -377,20 +300,15 @@
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Marlene Garayzar',
+          nombre: 'Miriam Chávez',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMSOFIPO',
         },
-        // ponete2: {
-        //   nombre: 'Mary Pilly Loo',
-        //   // enlace: "",
-        //   sofipo: 'CNBV',
-        // },
-        // ponete3: {
-        //   nombre: 'Jeanette Leyva',
-        //   // enlace: '/semblanzas/AMS_semblanza_Jeanette_Leyva.pdf',
-        //   sofipo: 'Moderador',
-        // },
+        ponete2: {
+          nombre: 'Claudia Núñez',
+          // enlace: "",
+          sofipo: 'Fintech México',
+        },
       },
     },
     {
@@ -418,16 +336,11 @@
     {
       id: 9,
       horario: '13:20 - 14:00',
-      actividad: 'Panel: Mecanismos para la protección del cliente en la era digital',
+      actividad: 'Conferencia: Mecanismos para la protección del cliente en la era digital',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Mtro. Daniel Miranda',
-          // enlace: "",
-          sofipo: 'CNBV',
-        },
-        ponete2: {
           nombre: 'Mtra. Elizabeth Noriega',
           // enlace: "",
           sofipo: 'Condusef',
@@ -440,51 +353,34 @@
       actividad: 'Comida',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      //   ponete2: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      // },
     },
     {
       id: 11,
       horario: '15:30 - 16:15',
-      actividad: 'Participación de las SOFIPOS en el ecosistema de Pagos en México',
+      actividad: 'Panel: Las SOFIPOS de ayer, hoy y mañana',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Othón Moreno',
-          // enlace: "/semblanzas/AMS_semblanza_Carlos_Marmolejo.pdf",
-          sofipo: 'Banxico',
+          nombre: 'Armando Sánchez',
+          // enlace: '',
+          sofipo: 'ASP',
         },
-        // ponete2: {
-        //   nombre: 'Oscar Salcedo Yúdico',
-        //   // enlace: '/semblanzas/AMS_semblanza_Oscar_Salcedo_Yudico.pdf',
-        //   sofipo: 'ASP',
-        // },
-        // ponete3: {
-        //   nombre: 'Alejandro Toiber',
-        //   // enlace: "/semblanzas/AMS_semblanza_Alejandro_Toiber.pdf",
-        //   sofipo: 'Xepelin',
-        // },
-        // ponete4: {
-        //   nombre: 'Edgar Guerrero',
-        //   // enlace: '',
-        //   sofipo: 'Bienestar',
-        // },
-        // ponete5: {
-        //   nombre: 'Marcela Galicia Fitch México',
-        //   // enlace: "",
-        //   sofipo: 'Moderador',
-        // },
+        ponete2: {
+          nombre: 'Sebastián de Lara',
+          // enlace: "",
+          sofipo: 'FINSUS',
+        },
+        ponete3: {
+          nombre: 'Alejandro Escobedo',
+          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+          sofipo: 'DiDi',
+        },
+        ponete4: {
+          nombre: 'Sebastián Estrada',
+          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+          sofipo: 'Moderador: Periodista de El Economista',
+        },
       },
     },
     {
@@ -493,23 +389,18 @@
       actividad: 'Panel: Inteligencia Financiera en la Prevención el Lavado de Dinero',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: 'Juan Francisco Fernández',
-      //     // enlace: "/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
-      //     sofipo: 'Crediclub',
-      //   },
-      //   ponete2: {
-      //     nombre: 'Juan Pablo Zorrilla',
-      //     // enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
-      //     sofipo: 'SAE',
-      //   },
-      //   ponete3: {
-      //     nombre: 'Stefhan Möller',
-      //     // enlace: "",
-      //     sofipo: 'Klar',
-      //   },
-      // },
+      reparto: {
+        ponete1: {
+          nombre: 'Mtro. Juan Ayax',
+          // enlace: "/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
+          sofipo: 'CNBV',
+        },
+        ponete2: {
+          nombre: 'Mtra. Regina Martha González',
+          // enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
+          sofipo: 'UIF',
+        },
+      },
     },
     {
       id: 13,
@@ -517,47 +408,35 @@
       actividad: 'Receso',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      //   ponete2: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      // },
     },
     {
       id: 14,
       horario: '17:15 - 17:40',
-      actividad: 'Innovación con sentido de inclusión para las SOFIPOS',
+      actividad: 'Panel: Innovación con sentido de inclusión para las SOFIPOS',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Mtra. Marian Aguirre Nienau',
+          nombre: 'Mtro. Jorge de la Madrid',
           // enlace: "",
           sofipo: 'NAFIN',
         },
         ponete2: {
+          nombre: 'Act. José Antonio Cortés',
+          // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
+          sofipo: 'FIRA',
+        },
+        ponete3: {
           nombre: 'Patricia Ortega',
           // enlace: '/semblanzas/AMS_semblanza_David_Romero.pdf',
           sofipo: 'Moderadora: Periodista de El Economista',
         },
-        // ponete3: {
-        //   nombre: 'Alicia Salgado',
-        //   // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
-        //   sofipo: 'Moderador',
-        // },
       },
     },
     {
       id: 15,
       horario: '17:40 - 18:10',
-      actividad: 'México digital: Observaciones de Fitch Ratings sobre un mercado en evolución',
+      actividad: 'Conferencia: México digital: Observaciones de Fitch Ratings sobre un mercado en evolución',
       // name: "Margarita Gonzalez Saravia",
       // title: "Gobernadora del Estado de Morelos",
       name: '',
@@ -568,21 +447,6 @@
           // enlace: "",
           sofipo: 'Fitch Ratings',
         },
-        // ponete2: {
-        //   nombre: 'Lic. Ángel Cabrera Mendoza',
-        //   // enlace: "",
-        //   sofipo: 'CNBV',
-        // },
-        // ponete3: {
-        //   nombre: 'Act. Alán Elizondo',
-        //   // enlace: "",
-        //   sofipo: 'FIRA',
-        // },
-        // ponete4: {
-        //   nombre: 'Mto. Javier Vázquez',
-        //   // enlace: "",
-        //   sofipo: 'Nafin',
-        // },
       },
     },
     {
@@ -593,15 +457,15 @@
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Marlene Garayzar',
+          nombre: 'Lic. Gisela Olvera',
+          // enlace: "",
+          sofipo: 'Procuradora Fiscal del Estado de Querétaro',
+        },
+        ponete2: {
+          nombre: 'Mtro. David Romero',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMSOFIPO',
         },
-        // ponete2: {
-        //   nombre: '',
-        //   // enlace: "",
-        //   sofipo: '',
-        // },
       },
     },
     {
@@ -610,18 +474,6 @@
       actividad: 'Coctel de Clausura',
       name: '',
       title: '',
-      // reparto: {
-      //   ponete1: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      //   ponete2: {
-      //     nombre: '',
-      //     // enlace: "",
-      //     sofipo: '',
-      //   },
-      // },
     },
   ])
 </script>

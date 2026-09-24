@@ -39,6 +39,7 @@ import Patricia_Ortega from '@/assets/img/ponentes/Patricia_Ortega.webp'
 import Hector_Ocadiz from '@/assets/img/ponentes/Hector_Ocadiz.webp'
 import Jorge_De_La_Madrid_Corona from '@/assets/img/ponentes/Jorge_De_La_Madrid_Corona.webp'
 import Jose_Antonio_Cortes_Barrientos from '@/assets/img/ponentes/Jose_Antonio_Cortes_Barrientos.webp'
+import Martin_Zubieta from '@/assets/img/ponentes/Martin_Zubieta.webp'
 
 export const ponentes = [
   {
@@ -83,13 +84,13 @@ export const ponentes = [
   //   descripcion: 'CEO de PREMO',
   //   enlace: '/semblanzas/AMS_semblanza_Celia_Bujaidar.pdf',
   // },
-  {
-    id: 6,
-    nombre: 'Daniel Miranda',
-    imagen: Daniel_Miranda,
-    descripcion: 'DG de Desarrollo Regulatorio de la CNBV',
-    enlace: '/semblanzas/AMS_semblanza_Daniel_Miranda.pdf',
-  },
+  // {
+  //   id: 6,
+  //   nombre: 'Daniel Miranda',
+  //   imagen: Daniel_Miranda,
+  //   descripcion: 'DG de Desarrollo Regulatorio de la CNBV',
+  //   enlace: '/semblanzas/AMS_semblanza_Daniel_Miranda.pdf',
+  // },
   // {
   //   id: 7,
   //   nombre: 'Daniel Servitje',
@@ -230,13 +231,13 @@ export const ponentes = [
   //   descripcion: 'Subsecretaria de Hacienda y Crédito Público',
   //   enlace: '/semblanzas/AMS_semblanza_Maria_Del_Carmen_Bonilla.pdf',
   // },
-  {
-    id: 34,
-    nombre: 'Marian Aguirre Nienau',
-    imagen: Marian_Aguirre_Nienau,
-    descripcion: 'Titular de la Unidad de Instituciones Financieras en NAFIN',
-    enlace: '/semblanzas/AMS_semblanza_Marian_Aguirre_Nienau.pdf',
-  },
+  // {
+  //   id: 34,
+  //   nombre: 'Marian Aguirre Nienau',
+  //   imagen: Marian_Aguirre_Nienau,
+  //   descripcion: 'Titular de la Unidad de Instituciones Financieras en NAFIN',
+  //   enlace: '/semblanzas/AMS_semblanza_Marian_Aguirre_Nienau.pdf',
+  // },
   {
     id: 22,
     nombre: 'Marlene Garayzar',
@@ -250,6 +251,13 @@ export const ponentes = [
     imagen: Martin_Ayarzagoitia,
     descripcion: 'Chief API & Alternative Data Officer en Círculo de Crédito',
     enlace: '/semblanzas/AMS_semblanza_Martin_Ayarzagoitia.pdf',
+  },
+  {
+    id: 39,
+    nombre: 'Martin Zubieta',
+    imagen: Martin_Zubieta,
+    descripcion: 'Director de Innovación en Círculo de Crédito',
+    enlace: '/semblanzas/AMS_semblanza_Martin_Zubieta.pdf',
   },
   // {
   //   id: 23,
@@ -286,6 +294,7 @@ export const ponentes = [
     descripcion: 'Periodista',
     enlace: '/semblanzas/AMS_semblanza_Patricia_Ortega.pdf',
   },
+
   // {
   //   id: 27,
   //   nombre: 'Ramiro Álvarez',
@@ -329,5 +338,5 @@ export const ponentes = [
     enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
   },
 
-  //39
+  //40
 ]
