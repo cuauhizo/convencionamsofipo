@@ -158,9 +158,9 @@
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Hector Ocadiz',
+          nombre: 'Héctor Ocádiz',
           // enlace: "",
-          sofipo: 'Conferecista',
+          sofipo: 'Suri Services',
         },
       },
     },
@@ -214,6 +214,11 @@
           nombre: 'Mtra. Yolanda Luna Martínez',
           // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
           sofipo: 'AMAFORE',
+        },
+        ponete3: {
+          nombre: 'Juan Manuel Ruíz Palmieri',
+          // enlace: '/semblanzas/AMS_semblanza_Marlene_Garayzar.pdf',
+          sofipo: 'Círculo de Crédito',
         },
       },
     },

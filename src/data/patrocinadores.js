@@ -31,5 +31,5 @@ export const patrocinadores = [
   { id: 16, url: 'https://japifon.com/', imagen: japifon, alt: 'Japifon' },
   { id: 17, url: 'https://www.fitchratings.com/', imagen: fitch_ratings, alt: 'Fitch Ratings' },
   { id: 18, url: 'https://deloitte.com', imagen: deloitte, alt: 'Deloitte' },
-  { id: 19, url: 'https://www.dynamicore.com/', imagen: dynamicore, alt: 'Dynamicore' },
+  { id: 19, url: 'https://dynamicore.io/', imagen: dynamicore, alt: 'Dynamicore' },
 ]

@@ -37,6 +37,8 @@ import Martin_Ayarzagoitia from '@/assets/img/ponentes/Martin_Ayarzagoitia.webp'
 import Juan_Manuel_Ruiz from '@/assets/img/ponentes/Juan_Manuel_Ruiz.webp'
 import Patricia_Ortega from '@/assets/img/ponentes/Patricia_Ortega.webp'
 import Hector_Ocadiz from '@/assets/img/ponentes/Hector_Ocadiz.webp'
+import Jorge_De_La_Madrid_Corona from '@/assets/img/ponentes/Jorge_De_La_Madrid_Corona.webp'
+import Jose_Antonio_Cortes_Barrientos from '@/assets/img/ponentes/Jose_Antonio_Cortes_Barrientos.webp'
 
 export const ponentes = [
   {
@@ -165,6 +167,20 @@ export const ponentes = [
   //   descripcion: 'Director General de FIRA',
   //   enlace: '/semblanzas/AMS_semblanza_Jesus_Alan_Elizondo.pdf',
   // },
+  {
+    id: 37,
+    nombre: 'Jorge de la Madrid Corona',
+    imagen: Jorge_De_La_Madrid_Corona,
+    descripcion: 'Director de Intermediarios Financieros y Microcrédito en NAFIN',
+    enlace: '/semblanzas/AMS_semblanza_Jorge_De_La_Madrid.pdf',
+  },
+  {
+    id: 38,
+    nombre: 'José Antonio Cortés Barrientos',
+    imagen: Jose_Antonio_Cortes_Barrientos,
+    descripcion: 'Director General Adjunto de Promoción de Negocios en FIRA',
+    enlace: '/semblanzas/AMS_semblanza_Jose_Antonio_Cortes.pdf',
+  },
   // {
   //   id: 17,
   //   nombre: 'José Antonio Peña Merino',
@@ -313,5 +329,5 @@ export const ponentes = [
     enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
   },
 
-  //37
+  //39
 ]
