@@ -40,6 +40,7 @@ import Hector_Ocadiz from '@/assets/img/ponentes/Hector_Ocadiz.webp'
 import Jorge_De_La_Madrid_Corona from '@/assets/img/ponentes/Jorge_De_La_Madrid_Corona.webp'
 import Jose_Antonio_Cortes_Barrientos from '@/assets/img/ponentes/Jose_Antonio_Cortes_Barrientos.webp'
 import Martin_Zubieta from '@/assets/img/ponentes/Martin_Zubieta.webp'
+import Paulina_De_La_Paz from '@/assets/img/ponentes/Paulina_De_La_Paz.webp'
 
 export const ponentes = [
   {
@@ -293,6 +294,13 @@ export const ponentes = [
     imagen: Patricia_Ortega,
     descripcion: 'Periodista',
     enlace: '/semblanzas/AMS_semblanza_Patricia_Ortega.pdf',
+  },
+  {
+    id: 40,
+    nombre: 'Paulina de la Paz',
+    imagen: Paulina_De_La_Paz,
+    descripcion: 'Subsecretaria de Política Fiscal e Ingresos de Querétaro',
+    enlace: '/semblanzas/AMS_semblanza_Paulina_De_La_Paz.pdf',
   },
 
   // {

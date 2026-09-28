@@ -457,9 +457,9 @@
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Lic. Gisela Olvera',
+          nombre: 'Mtra. Paulina de la Paz Samperio',
           // enlace: "",
-          sofipo: 'Procuradora Fiscal del Estado de Querétaro',
+          sofipo: 'Subsecretaria de Política Fiscal e Ingresos de Querétaro',
         },
         ponete2: {
           nombre: 'Mtro. David Romero',
