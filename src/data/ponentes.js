@@ -61,7 +61,7 @@ export const ponentes = [
   //   nombre: 'Ángel Cabrera Mendoza',
   //   imagen: Angel_Cabrera_Mendoza,
   //   descripcion: 'Presidente de la CNBV',
-  //   enlace: '/semblanzas/AMS_semblanza_Angel_Cabrera_Mendoza.pdf',
+  //   enlace: '/semblanzas/AMS_semblanza_Angel_Cabrera.pdf',
   // },
   {
     id: 3,
@@ -273,13 +273,13 @@ export const ponentes = [
   //   descripcion: 'Vicepresidenta de Vinculación en Amafore',
   //   enlace: '/semblanzas/AMS_semblanza_Nieves_Lanzagorta.pdf',
   // },
-  {
-    id: 25,
-    nombre: 'Óscar Rosado',
-    imagen: Oscar_Rosado,
-    descripcion: 'Presidente de la CONDUSEF',
-    enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf',
-  },
+  // {
+  //   id: 25,
+  //   nombre: 'Óscar Rosado',
+  //   imagen: Oscar_Rosado,
+  //   descripcion: 'Presidente de la CONDUSEF',
+  //   enlace: '/semblanzas/AMS_semblanza_Oscar_Rosado.pdf',
+  // },
   {
     id: 26,
     nombre: 'Othón Moreno González',
