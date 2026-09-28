@@ -386,16 +386,11 @@
     {
       id: 12,
       horario: '16:15 - 17:00',
-      actividad: 'Panel: Inteligencia Financiera en la Prevención el Lavado de Dinero',
+      actividad: 'Conferencia: Inteligencia Financiera en la Prevención el Lavado de Dinero',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Mtro. Juan Ayax',
-          // enlace: "/semblanzas/AMS_semblanza_Juan_Francisco_Fernandez.pdf",
-          sofipo: 'CNBV',
-        },
-        ponete2: {
           nombre: 'Mtra. Regina Martha González',
           // enlace: '/semblanzas/AMS_semblanza_Juan_Pablo_Zorrilla.pdf',
           sofipo: 'UIF',
@@ -422,7 +417,7 @@
           sofipo: 'NAFIN',
         },
         ponete2: {
-          nombre: 'Act. José Antonio Cortés',
+          nombre: 'Maria de la Paz Luna',
           // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
           sofipo: 'FIRA',
         },
