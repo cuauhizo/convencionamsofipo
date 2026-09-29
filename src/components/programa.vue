@@ -417,7 +417,7 @@
           sofipo: 'NAFIN',
         },
         ponete2: {
-          nombre: 'Maria de la Paz Luna',
+          nombre: 'Lic. Maria de la Paz Luna',
           // enlace: '/semblanzas/AMS_semblanza_Alicia_Salgado.pdf',
           sofipo: 'FIRA',
         },
