@@ -41,6 +41,7 @@ import Jorge_De_La_Madrid_Corona from '@/assets/img/ponentes/Jorge_De_La_Madrid_
 import Jose_Antonio_Cortes_Barrientos from '@/assets/img/ponentes/Jose_Antonio_Cortes_Barrientos.webp'
 import Martin_Zubieta from '@/assets/img/ponentes/Martin_Zubieta.webp'
 import Paulina_De_La_Paz from '@/assets/img/ponentes/Paulina_De_La_Paz.webp'
+import Maria_De_La_Paz_Luna from '@/assets/img/ponentes/Maria_De_La_Paz_Luna.webp'
 
 export const ponentes = [
   {
@@ -225,6 +226,13 @@ export const ponentes = [
     descripcion: 'CEO y Director General de Crediclub',
     enlace: '/semblanzas/AMS_semblanza_Marcelino_Herrera.pdf',
   },
+  {
+    id: 41,
+    nombre: 'Maria De La Paz Luna',
+    imagen: Maria_De_La_Paz_Luna,
+    descripcion: 'Directora de Atención Corporativa a Intermediarios Financieros en FIRA',
+    enlace: '/semblanzas/AMS_semblanza_Maria_De_La_Paz_Luna.pdf',
+  },
   // {
   //   id: 21,
   //   nombre: 'María del Carmen Bonilla',
@@ -346,5 +354,5 @@ export const ponentes = [
     enlace: '/semblanzas/AMS_semblanza_Yolanda_Luna.pdf',
   },
 
-  //40
+  //42
 ]
