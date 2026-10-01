@@ -87,7 +87,7 @@
 
   // `activeTab` es una ref reactiva que almacena el nombre de la pestaña actualmente activa.
   // La inicializamos con 'tab1' para que esa pestaña esté visible por defecto al cargar el componente.
-  const activeTab = ref('tab1')
+  const activeTab = ref('tab2')
 
   /**
    * Función para cambiar la pestaña activa.
@@ -248,16 +248,16 @@
       },
     },
     {
-      id: 3,
+      id: 7,
       horario: '10:10 - 10:50',
-      actividad: 'Conferencia: Aplicaciones prácticas de usos de IA en servicios financieros',
+      actividad: 'Conferencia: Innovación y Cercanía: El Potencial del Comisionista Digital en las SOFIPOS',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Alejandra Mendoza',
-          // enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
-          sofipo: 'Deloitte Spanish Latam',
+          nombre: 'Dr. Lucía Buenrostro',
+          // enlace: "",
+          sofipo: 'CNBV',
         },
       },
     },
@@ -312,16 +312,16 @@
       },
     },
     {
-      id: 7,
+      id: 3,
       horario: '12:30 - 13:00',
-      actividad: 'Conferencia: Innovación y Cercanía: El Potencial del Comisionista Digital en las SOFIPOS',
+      actividad: 'Conferencia: Aplicaciones prácticas de usos de IA en servicios financieros',
       name: '',
       title: '',
       reparto: {
         ponete1: {
-          nombre: 'Dr. Lucía Buenrostro',
-          // enlace: "",
-          sofipo: 'CNBV',
+          nombre: 'Alejandra Mendoza',
+          // enlace: '/semblanzas/AMS_semblanza_Aurora_Cervantes_Martinez.pdf',
+          sofipo: 'Deloitte Spanish Latam',
         },
       },
     },
