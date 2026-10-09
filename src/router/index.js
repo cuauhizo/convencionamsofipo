@@ -8,7 +8,7 @@ const routes = [
     component: () => import('@/views/HomeView.vue'),
   },
   {
-    path: '/12092025',
+    path: '/galeria',
     name: 'galeria',
     component: () => import('../views/GaleriaView.vue'),
   },

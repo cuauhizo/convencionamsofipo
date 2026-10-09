@@ -22,7 +22,7 @@
   // 1. NUEVA VARIABLE: Controla si ya pasamos la sección del video
   const isScrolled = ref(false)
 
-  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
+  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7']
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -104,6 +104,9 @@
               </li>
               <li>
                 <a href="#sede" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click="(scrollToSection(6), cerrarMenu())">Sede</a>
+              </li>
+              <li>
+                <a href="galeria" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section7' ? 'bg-white text-[#3a3a82]' : '']">Galeria</a>
               </li>
               <!-- <li>
                 <router-link to="/demo" :class="[
