@@ -27,13 +27,11 @@
       <!-- ABAJO: LOS TEXTOS -->
       <div class="w-full flex justify-center" data-aos="fade-up">
         <h2 class="uppercase text-center leading-7 text-white">
-          <span class="text-[2.244rem] font-lemon-bold">Del 30 de Septiembre</span>
-          <br />
-          <span class="text-[#c78ae8] text-[1.773rem] font-lemon-bold">al 1 de Octubre</span>
-          <br />
-          <span class="text-[1.246rem] font-lemon-normal">Hacienda San Gil</span>
-          <br />
-          <span class="text-[1.246rem] font-lemon-light">Querétaro</span>
+          <span class="text-[2.244rem] font-lemon-bold">
+            Nos vemos
+            <span class="text-[#c78ae8] font-lemon-bold">el proximo</span>
+            Año
+          </span>
         </h2>
       </div>
     </section>

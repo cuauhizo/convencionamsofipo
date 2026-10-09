@@ -106,7 +106,7 @@
                 <a href="#sede" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']" @click="(scrollToSection(6), cerrarMenu())">Sede</a>
               </li>
               <li>
-                <a href="galeria" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section7' ? 'bg-white text-[#3a3a82]' : '']">Galeria</a>
+                <router-link to="/galeria" :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section7' ? 'bg-white text-[#3a3a82]' : '']">Galeria</router-link>
               </li>
               <!-- <li>
                 <router-link to="/demo" :class="[
