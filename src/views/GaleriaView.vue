@@ -199,7 +199,6 @@
     'AMS-2026-D2-246.jpeg',
     'AMS-2026-D2-254.jpeg',
     'AMS-2026-D2-255.jpeg',
-    'AMS-2026-D2-277.jpeg',
     'AMS-2026-D2-3.jpeg',
     'AMS-2026-D2-30.jpeg',
     'AMS-2026-D2-32.jpeg',

@@ -12,6 +12,11 @@ const routes = [
     name: 'galeria',
     component: () => import('../views/GaleriaView.vue'),
   },
+  {
+    path: '/documentos', // Esta es la URL que verá el usuario
+    name: 'Documentos',
+    component: () => import('@/views/DocumentosView.vue'),
+  },
   // {
   //   path: '/demo',
   //   name: 'Demo',
