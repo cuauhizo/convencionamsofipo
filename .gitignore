@@ -16,6 +16,7 @@ dist-ssr
 programa
 public/galeria
 fotos-evento
+archivos-pdf
 
 # Editor directories and files
 .vscode/*
